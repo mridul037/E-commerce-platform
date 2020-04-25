@@ -1,0 +1,72 @@
+<app-header-container
+	[showCartIcon]="false"
+	[showMenuList]="false"
+	[showNavOptionsCartPage]="true"
+	[showSearchIcon]="false"
+	[showUser]="false"
+	[showUserOption]="false"
+	[showUserOptionMdView]="false"
+	[showSigninRegister]="false"
+	[showMobileHeaderSearch]="false"
+	[showMobileHeaderCart]="false"
+></app-header-container>
+<div fxShow fxHide.lt-md="true" style="height:98px;"></div>
+<div
+	class="cart-container-section"
+	style="width:100%; margin: auto; position: relative;"
+>
+	<div *ngIf="(cartData$ | async) || (guestUserCartData$ | async) as userDataa">
+		<app-cart-messaging-box
+			fxShow.gt-sm
+			fxHide.lt-md
+			[offerMessageData]="offerMessage$ | async"
+		>
+		</app-cart-messaging-box>
+		<app-cart-item-detail
+			[cartAllData]="cartAllData$ | async"
+			[userData]="cartAllData$ | async"
+			[cartProducts]="cartProducts$ | async"
+			[cartTotals]="cartTotals$ | async"
+			[userDataGet]="guestUserCartData$ | async"
+			[offerMessageData]="offerMessage$ | async"
+			[accessories]="(cartAccessory$ | async)?.cartAccessoryData"
+			[RmCoupon]="refresCartDataAfterRemoveCoupon$ | async"
+			[ApCoupon]="refresCartDataAfterApplyCoupon$ | async"
+			[refressCartUpdate]="updateCartData1$ | async"
+			(removeCartCoupon)="removeCartCouponByParent($event)"
+			(applyCartCoupon)="applyCartCouponByParent($event)"
+			(updateCartItem)="updateCartItemByParent($event)"
+			(removeCartItem)="removeCartItemByParent($event)"
+			[device]="device"
+			[cartListProducts]="getCartListProducts$ | async"
+		></app-cart-item-detail>
+		<app-cart-mob-accessories
+			[accessories]="(cartAccessory$ | async)?.cartAccessoryData"
+		>
+		</app-cart-mob-accessories>
+		<!-- <app-cart-messaging-box
+			fxShow.lt-md
+			fxHide.gt-sm
+			[offerMessageData]="offerMessage$ | async"
+		></app-cart-messaging-box> -->
+		<app-cart-messaging-box
+			fxShow.lt-md
+			fxHide.gt-sm
+			[offerMessageData]="offerMessage$ | async"
+			[userData]="userDataa.cartData"
+		></app-cart-messaging-box>
+		<!-- <app-cart-coupon-applied
+			[offerMessageData]="offerMessage$ | async"
+		></app-cart-coupon-applied> -->
+		<app-cart-orders-summery></app-cart-orders-summery>
+	</div>
+</div>
+<app-footer-container
+	[showSubscribeUser]="false"
+	[showHelpDesk]="false"
+	[showAboutDO]="false"
+	[showDOFeatures]="true"
+	[showDesignerInvite]="false"
+	[showCompanyLinks]="false"
+	[showSocial]="false"
+></app-footer-container>

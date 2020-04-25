@@ -1,0 +1,210 @@
+@import "../../../styles/placeholders";
+@import "../../../styles/animations";
+
+.error-message {
+	@extend %font-400;
+	text-align: center;
+	font-size: 14px;
+	color: red;
+	margin: 10px 0px;
+}
+
+.login-section {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	.login-dialog-wrapper {
+		padding: 0px;
+		box-shadow: 0px 0px 0px 0px;
+		margin: 0px auto;
+		width: 860px;
+		height: 570px;
+		.image-container {
+			width: 90%;
+		}
+		.login-form-container {
+			width: 100%;
+			padding: 30px;
+			.login-via-text-container {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 30px;
+				.border {
+					width: 100%;
+					border-bottom: 1px solid #000;
+				}
+				.sign-in-text-container {
+					@extend %font-700;
+					font-size: 18px;
+					width: 80%;
+				}
+			}
+			.oauth-options-wrapper {
+				// width: 100%;
+				margin: 15px 0px;
+				.google-login-container {
+					button {
+						@extend %font-600;
+						width: 150px;
+						height: 48px;
+						font-size: 16px;
+						color: #4e4e4e;
+					}
+				}
+				.fb-login-container {
+					button {
+						@extend %font-600;
+						width: 150px;
+						height: 48px;
+						font-size: 16px;
+						background: #3b5998;
+						color: #fff;
+					}
+				}
+			}
+			.or-text-container {
+				@extend %font-400;
+				width: 100%;
+				text-align: center;
+				padding: 10px 0px;
+				font-size: 18px;
+			}
+			.register-form-container {
+				width: 100%;
+				padding-bottom: 20px;
+				.mobile-input-form-control,
+				.email-input-form-control {
+					width: 100%;
+					margin-bottom: 15px;
+					input {
+						@extend %font-400;
+					}
+					.invalid-feedback {
+						@extend %font-400;
+					}
+				}
+				.opt-container {
+					margin-bottom: 30px;
+					.otp-field-label {
+						@extend %font-400;
+						font-size: 12px;
+						margin: 10px 0px;
+						&.disabled {
+							color: #a6a6a6;
+						}
+					}
+					.otp-form-control-container {
+						width: 100%;
+						margin: 15px 0px;
+						.otp-input-container {
+							width: 85%;
+							.otp-input {
+								@extend %font-600;
+								font-size: 18px;
+								text-align: center;
+								border: none;
+								border-bottom: 2px solid #787878;
+								width: 10%;
+								&:focus {
+									outline: none;
+									caret-color: #ea4c7f;
+									border-bottom: 2px solid #ea4c7f;
+									transition: all ease-in-out;
+								}
+								&.disabled {
+									color: #9e9e9e;
+									background: 0;
+									border-bottom: 1px solid #a0a0a0;
+								}
+							}
+							input::-webkit-outer-spin-button,
+							input::-webkit-inner-spin-button {
+								-webkit-appearance: none;
+								margin: 0;
+							}
+							/* Firefox */
+							input[type="number"] {
+								-moz-appearance: textfield;
+							}
+						}
+						.otp-icon-container {
+							display: flex;
+							animation: fadein 0.2s;
+							.verified-icon {
+								color: #66bb6a;
+								animation: fadein 0.2s;
+							}
+							.not-verified-icon {
+								color: #f44336;
+								animation: fadein 0.2s;
+							}
+						}
+					}
+					.resend-otp-container {
+						.resend-otp-link {
+							@extend %font-600;
+							font-size: 14px;
+							float: right;
+							text-decoration: underline;
+							color: #ff931e;
+							&.disabled {
+								color: gray;
+								cursor: not-allowed;
+								text-decoration: underline;
+								background: 0;
+							}
+						}
+					}
+				}
+				.get-otp-btn,
+				.login-btn {
+					@extend %font-700;
+					width: 100%;
+					height: 48px;
+					background: #ff931e;
+				}
+				.gender-radio-group {
+					width: 75%;
+					padding-bottom: 15px;
+					.gender-label {
+						@extend %font-400;
+					}
+				}
+				.register-btn-container {
+					margin: 20px 0px;
+					.register-btn {
+						@extend %font-600;
+						font-size: 16px;
+						width: 100%;
+						height: 48px;
+					}
+				}
+			}
+			.existing-user-link-container {
+				width: 100%;
+				text-align: center;
+				.text {
+					@extend %font-400;
+				}
+				.register-btn {
+					@extend %font-600;
+					font-size: 16px;
+					width: 100%;
+					height: 48px;
+					color: #ff931e;
+					text-transform: uppercase;
+					text-decoration: underline;
+					cursor: pointer;
+				}
+			}
+			.upgraded-text-container {
+				@extend %font-400;
+				font-size: 11px;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.spinner {
+	margin-bottom: 30px;
+}

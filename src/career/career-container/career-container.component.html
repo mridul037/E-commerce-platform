@@ -1,0 +1,866 @@
+<app-header-container></app-header-container>
+<div class="height-gap"></div>
+<section class="middleSection carrers-page">
+	<div class="career-container">
+		<div
+			[ngClass]="[
+				'career-container-heading',
+				'career-container-heading-mobile'
+			]"
+			[ngClass.lt-md]="{
+				'career-container-heading': false,
+				'career-container-heading-mobile': true
+			}"
+			[ngClass.gt-sm]="{
+				'career-container-heading': true,
+				'career-container-heading-mobile': false
+			}"
+		>
+			<h2>Careers</h2>
+		</div>
+		<div class="view-opening">
+			<p>
+				Our Small team is growing fast. We'd love your help <br />in making it
+				truly special.
+			</p>
+			<p>Come join us</p>
+
+			<button
+				mat-stroked-button
+				routerLink="/career"
+				fragment="opening-section"
+			>
+				View Openings
+			</button>
+		</div>
+		<h2
+			[ngClass]="['heading', 'heading-mobile']"
+			[ngClass.lt-md]="{ 'heading-mobile': true, heading: false }"
+			[ngClass.gt-sm]="{ 'heading-mobile': false, heading: true }"
+		>
+			Why work for us?
+		</h2>
+
+		<div
+			fxHide.lt-md
+			fxShow.gt-sm
+			class="why-work-container"
+			fxLayout="column"
+			fxLayoutAlign="center center"
+		>
+			<div
+				class="talented-entrepreneurial-container"
+				fxLayout="row"
+				fxLayoutAlign="space-around start"
+			>
+				<div
+					class="talented-container"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/talent.png"
+						alt="talented"
+						width="65"
+					/>
+					<h3>Talented</h3>
+
+					<p>
+						We hire the best talent on the market. You will work with some of
+						the brightest people at dailyobjects.
+					</p>
+				</div>
+				<div
+					class="entrepreneurial-container"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/entrepreneurial.png"
+						alt="talented"
+						width="65"
+					/>
+					<h3>Entrepreneurial</h3>
+
+					<p>
+						We are a small startup that is growing incredibly fast. We have a
+						young, enterprising workforce that is driving this growth. You will
+						love our startup culture and our dynamic team.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="design-customer-container"
+				fxLayout="row"
+				fxLayoutAlign="space-around start"
+			>
+				<div
+					class="design-oriented-container"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/design1.png"
+						alt="design-oriented"
+						width="65"
+					/>
+					<h3>Design oriented</h3>
+
+					<p>
+						We think good design can be learnt and great taste, developed. Since
+						these are both our USPs at dailyobjects, you will quickly increase
+						your designs skills and improve your taste, with us.
+					</p>
+				</div>
+				<div
+					class="customer-focused-container"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/customer1.png"
+						alt="customer-focused"
+						width="65"
+					/>
+					<h3>Customer focused</h3>
+
+					<p>
+						We do everything we can to amaze and thrill our customers. We hire
+						talent with great people skills and we help them hone these skills,
+						to wow our customers.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div
+			fxHide.gt-sm
+			fxShow.lt-md
+			class="why-work-container-mobile"
+			fxLayout="column"
+			fxLayoutAlign="center center"
+		>
+			<div
+				class="talented-container-mobile"
+				fxLayout="column"
+				fxLayoutAlign="center center"
+			>
+				<div
+					ngClass.lt-md="visible-section"
+					(click)="toggle_talented()"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/talent.png"
+						alt="talented"
+						width="65"
+					/>
+					<h3>Talented</h3>
+				</div>
+				<div ngClass.lt-md="hidden-section" *ngIf="show_talented">
+					<p>
+						We hire the best talent on the market. You will work with some of
+						the brightest people at dailyobjects.
+					</p>
+				</div>
+			</div>
+			<div
+				class="entrepreneurial-container-mobile"
+				fxLayout="column"
+				fxLayoutAlign="center center"
+			>
+				<div
+					ngClass.lt-md="visible-section"
+					(click)="toggle_entrepreneurial()"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/entrepreneurial.png"
+						alt="talented"
+						width="65"
+					/>
+					<h3>Entrepreneurial</h3>
+				</div>
+				<div ngClass.lt-md="hidden-section" *ngIf="show_entrepreneurial">
+					<p>
+						We are a small startup that is growing incredibly fast. We have a
+						young, enterprising workforce that is driving this growth. You will
+						love our startup culture and our dynamic team.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="design-oriented-container-mobile"
+				fxLayout="column"
+				fxLayoutAlign="center center"
+			>
+				<div
+					ngClass.lt-md="visible-section"
+					(click)="toggle_design_oriented()"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/design1.png"
+						alt="design-oriented"
+						width="65"
+					/>
+					<h3>Design oriented</h3>
+				</div>
+				<div ngClass.lt-md="hidden-section" *ngIf="show_design_oriented">
+					<p>
+						We think good design can be learnt and great taste, developed. Since
+						these are both our USPs at dailyobjects, you will quickly increase
+						your designs skills and improve your taste, with us.
+					</p>
+				</div>
+			</div>
+			<div
+				class="customer-focused-container-mobile"
+				fxLayout="column"
+				fxLayoutAlign="center center"
+			>
+				<div
+					ngClass.lt-md="visible-section"
+					(click)="toggle_customer_focused()"
+					fxLayout="column"
+					fxLayoutAlign="center center"
+				>
+					<img
+						appImageSrc
+						src="/domobile/images/customer1.png"
+						alt="customer-focused"
+						width="65"
+					/>
+					<h3>Customer focused</h3>
+				</div>
+				<div ngClass.lt-md="hidden-section" *ngIf="show_customer_focused">
+					<p>
+						We do everything we can to amaze and thrill our customers. We hire
+						talent with great people skills and we help them hone these skills,
+						to wow our customers.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="current-openings" id="opening-section">
+			<div
+				[ngClass]="[
+					'current-opening-main-heading',
+					'current-opening-main-heading-mobile'
+				]"
+				[ngClass.lt-md]="{
+					'current-opening-main-heading-mobile': true,
+					'current-opening-main-heading': false
+				}"
+				[ngClass.gt-sm]="{
+					'current-opening-main-heading': true,
+					'current-opening-main-heading-mobile': false
+				}"
+			>
+				<h2>
+					Current Openings
+				</h2>
+			</div>
+			<div
+				[ngClass]="['heading-tagline', 'heading-tagline-mobile']"
+				[ngClass.lt-md]="{
+					'heading-tagline': false,
+					'heading-tagline-mobile': true
+				}"
+				[ngClass.gt-sm]="{
+					'heading-tagline': true,
+					'heading-tagline-mobile': false
+				}"
+			>
+				<p>
+					Come and explore a host of exciting career opportunities at
+					DailyObjects in the following functions / areas :
+				</p>
+			</div>
+			<div
+				[ngClass]="['openings-list', 'openings-list-mobile']"
+				[ngClass.lt-md]="{
+					'openings-list-mobile': true,
+					'openings-list': false
+				}"
+				[ngClass.gt-sm]="{
+					'openings-list-mobile': false,
+					'openings-list': true
+				}"
+			>
+				<mat-accordion>
+					<mat-expansion-panel
+						[ngClass]="['panel-content', 'panel-content-mobile']"
+						[ngClass.gt-sm]="{
+							'panel-content': true,
+							'panel-content-mobile': false
+						}"
+						[ngClass.lt-md]="{
+							'panel-content-mobile': true,
+							'panel-content': false
+						}"
+					>
+						<mat-expansion-panel-header>
+							<mat-panel-title
+								ngclass="current-opening-heading current-opening-mobile-heading"
+								[ngClass.lt-md]="{
+									'current-opening-heading': false,
+									'current-opening-mobile-heading': true
+								}"
+								[ngClass.gt-sm]="{
+									'current-opening-mobile-heading': false,
+									'current-opening-heading': true
+								}"
+							>
+								Senior Graphic Designer
+							</mat-panel-title>
+						</mat-expansion-panel-header>
+						<p>
+							DailyObjects is looking for a creative Senior Graphic Designer to
+							join the family. We have created some of the most creative
+							graphics in the Indian Ecommerce ecosystem. This individual would
+							be responsible for creating Marketing collaterals, Social Media
+							Graphics, Communications designs like emailer and offer banners.
+							The position is based in New Delhi, India.
+						</p>
+						<h3>Primary Functions:</h3>
+						<ul>
+							<li>
+								Create design concepts that are consistent with brand strategy
+								and communications goals. Extend brand visuals to new verticals
+								and platforms as needed.
+							</li>
+							<li>
+								Communication design for any of the media - e-mailers, banners,
+								promotionals, social handles like facebook, twitter etc
+							</li>
+							<li>
+								Create user flows & visual design of landing pages for
+								websites/apps
+							</li>
+							<li>
+								Coordinate schedules and project deliverables with project
+								managers and other team members.
+							</li>
+							<li>
+								Maintain graphic resource and information systems.
+							</li>
+						</ul>
+						<h3>Mandatory Skills:</h3>
+						<ul>
+							<li>
+								Minimum of 3-4 years of experience in a design, branding or
+								in-house studio or an agency. Degree in graphic design (B.F.A.,
+								M.F.A., or equivalent) is good to have though we are not big on
+								degrees
+							</li>
+							<li>
+								Excellent design and typography skills.
+							</li>
+							<li>
+								Solid knowledge of design systems and templates, grid
+								structures, layout principles, colour theory and information
+								design.
+							</li>
+							<li>
+								Ability to synthesize information from multiple sources into
+								clear and compelling visual solutions
+							</li>
+							<li>
+								Have the ability to manage multiple projects and remain flexible
+								through multiple revisions while keeping a keen attention to
+								detail
+							</li>
+							<li>
+								Demonstrable skills across online designs
+							</li>
+							<li>
+								Advanced proficiency with Adobe CS
+							</li>
+							<li>
+								Strong interpersonal skills
+							</li>
+							<li>
+								Basic understanding of consumer websites an advantage
+							</li>
+							<li>
+								Working knowledge of Adobe Dreamweaver, HTML and flash is an
+								added advantage
+							</li>
+							<li>
+								Ability to work under deadlines and pressure
+							</li>
+						</ul>
+						<h3>Location: <span>South Delhi</span></h3>
+						<h3>Salary Range: <span>Industry standard</span></h3>
+						<h3>Role: <span>Senior Software Engineer</span></h3>
+						<h3>
+							How to Apply:
+							<span
+								>Apply directly by email to career@dailyobjects.com with Senior
+								Graphic Designer in the subject.</span
+							>
+						</h3>
+					</mat-expansion-panel>
+					<mat-expansion-panel
+						[ngClass]="['panel-content', 'panel-content-mobile']"
+						[ngClass.gt-sm]="{
+							'panel-content': true,
+							'panel-content-mobile': false
+						}"
+						[ngClass.lt-md]="{
+							'panel-content-mobile': true,
+							'panel-content': false
+						}"
+					>
+						<mat-expansion-panel-header>
+							<mat-panel-title
+								ngclass="current-opening-heading current-opening-mobile-heading"
+								[ngClass.lt-md]="{
+									'current-opening-heading': false,
+									'current-opening-mobile-heading': true
+								}"
+								[ngClass.gt-sm]="{
+									'current-opening-mobile-heading': false,
+									'current-opening-heading': true
+								}"
+							>
+								Senior Software Engineer
+							</mat-panel-title>
+						</mat-expansion-panel-header>
+						<p>
+							Dailyobjects is currently looking for a senior software engineer
+							to join our e-commerce team in New Delhi. The right candidate will
+							become part of our highly motivated development team and will
+							design and develop complex web applications as well as modules for
+							our e-commerce platform.
+						</p>
+						<p>
+							Your responsibilities will include building and maintaining
+							high-performance, scalable e-commerce systems ready for the cloud.
+							As a senior software engineer, you will develop elegant,
+							maintainable solutions to complex problems using the principles of
+							agile software development and you will write clean code using PHP
+							as well as work closely with product management, interaction
+							designers and UI engineers.
+						</p>
+						<h3>Primary Functions:</h3>
+						<ul>
+							<li>
+								Perform optimization of existing and future Product
+								implementation.
+							</li>
+							<li>
+								Troubleshoot, maintain, and configure server environment.
+							</li>
+							<li>
+								Perform integration between Magento and other applications.
+							</li>
+							<li>
+								Develop new technology through custom development
+							</li>
+							<li>
+								Collaborate with marketing department to develop new ways to
+								enhance functionality and increase conversions.
+							</li>
+						</ul>
+						<h3>Mandatory Skills:</h3>
+						<ul>
+							<li>
+								Develop PHP web applications with Object Oriented MVC
+								architecture.
+							</li>
+							<li>
+								Establish Code development standards.
+							</li>
+							<li>
+								Develop code optimized for optimum performance.
+							</li>
+							<li>
+								Develop web service Clients/Servers utilising SOAP/XML-RPC.
+							</li>
+							<li>
+								Develop Simple/Advanced SQL queries.
+							</li>
+							<li>
+								Develop Database Stored Procedures, Transactions/Rollbacks.
+							</li>
+							<li>
+								Optimize SQL Queries and database to improve the performance.
+							</li>
+							<li>
+								Collaborate with the HTML & Design Team to develop the Frontend.
+							</li>
+							<li>
+								Front-end development utilising JavaScript (jQuery/Prototype)
+								and AJAX.
+							</li>
+							<li>
+								Develop completely customised upgradable websites in Magento.
+							</li>
+							<li>
+								Upgrade existing websites to newer Magento versions.
+							</li>
+							<li>
+								Extension development in Magento.
+							</li>
+							<li>
+								Participate in Design and Development of new features in the
+								product.
+							</li>
+							<li>
+								Responsible for the deployment of the web application
+							</li>
+							<li>
+								Understanding client requirements & functional specifications.
+							</li>
+							<li>
+								Effectively communicate status, metrics and issues on a regular
+								basis.
+							</li>
+							<li>
+								Execute assigned tasks in a timely & efficient manner.
+							</li>
+							<li>
+								Assist team members & colleagues to solve technical issues.
+							</li>
+						</ul>
+						<h3>Necessary skills and qualifications</h3>
+						<ul>
+							<li>
+								A university degree in computer science or a similar academic
+								background. Impress us with your profound knowledge in PHP5,
+								Magento Core Architecture, MySQL, Zend Framework & MVC, HTML,
+								CSS and JS.
+							</li>
+							<li>
+								A structured approach and experience in object-oriented
+								development as well as a disciplined approach to testing and
+								quality assurance as well as experience in implementing software
+								engineering best practices (e.g. unit testing, code reviews,
+								design documentation).
+							</li>
+							<li>
+								A solid understanding of the full web technology stack (e.g.
+								HTTP, cookies, headers, asset loading / caching). In addition
+								you should have experience with web infrastructure and
+								fault-tolerant distributed systems.
+							</li>
+							<li>
+								Must have a minimum of 4-5 years of development experience with
+								Magento including knowledge of best practices pertaining to the
+								fundamentals of Magento development (extending existing
+								functionality, developing custom extensions, etc.)
+							</li>
+							<li>Must have at least 3 years of PHP development.</li>
+							<li>Must be an expert in MySQL.</li>
+							<li>
+								Must have experience with writing Javascript, CSS, jQuery, and
+								HTML.
+							</li>
+							<li>
+								XML experience is required.
+							</li>
+							<li>
+								Must have excellent written and verbal communications skills.
+							</li>
+							<li>
+								Linux experience is required.
+							</li>
+							<li>
+								Magento Developer and Zend Certification are preferred.
+							</li>
+						</ul>
+						<h3>Location: <span>South Delhi</span></h3>
+						<h3>Salary Range: <span>Industry standard</span></h3>
+						<h3>Role: <span>Senior Software Engineer</span></h3>
+						<h3>
+							How to Apply:
+							<span
+								>Apply directly by email to career@dailyobjects.com with Senior
+								Software Engineer in the subject.</span
+							>
+						</h3>
+					</mat-expansion-panel>
+					<mat-expansion-panel
+						[ngClass]="['panel-content', 'panel-content-mobile']"
+						[ngClass.gt-sm]="{
+							'panel-content': true,
+							'panel-content-mobile': false
+						}"
+						[ngClass.lt-md]="{
+							'panel-content-mobile': true,
+							'panel-content': false
+						}"
+					>
+						<mat-expansion-panel-header>
+							<mat-panel-title
+								ngclass="current-opening-heading current-opening-mobile-heading"
+								[ngClass.lt-md]="{
+									'current-opening-heading': false,
+									'current-opening-mobile-heading': true
+								}"
+								[ngClass.gt-sm]="{
+									'current-opening-mobile-heading': false,
+									'current-opening-heading': true
+								}"
+							>
+								UI Lead
+							</mat-panel-title>
+						</mat-expansion-panel-header>
+						<p>
+							Dailyobjects is currently looking for top-notch UI Lead with
+							strong jQuery skills, to join our team in Delhi. The ideal
+							candidate has an eye for clean and artful design, possesses
+							superior UI skills and is able to translate high-level
+							requirements into interaction flows and artefacts and then
+							transform them into beautiful, intuitive, and functional user
+							interfaces.
+						</p>
+
+						<h3>Necessary skills and personality attributes:</h3>
+						<ul>
+							<li>
+								The ability to implement brilliant, unique user experiences.
+							</li>
+							<li>
+								The ability to deliver what you promise and exceed expectations.
+							</li>
+							<li>
+								Creative and positive when working as a part of a specialist
+								team, but able take responsibility independently.
+							</li>
+							<li>
+								An understanding the importance of user experience and its
+								implications on website development.
+							</li>
+							<li>
+								Comfort with rapid prototyping and HTML development and the
+								relevant helper libraries such as jQuery.
+							</li>
+							<li>
+								Familiarity with user-centric design processes on a practical
+								level.
+							</li>
+							<li>
+								Development skills that enable you to implement concepts and
+								complex services designed by our UX experts into perfectly
+								functioning, responsive, high-performance websites.
+							</li>
+						</ul>
+						<h3>Primary Functions:</h3>
+						<ul>
+							<li>
+								Collaborate with product management and engineering to define
+								and implement innovative solutions for the product direction,
+								visuals and experience.
+							</li>
+							<li>
+								Execute all visual design stages from concept to final hand-off
+								to engineering.
+							</li>
+							<li>
+								Conceptualise original ideas that bring simplicity and user
+								friendliness to complex design roadblocks.
+							</li>
+							<li>
+								Create wireframes, user flows, process flows and site maps to
+								effectively communicate interaction and design ideas.
+							</li>
+							<li>
+								Present and defend designs and key milestone deliverables to
+								peers and executive level stakeholders.
+							</li>
+							<li>
+								Conduct user research and evaluate user feedback.
+							</li>
+							<li>
+								Establish and promote design guidelines, best practices and
+								standards.
+							</li>
+							<li>
+								Knowledge to build High Quality Backlinks as per latest trends.
+							</li>
+							<li>
+								Knowledge of Classified Advertising, Blog Creation and Posting,
+								Forums Submission
+							</li>
+						</ul>
+						<h3>Essential Functions:</h3>
+						<ul>
+							<li>
+								Identify UI problems and develop designs that achieve the key
+								business metrics.
+							</li>
+							<li>
+								Develop customer centric designs on the basis of data captured
+								through various tools & feedback.
+							</li>
+							<li>
+								Design the UI and interaction flow for the entire site.
+							</li>
+							<li>
+								Create wireframes and visual design mockups as required to
+								identify and visualise interaction behaviours.
+							</li>
+							<li>
+								Create and manage detailed UI guidelines and specifications.
+							</li>
+							<li>
+								Provide leadership in the area of e-commerce trends and user
+								interface innovations.
+							</li>
+							<li>
+								Up-to-date with the latest UI trends, techniques, and
+								technologies.
+							</li>
+							<li>
+								Solid jQuery, HTML/HTML5 and CSS3 skills.
+							</li>
+						</ul>
+						<h3>Necessary skills and qualifications</h3>
+						<ul>
+							<li>
+								A Design/Computer Science degree from a reputed college and more
+								than 5 years work experience.
+							</li>
+							<li>
+								Awesome online portfolio that displays your thought process and
+								sense of aesthetics as well as your experience in creating
+								user-centric designs.
+							</li>
+							<li>
+								Experience in working in a team environment.
+							</li>
+							<li>
+								Excellent communication, presentation, and interpersonal skills.
+							</li>
+							<li>
+								Experience with a variety of design tools such as Photoshop,
+								Illustrator, Fireworks, Visio, and/or Dreamweaver.
+							</li>
+							<li>
+								Experience in Google Analytics & heat-maps.
+							</li>
+							<li>
+								Ability to prototype in HTML, JavaScript, and CSS, or Flash.
+							</li>
+						</ul>
+						<h3>Location: <span>South Delhi</span></h3>
+						<h3>Salary Range: <span>Industry standard</span></h3>
+						<h3>Role: <span>UI Lead</span></h3>
+						<h3>
+							How to Apply:
+							<span
+								>Apply directly by email to career@dailyobjects.com with UI Lead
+								in the subject.</span
+							>
+						</h3>
+					</mat-expansion-panel>
+					<mat-expansion-panel
+						[ngClass]="['panel-content', 'panel-content-mobile']"
+						[ngClass.gt-sm]="{
+							'panel-content': true,
+							'panel-content-mobile': false
+						}"
+						[ngClass.lt-md]="{
+							'panel-content-mobile': true,
+							'panel-content': false
+						}"
+					>
+						<mat-expansion-panel-header>
+							<mat-panel-title
+								ngclass="current-opening-heading current-opening-mobile-heading"
+								[ngClass.lt-md]="{
+									'current-opening-heading': false,
+									'current-opening-mobile-heading': true
+								}"
+								[ngClass.gt-sm]="{
+									'current-opening-mobile-heading': false,
+									'current-opening-heading': true
+								}"
+							>
+								Illustrator /Graphic Artist
+							</mat-panel-title>
+						</mat-expansion-panel-header>
+						<p>
+							Dailyobjects is currently looking for an illustrator/graphic
+							artist to join our e-commerce team in New Delhi. The position
+							involves ideating and creating visually stunning themes, concepts,
+							designs and illustrations for our website and associated
+							promotional material.
+						</p>
+
+						<h3>Necessary skills and personality attributes:</h3>
+						<ul>
+							<li>
+								Excellent graphic art skills, strong design thinking,
+								illustration and sketching should be amongst your core strengths
+							</li>
+							<li>
+								Excellent knowledge of Photoshop and Illustrator.
+							</li>
+							<li>
+								Ability to come up with creative solutions in face of challenges
+								and tough deadlines.
+							</li>
+							<li>
+								Great interpersonal and communication skills.
+							</li>
+							<li>
+								Be aware of the latest advances in design and computer
+								technology. Have the ability to perceive how this affects the
+								business environment.
+							</li>
+							<li>
+								Self motivated, enthusiastic and proactive.
+							</li>
+							<li>
+								The ability to prioritise effectively.
+							</li>
+						</ul>
+						<h3>
+							Qualification:
+							<span
+								>Degree/ Diploma from NIFT, NID or other premier design
+								school.</span
+							>
+						</h3>
+						<h3>Experience: <span>0 to 2 years</span></h3>
+						<h3>Location: <span>South Delhi</span></h3>
+						<h3>Salary Range: <span>Industry standard</span></h3>
+						<h3>Role: <span>Illustrator / Graphic Artist</span></h3>
+						<h3>
+							How to Apply:
+							<span
+								>Apply directly by email to career@dailyobjects.com with
+								Illustrator / Graphic Artist in the subject..</span
+							>
+						</h3>
+					</mat-expansion-panel>
+				</mat-accordion>
+			</div>
+		</div>
+	</div>
+</section>
+<app-footer-container
+	[showSubscribeUser]="true"
+	[showHelpDesk]="true"
+	[showAboutDO]="false"
+	[showDOFeatures]="true"
+	[showDesignerInvite]="true"
+	[showCompanyLinks]="true"
+	[showSocial]="true"
+	(subscribeToNewsletter)="subscribeToNewsletter($event)"
+></app-footer-container>

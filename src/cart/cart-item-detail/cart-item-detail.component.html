@@ -1,0 +1,1116 @@
+<!-- =============For Mobile Cart Section======================-->
+
+<div class="cart-section-mobile" fxShow.lt-md fxHide.gt-sm>
+	<div style="height:40px;"></div>
+	<!-- <div class="cart-heading"><h1>My Cart</h1></div> -->
+	<div *ngIf="cartProducts && cartProducts.length > 0">
+		<section class=" cart-item-detail-section-mobile" fxShow.lt-md fxHide.gt-sm>
+			<div *ngIf="cartProducts">
+				<mat-card class="cart-card" *ngFor="let product of cartProducts">
+					<mat-card-header>
+						<div
+							mat-card-avatar
+							class="thumbnail-img"
+							fxLayout="column"
+							fxLayoutAlign="center center"
+						>
+							<a [routerLink]="['', product['subProducts']['slug']]">
+								<img
+									appImageSrc
+									src="{{ product.subProducts.thumbnail }}"
+									width="50"
+									height="50"
+									style="width:100%"
+									alt="{{ product.subProducts.name }}"
+								/>
+							</a>
+						</div>
+						<div class="product-detail">
+							<div
+								class="product-remove-icon"
+								(click)="
+									removeCartD(product['subProducts']['slug'], cartAllData)
+								"
+							>
+								<img
+									appImageSrc
+									width="20"
+									src="/assets/images/my-account/delete-icon@2x.png"
+								/>
+							</div>
+							<a [routerLink]="['', product['subProducts']['slug']]">
+								<div class="product-name">{{ product.subProducts.name }}</div>
+							</a>
+							<div
+								class="product-row"
+								*ngIf="
+									product.subProducts.mrp > product.subProducts.sellingprice
+								"
+							>
+								<div class="mrp-price">
+									{{
+										getPrice(
+											product["subProducts"]["mrp"] *
+												product["subProducts"]["cartQty"]
+										)
+									}}
+								</div>
+							</div>
+							<div
+								class="product-row"
+								fxLayout="row"
+								fxLayoutAlign="center center"
+							>
+								<div class="qunty-label"><span>Qty.</span></div>
+								<select
+									[(value)]="product.subProducts.cartQty"
+									name="food"
+									class="cart-qunty"
+									(change)="
+										qtyChange(
+											$event.target.value,
+											product['subProducts']['slug'],
+											cartAllData
+										)
+									"
+								>
+									<option *ngFor="let qty of cartShowQty()" [value]="qty"
+										>{{ qty }}
+									</option>
+								</select>
+								<div class="selling-price">
+									{{
+										getPrice(
+											product["subProducts"]["sellingPrice"] *
+												product["subProducts"]["cartQty"]
+										)
+									}}
+								</div>
+							</div>
+						</div>
+					</mat-card-header>
+				</mat-card>
+			</div>
+		</section>
+
+		<section class="cart-mob-accessory-mobile" fxShow.lt-md fxHide.gt-sm>
+			<mat-expansion-panel [expanded]="true">
+				<mat-expansion-panel-header>
+					<mat-panel-title>
+						<div class="accessory-header-section">Add Accessories</div>
+					</mat-panel-title>
+				</mat-expansion-panel-header>
+				<div
+					class="list-mat"
+					*ngIf="cartListProducts && cartListProducts['cartProductsListData']"
+				>
+					<div class="accessory-section">
+						<div
+							class="mobile-accesory-container-area"
+							*ngFor="
+								let listProducts of cartListProducts['cartProductsListData']
+							"
+						>
+							<div
+								class="mob-accessory"
+								*ngFor="
+									let listProduct of listProducts['subProducts'].slice(0, 1)
+								"
+							>
+								<div class="image-container">
+									<img
+										appImageSrc
+										src="{{ listProduct['thumbnail'] }}"
+										width="50"
+									/>
+								</div>
+								<div class="mob-accessory-product">
+									<div
+										class="product-name"
+										style="white-space: initial;
+									height: 60px;
+									overflow: auto;"
+									>
+										<p>
+											{{ get(listProduct["name"]) }}
+										</p>
+									</div>
+									<div class="price-section">
+										<span class="selling-price">{{
+											getPrice(listProduct["sellingPrice"])
+										}}</span
+										><span class="mrp-price">{{
+											getPrice(listProduct["mrp"])
+										}}</span>
+									</div>
+									<div class="btn-section">
+										<button
+											*ngIf="
+												listProduct['status'] !== 'outOfStock' &&
+												listProduct['status'] !== 'commingSoon' &&
+												check(listProduct.slug) === false
+											"
+											mat-button
+											(click)="addToCart(listProduct)"
+										>
+											ADD
+										</button>
+										<button
+											*ngIf="
+												listProduct['sellingPrice'] !== '' &&
+												check(listProduct['slug']) === true
+											"
+											mat-button
+										>
+											ADDED
+										</button>
+										<button
+											*ngIf="listProduct['status'] === 'outOfStock'"
+											mat-button
+											style="font-size: 9px;background: grey;"
+										>
+											OUT OF STOCK
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</mat-expansion-panel>
+		</section>
+
+		<section class="cart-message-section-mobile" fxShow.lt-md fxHide.gt-sm>
+			<div class="cart-message">
+				<div class="cart-card-section">
+					<mat-card class="apply-enter-coupon">
+						<mat-card-content>
+							<div class="coupon-apply-section">
+								<div class="coupon-form">
+									<mat-form-field class="coupon-input">
+										<input
+											class="input"
+											[value]="couponCode"
+											style="text-transform:uppercase"
+											matInput
+											type="text"
+											placeholder="Please Enter Your Coupon"
+											id="coupon"
+											#coupon
+											name="coupon"
+										/>
+									</mat-form-field>
+								</div>
+								<div class="edit-section">
+									<div
+										class="edit-cpn"
+										*ngIf="couponApplied === true && editcoupn === false"
+									>
+										<span (click)="editcoupnApply()" class="mat-edit">
+											<img
+												appImageSrc
+												src="/assets/icon/material-icon/edit-icon-cart-mobile.svg"
+											/>
+										</span>
+										<span (click)="removeCoupon(cartAllData)" class="mat-close">
+											<img
+												appImageSrc
+												src="/assets/icon/material-icon/close-icon-cart-mobile.svg"
+											/>
+										</span>
+									</div>
+									<div
+										class="apply-cupn"
+										*ngIf="couponApplied === false && editcoupn === true"
+									>
+										<button
+											[disabled]="
+												couponCode === coupon.value ||
+												coupon.value === '' ||
+												coupon.value.length <= 2
+											"
+											mat-button
+											(click)="couponApply(coupon.value, cartAllData)"
+										>
+											Apply
+										</button>
+									</div>
+								</div>
+							</div>
+						</mat-card-content>
+					</mat-card>
+				</div>
+				<div class="cart-card-section">
+					<mat-card class="availbale-cpn">
+						<mat-card-content>
+							<div>
+								<div
+									class="coupon-apply-section-radio"
+									*ngIf="offerMsgBoxData"
+									#couponDescription
+								>
+									<h3>
+										Available Coupons
+									</h3>
+									<div
+										class="cpn-apply"
+										*ngFor="let couponData of offerMsgBoxData; let i = index"
+										[ngStyle]="{
+											opacity: couponData.isEnabled === false ? '0.3' : ''
+										}"
+									>
+										<div>
+											<div class="selection-radio-coupon">
+												<mat-radio-group
+													aria-label="Select an option"
+													class="coupon-apply"
+													(change)="
+														couponApply(couponData.couponCode, cartAllData)
+													"
+													[disabled]="couponData.isEnabled === false"
+												>
+													<mat-radio-button
+														style="margin-left:8px"
+														[checked]="couponData.couponCode == couponCode"
+														value="{{ couponData.couponCode }}"
+													></mat-radio-button>
+												</mat-radio-group>
+											</div>
+											<div class="coupon-details-container">
+												<div class="coupon-code-name">
+													<div
+														class="coupon-cd"
+														(click)="
+															couponApplyMob(
+																couponData.couponCode,
+																cartAllData,
+																couponData.isEnabled
+															)
+														"
+													>
+														{{ couponData["couponCode"] }}
+													</div>
+													&nbsp;
+													<div class="cpn-title">
+														{{ couponData["offerCartTitle"] }}
+													</div>
+												</div>
+												<div
+													class="coupon-descr-data"
+													[class.show]="active && couponIndexCount === i"
+												>
+													<div
+														class="coupon-descr"
+														*ngFor="
+															let couponDetail of couponData['offerMessage']
+														"
+													>
+														<p>{{ couponDetail }}</p>
+													</div>
+												</div>
+												<a
+													class="show-more-less"
+													(click)="carMessageDescriptionCheck(i)"
+													>{{
+														active && couponIndexCount === i
+															? "See less"
+															: "See More"
+													}}</a
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</mat-card-content>
+					</mat-card>
+				</div>
+			</div>
+		</section>
+		<section class="cart-order-summary-mobile" fxShow.lt-md fxHide.gt-sm>
+			<div class="order-summary" *ngIf="cartTotals">
+				<ul class="list-no-style">
+					<li class="order-detail-list">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Total Items</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ cartTotals["cartItemsCount"] }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="order-detail-list">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Sub Total</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["subTotal"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+
+					<li
+						class="order-detail-list"
+						*ngIf="cartTotals && cartTotals['discount'] > 0"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left" style="color:#ff931e">
+								<p>Discount</p>
+							</li>
+							<li class="order-details show-right" style="color:#ff931e">
+								<p>
+									-
+									{{ getPrice(cartTotals["discount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="order-detail-list">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Total Amount</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["subTotalPostDiscount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li
+						class="order-detail-list"
+						*ngIf="cartTotals['shippingCharges'] > 0"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Shipping</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["shippingCharges"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="order-detail-list" *ngIf="cartTotals['vat'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>GST</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["vat"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="order-detail-list" *ngIf="cartTotals['codCharges'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>COD</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["codCharges"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li
+						class="order-detail-list"
+						*ngIf="cartTotals['giftWrappingCharge'] > 0"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Gift Wrap</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["giftWrappingCharge"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="order-details-total order-detail-list">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Grand Total</p>
+							</li>
+							<li class="order-details show-right total-payble">
+								<p>
+									{{ getPrice(cartTotals["grandTotal"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li
+						class="order-details-discount order-detail-list"
+						*ngIf="cartTotals['prepaidDiscount'] > 0"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Prepaid Discount</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									(-)
+									{{ getPrice(cartTotals["prepaidDiscount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<!-- <li class="order-details-net order-detail-list">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>NetPayable</p>
+									</li>
+									<li class="order-details show-right">
+										<p>{{ userData.data.totals.netPayable }}</p>
+									</li>
+								</ul>
+							</li> -->
+					<!-- <input class="inputBtn current__state" type="button" value="CONTINUE" ng-click="afterOrderReview()"> -->
+				</ul>
+			</div>
+		</section>
+		<section class="btn-checkout" fxLayout="row" fxLayoutAlign="center center">
+			<div class="cart-total-bottom">
+				<p>Total Payable</p>
+				<p class="sell-price-bottom">
+					{{ getPrice(cartTotals["grandTotal"]) }}
+				</p>
+			</div>
+			<div class="checkout-btn-bottom">
+				<button mat-button (click)="redirectToCheckout()">
+					CHECKOUT
+				</button>
+			</div>
+		</section>
+	</div>
+	<section
+		class="cart-empty text-center"
+		*ngIf="cartProducts && cartProducts.length === 0"
+	>
+		<div class="cart-empty-text">
+			<h2>
+				Your Cart is empty!!<br />
+				Add something to it.
+			</h2>
+			<button mat-button routerLink="/">BROWSE</button>
+		</div>
+	</section>
+	<section
+		class="notification-message-mobile"
+		fxShow.lt-md
+		fxHide.gt-sm
+		*ngIf="device === 'mobile'"
+	>
+		<ng-template #couponToaster>
+			<div
+				class="toaster-message-mobile"
+				[ngStyle]="{ 'background-color': backGroundColor }"
+			>
+				<div class="toaster-message">{{ message }}</div>
+			</div>
+		</ng-template>
+	</section>
+</div>
+
+<!-- =============For Desktop Cart Section======================-->
+
+<div class="cart-desktop" fxShow.gt-sm fxHide.lt-md>
+	<section
+		class="cart-section-desktop"
+		*ngIf="cartProducts && cartProducts.length === 0"
+	>
+		<div class="cart-empty">
+			<h3 class="txtCenter cart-title" style="text-transform: none;">
+				Shopping Cart
+			</h3>
+			<div style="margin-top: 40px;">
+				<h4 class="text-center">SO LONELY. SO ALONE.</h4>
+
+				<p class="text-center border-dashed pd-v15">
+					I am your shopping cart. I am empty.
+				</p>
+				<p class="text-center less-important">
+					Fill me with <a routerLink="/">DailyObjects</a>
+				</p>
+			</div>
+			<div class="payment-options"></div>
+		</div>
+	</section>
+	<section
+		class="cart-section-desktop"
+		*ngIf="cartProducts && cartProducts.length > 0"
+	>
+		<div>
+			<h1>Shopping Cart</h1>
+			<div class="continue-shopping">
+				<a [routerLink]="['/']" (click)="backToShopping()">
+					<i class="material-icons" style="font-size: 18px">
+						keyboard_arrow_left
+					</i>
+					Back to Shopping</a
+				>
+			</div>
+			<div class="cart-section-left">
+				<section class="cart-message-section-desktop" fxShow.gt-sm fxHide.lt-md>
+					<div class="cart-message">
+						<div class="offer-message">
+							<ul>
+								<li class="offer-message-header">
+									<div class="offer-tag-image">
+										<img src="https://cdn.dailyobjects.com/offer-tag-mar.svg" />
+									</div>
+									<div class="offer-tag-title">
+										{{ cartCouponMessage["offerCartTitle"] }}
+									</div>
+								</li>
+								<li
+									*ngFor="let offerData of cartCouponMessage['offerContent']"
+									class="offer-message-content"
+								>
+									<div class="bullet-icon">&bull; &nbsp;</div>
+									<div class="msg-content" [innerHTML]="offerData"></div>
+								</li>
+							</ul>
+							<ul>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<div class="cart-item-detail-section-desktop" fxShow.gt-sm fxHide.lt-md>
+					<div class="cart-left-section" *ngIf="userDataProduct">
+						<table>
+							<tr>
+								<th colspan="9" style="text-align:left;">
+									ITEM DETAILS
+								</th>
+								<th colspan="3">SUBTOTAL</th>
+							</tr>
+							<tr *ngFor="let product of cartProducts" class="cart-card">
+								<td>
+									<div class="thumbnail-img">
+										<a [routerLink]="['', product['subProducts']['slug']]">
+											<img
+												appImageSrc
+												src="{{ product.subProducts.thumbnail }}?tr=w-100"
+												alt=""
+												width="100"
+												height="100"
+											/>
+										</a>
+									</div>
+								</td>
+								<td>
+									<div class="product-detail">
+										<a [routerLink]="['', product['subProducts']['slug']]">
+											<div class="product-name">
+												{{ product["subProducts"]["name"] }}
+											</div>
+										</a>
+									</div>
+								</td>
+								<td>
+									<div class="product-row" style="text-align:center;">
+										<div class="qunty-label"><span>Quantity</span></div>
+										<mat-card-actions>
+											<div
+												class="btn-remove btn"
+												(click)="
+													removeCartD(
+														product['subProducts']['slug'],
+														cartAllData
+													)
+												"
+											>
+												Remove
+											</div>
+										</mat-card-actions>
+									</div>
+								</td>
+								<td style="width:10%;">
+									<div class="product-row">
+										<!-- <mat-select
+											[(value)]="product['subProducts']['cartQty']"
+											name="food"
+											class="cart-qunty"
+											(selectionChange)="
+												qtyChange(
+													$event.value,
+													product['subProducts']['slug'],
+													cartAllData
+												)
+											"
+										>
+											<mat-option
+												*ngFor="let qty of cartShowQty()"
+												[value]="qty"
+												label="Qty."
+											>
+												{{ qty }}</mat-option
+											>
+										</mat-select> -->
+										<select
+											[(value)]="product.subProducts.cartQty"
+											name="food"
+											class="cart-qunty"
+											(change)="
+												qtyChange(
+													$event.target.value,
+													product['subProducts']['slug'],
+													cartAllData
+												)
+											"
+										>
+											<option *ngFor="let qty of cartShowQty()" [value]="qty"
+												>{{ qty }}
+											</option>
+										</select>
+									</div>
+								</td>
+								<td>
+									<div
+										class="product-row"
+										style="text-align:center;"
+										*ngIf="
+											product['subProducts']['mrp'] >
+											product['subProducts']['sellingprice']
+										"
+									>
+										<div class="mrp-price">
+											{{
+												getPrice(
+													product["subProducts"]["mrp"] *
+														product["subProducts"]["cartQty"]
+												)
+											}}
+										</div>
+									</div>
+									<div class="product-row" style="text-align:center;">
+										<div class="selling-price">
+											{{
+												getPrice(
+													product["subProducts"]["sellingPrice"] *
+														product["subProducts"]["cartQty"]
+												)
+											}}
+										</div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- <div
+						routerLink="/checkout"
+						style="
+							width: 64%;
+							background: #ff931e;text-transform: uppercase;    
+							font-stretch: normal;
+							font-style: normal;
+							font-size: 4vw;
+							font-weight: 700;
+							text-align: center;
+							border: 0;
+							padding: 10px 0;
+							letter-spacing: 1px;
+							color: #fff; display: inline-block"
+						>
+						Go To Checkout
+						</div> -->
+				</div>
+				<section class="cart-mob-accessory-desktop" fxShow.gt-sm fxHide.lt-md>
+					<mat-expansion-panel [expanded]="true">
+						<mat-expansion-panel-header class="accessories-header">
+							<mat-panel-title>
+								<div class="accessory-header-section">Add Accessories</div>
+							</mat-panel-title>
+							<!-- <mat-panel-description>
+							<div>rrr</div>
+							</mat-panel-description> -->
+						</mat-expansion-panel-header>
+						<mat-list class="list-mat">
+							<mat-list-item
+								class="accessory-section"
+								*ngFor="let accessory of accessories"
+							>
+								<div class="mob-accessory">
+									<div class="image-container">
+										<img
+											appImageSrc
+											src="{{ accessory.thumbnail }}"
+											height="80px"
+										/>
+									</div>
+									<div class="mob-accessory-product">
+										<div class="product-name">
+											<p>
+												Designer {{ accessory["name"] }}
+												<i class="material-icons">
+													keyboard_arrow_right
+												</i>
+											</p>
+										</div>
+										<div class="price-section">
+											<span class="selling-price">{{
+												getPrice(accessory["sellingPrice"])
+											}}</span
+											><span class="mrp-price">{{
+												getPrice(accessory["mrp"])
+											}}</span>
+										</div>
+									</div>
+									<div class="mob-accessory-product">
+										<div class="btn-section">
+											<button
+												mat-button
+												routerLink="/mobile-accessories/dailyobjects/wander-wallet"
+											>
+												SELECT AND ADD
+												<i class="material-icons">
+													keyboard_arrow_right
+												</i>
+											</button>
+										</div>
+										<div class="offer-section">
+											<p>{{ accessory["offer"] }}</p>
+										</div>
+									</div>
+								</div>
+							</mat-list-item>
+						</mat-list>
+					</mat-expansion-panel>
+				</section>
+			</div>
+			<section class="cart-right-section-desktop" fxShow.gt-sm fxHide.lt-md>
+				<div class="cart-right-section">
+					<div class="coupon-section">
+						<div
+							class="remove-coupon"
+							*ngIf="couponApplied === true && editcoupn === false"
+						>
+							<span class="coupon-applied">Coupon Applied!</span>
+							<span class="coupon-edit" (click)="removeCoupon(cartAllData)">
+								Remove</span
+							>
+							<span class="coupon-apply-btn">
+								<button
+									mat-button
+									id="couponApplyBtn-0"
+									type="button"
+									(click)="openDialog(couponDialog)"
+								>
+									<!-- couponApply('BOGO', userData); -->
+									<span>EDIT</span>
+								</button>
+							</span>
+						</div>
+						<div
+							class="apply-cupn"
+							*ngIf="couponApplied === false && editcoupn === true"
+						>
+							<span class="coupons">Coupons</span>
+							<span class="apply">
+								<button mat-button (click)="openDialog(couponDialog)">
+									Apply
+								</button>
+							</span>
+						</div>
+					</div>
+					<div class="order-summary" *ngIf="cartTotals">
+						<h4>Order Summary</h4>
+						<hr class="solid" />
+						<ul class="list-no-style">
+							<li>
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>Total Items</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											{{ cartTotals.cartItemsCount }}
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>Sub Total</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											{{ getPrice(cartTotals["subTotal"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+
+							<li *ngIf="cartTotals.discount > 0">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left discount">
+										<p>Discount</p>
+									</li>
+									<li class="order-details show-right discount">
+										<p>
+											(-)
+											{{ getPrice(cartTotals["discount"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li *ngIf="cartTotals.giftWrappingCharge > 0">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>Gift Wrap</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											{{ getPrice(cartTotals["giftWrappingCharge"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li *ngIf="cartTotals.shippingCharges > 0">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>Shipping</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											{{ getPrice(cartTotals["shippingCharges"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="order-details-discount" *ngIf="prepaidDiscount > 0">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>Prepaid Discount</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											(-)
+											{{ getPrice(cartTotals["prepaidDiscount"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+							<hr class="solid" />
+							<li>
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>Total Amount</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											{{ getPrice(cartTotals["subTotalPostDiscount"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+
+							<li *ngIf="cartTotals.vat > 0">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>GST</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											{{ getPrice(cartTotals["vat"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+							<hr class="solid" />
+							<li *ngIf="cartTotals.codCharges > 0">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>COD</p>
+									</li>
+									<li class="order-details show-right">
+										<p>
+											{{ getPrice(cartTotals["codCharges"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+
+							<li class="order-details-total">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>Total Payable</p>
+									</li>
+									<li class="order-details show-right total-payble">
+										<p>
+											{{ getPrice(cartTotals["grandTotal"]) }}
+										</p>
+									</li>
+								</ul>
+							</li>
+							<hr class="solid" />
+
+							<!-- <li class="order-details-net">
+								<ul class="unorder-list-style">
+									<li class="order-details show-left">
+										<p>NetPayable</p>
+									</li>
+									<li class="order-details show-right">
+										<p>{{ userData["data"]["totals"]["netPayable"] }}</p>
+									</li>
+								</ul>
+							</li> -->
+							<!-- <input class="inputBtn current__state" type="button" value="CONTINUE" ng-click="afterOrderReview()"> -->
+						</ul>
+						<div class="btn-checkout-section">
+							<button
+								class="go-to-checkout"
+								mat-button
+								(click)="redirectToCheckout()"
+							>
+								<span class="checkout-btn">
+									Checkout
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="coupons-dialog-box-desktop">
+				<ng-template #couponDialog>
+					<div class="coupon-dialog" *ngIf="offerMsgBoxData">
+						<div style="position:relative;" class="title border-btm clearfix">
+							<span>
+								<label>Apply Coupon</label>
+							</span>
+							<span>
+								<button
+									class="remove-dialog"
+									type="button"
+									(click)="dialogClose()"
+								>
+									<img
+										appImageSrc
+										src="/assets/images/desktop/icons/remove.svg"
+										width="16px"
+										height="16px"
+										alt=""
+									/>
+								</button>
+							</span>
+						</div>
+						<div class="coupon-code-input-container">
+							<!-- <mat-form-field class="apply-coupon"> -->
+							<div class="form-coupon-section">
+								<form>
+									<input
+										type="text"
+										[value]="couponCode"
+										name="couponD"
+										id="couponD"
+										#couponD
+										(keyup.enter)="couponApply(couponD.value, cartAllData)"
+										placeholder="Please Enter CouponCode"
+										required
+									/>
+									<button
+										class="apply-in-input"
+										type="button"
+										id="applyCodeBtn"
+										(click)="couponApply(couponD.value, cartAllData)"
+									>
+										<span>
+											Apply
+										</span>
+									</button>
+								</form>
+							</div>
+
+							<!-- </mat-form-field> -->
+							<div class="coupon-applied-msg" *ngIf="couponCode">
+								<span class="cpn-name">'{{ couponCode }}'</span>
+								<span class="applied-text">Coupon Applied</span>
+							</div>
+							<div class="coupon-applied-msg available">
+								<span class="available-coupon">Available Coupons</span>
+							</div>
+						</div>
+						<div class="coupon-list">
+							<div
+								class="coupon-list-wrapper"
+								*ngFor="let couponData of offerMsgBoxData"
+							>
+								<div class="coupon-details-container">
+									<div class="coupon-code-name">
+										<span>{{ couponData.couponCode }}</span>
+									</div>
+									<div class="coupon-title">
+										<span>{{ couponData.offerCartTitle }}</span>
+									</div>
+									<div class="coupon-details-container">
+										<div
+											class="coupon-description"
+											*ngFor="let couponDetail of couponData['offerMessage']"
+										>
+											<span>{{ couponDetail }}</span>
+										</div>
+									</div>
+								</div>
+								<div class="coupon-apply-container">
+									<button
+										type="button"
+										[disabled]="couponData.isEnabled === false"
+										(click)="couponApply(couponData.couponCode, cartAllData)"
+									>
+										<span>
+											Apply
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</ng-template>
+			</section>
+			<div class="continue-shopping">
+				<a [routerLink]="['/']" (click)="backToShopping()">
+					<i class="material-icons" style="font-size:18px;">
+						keyboard_arrow_left
+					</i>
+					Back to Shopping</a
+				>
+			</div>
+		</div>
+	</section>
+
+	<section class="limit-width" fxShow.gt-sm fxHide.lt-md>
+		<div class="cart-payment-strip">
+			<img
+				src="https://cdn.dailyobjects.com/assets/images/checkout/payment-options-strip-02.jpg"
+			/>
+		</div>
+	</section>
+	<section
+		class="notification-message-desktop"
+		fxShow.gt-sm
+		fxHide.lt-md
+		*ngIf="device === 'website'"
+	>
+		<ng-template #couponToaster>
+			<div
+				class="toaster-message-desktop"
+				[ngStyle]="{ 'background-color': backGroundColor }"
+			>
+				<div class="toaster-message">{{ message }}</div>
+			</div>
+		</ng-template>
+	</section>
+</div>

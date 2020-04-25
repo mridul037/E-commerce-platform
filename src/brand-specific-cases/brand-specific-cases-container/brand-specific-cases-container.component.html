@@ -1,0 +1,102 @@
+<app-header-container></app-header-container>
+<ng-container *ngIf="device === 'website'">
+	<div style="height:98px"></div>
+	<div
+		class="choose-more-devicelist-desktop"
+		ngStyle.gt-lg="width:65%; margin:auto;"
+		ngStyle.lg="width:80%; margin:auto;"
+		*ngIf="brandData"
+	>
+		<div class="breadcrumbs-container">
+			<app-desktop-breadcrumb
+				[catName]="pageType | slugToTitle | titlecase"
+				[catSlug]="pageType"
+				[modelName]="brandName | slugToTitle | titlecase"
+			></app-desktop-breadcrumb>
+		</div>
+		<h1>{{ brandData.data[0].brands[0].name }} Cases & Covers</h1>
+		<div style="text-align: center">
+			<img
+				style="vertical-align: top;"
+				appImageSrc
+				src="{{ brandData.data[0].brands[0].icon }}"
+				width="81"
+			/>
+		</div>
+		<h2>Choose your Model</h2>
+		<div class="brand-list">
+			<ul>
+				<li *ngFor="let model of brandData.data[0].brands[0].models">
+					<a>
+						<button
+							(click)="
+								open(
+									brandData.data[0].brands[0].slug,
+									model['slug'],
+									model['intermediatePage']
+								)
+							"
+							mat-stroked-button
+							color="Basic"
+						>
+							{{ model["name"] }}
+						</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section
+			*ngIf="brandContent && brandContent['data'][0]"
+			class="product-listing-seo-content"
+		>
+			<div
+				class="bottom-text-listing"
+				[innerHTML]="brandContent['data'][0]['details']"
+			></div>
+		</section>
+	</div>
+</ng-container>
+<ng-container *ngIf="device === 'mobile'">
+	<div style="height:98px"></div>
+	<div
+		class="choose-more-devicelist-mobile"
+		ngStyle.gt-lg="width:65%; margin:auto;"
+		ngStyle.lg="width:55%; margin:auto;"
+		*ngIf="brandData"
+	>
+		<h1>{{ brandData.data[0].brands[0].name }} Cases & Covers</h1>
+
+		<div style="text-align: center">
+			<img
+				style="vertical-align: top;"
+				appImageSrc
+				src="{{ brandData.data[0].brands[0].icon }}"
+				width="81"
+			/>
+		</div>
+		<h2>Choose your Model</h2>
+		<div class="brand-list">
+			<ul>
+				<li *ngFor="let model of brandData.data[0].brands[0].models">
+					<a>
+						<button
+							(click)="
+								open(
+									brandData.data[0].brands[0].slug,
+									model['slug'],
+									model['intermediatePage']
+								)
+							"
+							mat-stroked-button
+							color="Basic"
+						>
+							{{ model["name"] }}
+						</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</ng-container>
+
+<app-footer-container></app-footer-container>

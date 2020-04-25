@@ -1,0 +1,86 @@
+<!-- <section
+	class="cart-message-section-desktop"
+	style="margin-top:20px"
+	fxShow.gt-sm
+	fxHide.lt-md
+>
+	<div class="continue-shopping">
+		<a> <span> &#x3c; </span>Back to Shopping</a>
+	</div>
+	<div class="cart-message">
+		<div class="offer-message">
+			<ul>
+				<li class="offer-message-header">
+					<div class="offer-tag-image">
+						<img src="https://cdn.dailyobjects.com/offer-tag-mar.svg" />
+					</div>
+					<div class="offer-tag-title">
+						{{ cartCouponMessage.offerCartTitle }}
+					</div>
+				</li>
+				<li
+					*ngFor="let offerData of cartCouponMessage['offerContent']"
+					class="offer-message-content"
+				>
+					&bull; &nbsp;{{ offerData }}
+				</li>
+			</ul>
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</section> -->
+<!-- <section
+	class="cart-message-section-mobile"
+	style="margin-top:20px"
+	fxShow.lt-md
+	fxHide.gt-sm
+>
+	<div class="cart-message">
+		<mat-card>
+			<mat-card-content>
+				<div class="coupon-apply-section">
+					<mat-form-field class="coupon-apply">
+						<input matInput type="text" placeholder="Clearable input" />
+						<button
+							class="mat-icon-section"
+							mat-button
+							*ngIf="value"
+							matSuffix
+							mat-icon-button
+							aria-label="Clear"
+							(click)="value = ''"
+						>
+							<mat-icon class="mat-edit" matSuffix>mode_edit</mat-icon>
+							<mat-icon class="mat-close">close</mat-icon>
+						</button>
+					</mat-form-field>
+				</div>
+				<div class="offer-message">
+					<ul>
+						<li class="offer-message-header">
+							<div class="offer-tag-image">
+								<img
+									src="https://cdn.dailyobjects.com/offer-tag-mar.svg"
+								/>
+							</div>
+							<div class="offer-tag-title">
+								{{ cartCouponMessage.offerCartTitle }}
+							</div>
+						</li>
+						<li
+							*ngFor="let offerData of cartCouponMessage['offerContent']"
+							class="offer-message-content"
+						>
+							&bull; &nbsp;{{ offerData }}
+						</li>
+					</ul>
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+			</mat-card-content>
+		</mat-card>
+	</div>
+</section> -->

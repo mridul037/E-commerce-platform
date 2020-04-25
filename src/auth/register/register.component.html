@@ -1,0 +1,327 @@
+<app-header-container></app-header-container>
+
+<div fxShow fxHide.gt-sm="true" style="height:60px;"></div>
+
+<div fxHide fxShow.gt-sm="true" style="height: 98px;"></div>
+
+<div class="register-section" [ngStyle.lt-md]="{ 'padding-top': '0px' }">
+	<mat-card
+		class="register-dialog-wrapper"
+		[ngStyle.lt-md]="{
+			width: '100%',
+			padding: '20px'
+		}"
+		[ngStyle.md]="{
+			'box-shadow': 'rgba(0, 0, 0, 0.1) 0px 2px 15px !important'
+		}"
+		fxLayout="row"
+		fxLayoutAlign="center start"
+	>
+		<div class="image-container" fxHide.lt-md="true">
+			<img
+				width="500"
+				height="500"
+				appImageSrc
+				style="object-fit: contain;"
+				src="/dodesktop/images/Signup-Image.jpg"
+				alt=""
+			/>
+		</div>
+		<div
+			class="register-form-container"
+			fxLayout="column"
+			fxLayoutAlign="center center"
+			[ngStyle.lt-sm]="{ padding: '15px 0px' }"
+			[ngStyle.gt-xs]="{ width: '360px' }"
+			[ngStyle.gt-sm]="{ width: '600px' }"
+		>
+			<div
+				class="register-via-text-container"
+				fxLayout="row"
+				fxLayoutAlign="space-between center"
+			>
+				<div class="border"></div>
+				<div class="register-text-container">
+					<span>REGISTER</span>
+				</div>
+				<div class="border"></div>
+			</div>
+			<div class="upgraded-text-container">
+				<span
+					><strong>We’ve upgraded!</strong> <br />
+					Please register again for your old profile.</span
+				>
+			</div>
+			<div class="register-form-container">
+				<form [formGroup]="mobileOTPForm" (ngSubmit)="register()">
+					<mat-form-field
+						class="mobile-input-form-control"
+						appearance="outline"
+						color="accent"
+					>
+						<mat-label class="form-label">Mobile number</mat-label>
+						<input
+							matInput
+							appOnlyNumbers
+							formControlName="mobile"
+							pattern="^[1-9]{1}[0-9]{9}$"
+							maxlength="10"
+						/>
+						<mat-error
+							*ngIf="mobileOTPForm.controls.mobile.errors"
+							class="invalid-feedback"
+						>
+							<div *ngIf="mobileOTPForm.controls.mobile.errors.required">
+								Mobile is required
+							</div>
+							<div *ngIf="mobileOTPForm.controls.mobile.errors.pattern">
+								Mobile must be a valid mobile number
+							</div>
+						</mat-error>
+					</mat-form-field>
+					<div
+						class="error-message"
+						[hidden]="showSpinner"
+						#MobileNumberErrorField
+					></div>
+					<div class="otp-container" *ngIf="showOTPField">
+						<div class="otp-field-label" [class.disabled]="isOTPVerified">
+							<label for="otp">One time password (OTP)</label>
+						</div>
+						<div
+							fxLayout="row"
+							fxLayoutAlign="space-between center"
+							class="otp-form-control-container"
+							*ngIf="!showSpinner"
+							#inputContainer
+						>
+							<div
+								class="otp-input-container"
+								fxLayout="row"
+								fxLayoutAlign="space-between center"
+							>
+								<input
+									type="number"
+									appOnlyNumbers
+									maxlength="1"
+									class="otp-input"
+									(keyup)="OnOTPKeyUp($event)"
+									*ngFor="let input of ['first', 'second', 'third', 'fourth']"
+									formControlName="{{ input }}OTPDigit"
+									[class.disabled]="isOTPVerified"
+								/>
+							</div>
+							<div class="otp-icon-container">
+								<mat-icon
+									*ngIf="isOTPVerified"
+									aria-label="Verified"
+									class="verified-icon"
+									>check_circle</mat-icon
+								>
+								<mat-icon
+									*ngIf="invalidOTP"
+									aria-label="Not Verified"
+									class="not-verified-icon"
+									>cancel</mat-icon
+								>
+							</div>
+						</div>
+						<div
+							fxLayout="column"
+							fxLayoutAlign="center center"
+							class="resend-otp-container"
+							*ngIf="!showSpinner && !isOTPVerified"
+						>
+							<button
+								mat-flat-button
+								class="resend-otp-link"
+								(click)="getOTP()"
+								[disabled]="(resendOtpCountDown$ | async) !== 0"
+								[class.disabled]="(resendOtpCountDown$ | async) !== 0"
+							>
+								<span>Resend OTP</span>
+								<span
+									class="resend-otp-timer"
+									*ngIf="(resendOtpCountDown$ | async) !== 0"
+									>(
+									{{ resendOtpCountDown$ | async | formatTime: "true" }} )</span
+								>
+							</button>
+						</div>
+					</div>
+
+					<div
+						class="error-message"
+						[hidden]="showSpinner"
+						#OTPErrorField
+					></div>
+
+					<ng-container *ngIf="showSpinner && showGetOTPSpinner">
+						<ng-container *ngTemplateOutlet="loader"></ng-container>
+					</ng-container>
+					<button
+						mat-raised-button
+						color="accent"
+						class="get-otp-btn"
+						*ngIf="!showSpinner && !hideGetOtpButton"
+						(click)="getOTP()"
+					>
+						REQUEST OTP
+					</button>
+				</form>
+				<form [formGroup]="registerForm" *ngIf="showRegisterForm">
+					<mat-form-field
+						class="email-input-form-control"
+						appearance="outline"
+						color="accent"
+					>
+						<mat-label class="form-label">Email</mat-label>
+						<input
+							matInput
+							formControlName="email"
+							type="email"
+							pattern="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+						/>
+						<mat-error
+							*ngIf="registerForm.controls.email.errors"
+							class="invalid-feedback"
+						>
+							<div
+								class="error-text"
+								*ngIf="registerForm.controls.email.errors.required"
+							>
+								Email is required
+							</div>
+							<div
+								class="error-text"
+								*ngIf="registerForm.controls.email.errors.pattern"
+							>
+								Email must be a valid email address
+							</div>
+						</mat-error>
+					</mat-form-field>
+					<div
+						class="error-message"
+						[hidden]="showSpinner"
+						#EmailErrorField
+					></div>
+					<mat-radio-group
+						fxLayout="row"
+						fxLayoutAlign="space-around center"
+						class="gender-radio-group"
+						formControlName="gender"
+						required
+					>
+						<label class="gender-label">Gender: </label>
+						<mat-radio-button
+							style="transform: scale(0.9);color: #787878;"
+							value="male"
+							>Male</mat-radio-button
+						>
+						<mat-radio-button
+							style="transform: scale(0.9);color: #787878;"
+							value="female"
+							>Female</mat-radio-button
+						>
+					</mat-radio-group>
+				</form>
+			</div>
+			<div class="or-text-container" *ngIf="!hideOauthOptions">
+				<span>or</span>
+			</div>
+			<div
+				class="oauth-options-wrapper"
+				fxLayout="row"
+				fxLayoutAlign="space-between center"
+				*ngIf="!hideOauthOptions"
+			>
+				<div class="fb-login-container">
+					<button mat-stroked-button (click)="socialLogin('facebook')">
+						<img
+							src="/assets/icons/facebook.png"
+							alt=""
+							width="20px"
+							style="margin: 0px 5px;"
+						/>
+						<span>Facebook</span>
+					</button>
+				</div>
+				<div class="google-login-container">
+					<button mat-stroked-button (click)="socialLogin('google')">
+						<img
+							src="/assets/icons/google-768x768.png"
+							alt=""
+							width="20px"
+							style="margin: 0px 5px;"
+						/>
+						<span>Google</span>
+					</button>
+				</div>
+			</div>
+			<ng-container *ngIf="showSpinner && !showGetOTPSpinner">
+				<ng-container *ngTemplateOutlet="loader"></ng-container>
+			</ng-container>
+
+			<ng-template #loader>
+				<div fxLayout="column" fxLayoutAlign="center center">
+					<mat-progress-spinner
+						color="accent"
+						mode="indeterminate"
+						diameter="30"
+					>
+					</mat-progress-spinner>
+				</div>
+			</ng-template>
+
+			<div
+				class="error-message"
+				[hidden]="showSpinner"
+				#defaultErrorField
+			></div>
+
+			<div
+				class="continue-btn-container"
+				*ngIf="!showSpinner && isOTPVerified && !showRegisterForm"
+			>
+				<button
+					mat-raised-button
+					color="accent"
+					class="continue-btn"
+					(click)="showRegisterForm = true"
+				>
+					Continue
+				</button>
+			</div>
+
+			<div
+				class="register-btn-container"
+				*ngIf="!showSpinner && showRegisterForm"
+			>
+				<button
+					mat-raised-button
+					color="accent"
+					class="register-btn"
+					(click)="register()"
+				>
+					Register
+				</button>
+			</div>
+
+			<div class="existing-user-link-container">
+				<span class="text">Already have an account ?</span>
+				<a class="login-btn" (click)="goToLogin()">
+					Login
+				</a>
+			</div>
+		</div>
+	</mat-card>
+</div>
+
+<app-footer-container
+	[showSubscribeUser]="false"
+	[showHelpDesk]="true"
+	[showAboutDO]="true"
+	[showDesignerInvite]="true"
+	[showCompanyLinks]="true"
+	[showSocial]="true"
+></app-footer-container>

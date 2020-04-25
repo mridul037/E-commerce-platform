@@ -1,0 +1,160 @@
+@import "../../../styles/placeholders";
+
+.case-collection-intermediate-page {
+	.height-gap {
+		height: 98px;
+	}
+	.main-container {
+		.heading-container {
+			text-align: center;
+			margin-top: 30px;
+			line-height: 42px;
+			.heading {
+				@extend %font-800;
+				font-size: 30px;
+				color: #787878;
+				margin: 0px;
+			}
+			.view-all {
+				@extend %font-600;
+				font-size: 14px;
+				letter-spacing: 0.2px;
+				color: #000;
+				text-decoration: underline;
+				cursor: pointer;
+				&:focus {
+					outline: 0px;
+				}
+			}
+		}
+		.image-container {
+			width: 100%;
+			min-height: 180px;
+			.image {
+				width: 45%;
+				position: relative;
+				cursor: pointer;
+				margin: 12px;
+				img {
+					width: 100%;
+				}
+			}
+			.card-div {
+				border: 2px solid #f4f4f4;
+				margin-bottom: 0%;
+			}
+			.image-text {
+				color: #000;
+				margin: auto;
+				// position: absolute;
+				top: 6%;
+				left: 6%;
+				text-align: left;
+				// width: 52%;
+				min-height: 95px;
+
+				.image-heading {
+					width: 100%;
+					span {
+						font-size: 2vw;
+						font-family: SharpSans;
+						color: #000;
+						font-weight: 600;
+					}
+				}
+				.image-description {
+					width: 50%;
+
+					span {
+						font-size: 1vw;
+						font-family: SharpSans;
+						color: #000;
+						font-weight: 400;
+					}
+				}
+				.btn-text {
+					float: right;
+					text-align: end;
+					button {
+						font-family: SharpSans;
+					}
+				}
+			}
+		}
+	}
+}
+
+.mobile-main-container {
+	min-height: 400px;
+	padding: 0 2%;
+	.heading-container {
+		text-align: center;
+		margin-top: 30px;
+		.heading {
+			@extend %font-700;
+			color: #4d4d4d;
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+	}
+}
+.heading-container-mobile {
+	width: 100%;
+	text-align: center;
+	.heading {
+		text-transform: uppercase;
+		text-align: center;
+		font-family: SharpSans;
+		font-size: 30px;
+	}
+}
+.view-all-mobile {
+	width: 100%;
+	text-align: center;
+}
+.card-div {
+	position: relative;
+	border: 2px solid #f4f4f4;
+	margin-bottom: 10%;
+}
+.image-text {
+	color: #000;
+	margin: auto;
+	// position: absolute;
+	top: 6%;
+	left: 6%;
+	text-align: left;
+	padding: 10px;
+	min-height: 80px;
+	.image-heading {
+		width: 60%;
+		span {
+			font-size: 5vw;
+			font-family: SharpSans;
+			color: #000;
+			font-weight: 600;
+		}
+	}
+	.image-description {
+		width: 60%;
+		display: inline-block;
+		span {
+			font-size: 3vw;
+			font-family: SharpSans;
+			color: #000;
+			font-weight: 400;
+		}
+	}
+	.btn-text {
+		float: right;
+		text-align: end;
+		button {
+			font-family: SharpSans;
+		}
+	}
+}
+a {
+	text-decoration: none;
+	color: grey;
+	font-family: SharpSans;
+}

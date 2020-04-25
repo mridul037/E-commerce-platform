@@ -1,0 +1,127 @@
+@import "../../../styles/placeholders";
+.mat-dialog-container {
+	padding: 0 !important;
+}
+.title {
+	padding: 10px 20px !important;
+	background: #000;
+	//width: 100%;
+	clear: both;
+	z-index: 5;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: #fff !important;
+
+	.remove-dialog {
+		text-align: center;
+		outline: none;
+		/* padding-right: 23px; */
+		padding-left: 0px;
+		border: none;
+		//background-color: #dedcd7;
+		@extend %font-400;
+		color: #313135;
+		//font-family: Sharpsans;
+		font-size: 1rem;
+		/* padding-top: 10px; */
+		vertical-align: middle;
+		float: right;
+		width: 0%;
+		background: 0;
+		color: #fff;
+		-webkit-filter: invert(85%) sepia(100%) saturate(0) hue-rotate(350deg)
+			brightness(104%) contrast(101%);
+		filter: invert(85%) sepia(100%) saturate(0) hue-rotate(350deg)
+			brightness(104%) contrast(101%);
+		border: 0;
+	}
+}
+.apply-coupon {
+	//width: 100%;
+	display: block;
+	padding: 15px 20px 10px;
+	input {
+		width: 80%;
+		display: inline-block;
+	}
+	.apply-in-input {
+		width: 20%;
+		display: inline-block;
+		background: #fff;
+		span {
+			//font-family: SharpSans;
+			font-size: 17px;
+			@extend %font-800;
+			letter-spacing: 1px;
+			text-align: left;
+			color: #ff9223;
+			text-transform: uppercase;
+			border-bottom: 1px solid #ff9223;
+		}
+	}
+}
+.coupon-list {
+	//width: 100%;
+	display: block;
+	position: relative;
+	padding: 0 20px;
+	.coupon-list-wrapper {
+		padding-bottom: 27px;
+		border-bottom: 1px solid #ccc;
+		//width: 100%;
+		display: flex;
+		position: relative;
+		.coupon-details-container {
+			width: 80%;
+			display: inline-block;
+			.coupon-code-name {
+				width: 185px;
+				height: 38px;
+				text-align: center;
+				position: relative;
+				background: #fff5ea;
+				border: 1px dashed #ff9223;
+				margin-top: 23px;
+				margin-bottom: 16px;
+				@extend %font-700;
+				letter-spacing: 0.2px;
+				color: #000;
+				span {
+					position: relative;
+					top: 10px;
+				}
+				.coupon-title {
+					span {
+						font-weight: 700;
+						letter-spacing: 0.7px;
+						text-align: left;
+						color: #000;
+					}
+				}
+			}
+		}
+		.coupon-apply-container {
+			button {
+				margin-top: 18px;
+				background: 0;
+				height: 38px;
+				border: 0;
+				padding: 0;
+				span {
+					font-family: SharpSans;
+					font-size: 17px;
+					font-weight: 800;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.24;
+					letter-spacing: 1px;
+					text-align: left;
+					color: #ff9223;
+					text-transform: uppercase;
+					border-bottom: 1px solid #ff9223;
+				}
+			}
+		}
+	}
+}

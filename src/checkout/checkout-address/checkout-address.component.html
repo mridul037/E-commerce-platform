@@ -1,0 +1,2003 @@
+<div
+	fxShow.lt-md
+	fxHide.gt-sm
+	class="checkout-section-mobile"
+	*ngIf="device === 'mobile'"
+>
+	<span style="margin-top:61px;display:block"></span>
+
+	<section class="steps-first steps">
+		<h2 class="heading heading-white" *ngIf="usersData && usersData['email']">
+			<p class="user-identity">
+				<img
+					src="https://cdn.dailyobjects.com/assets/images/checkout/tick.png"
+				/>
+				You are logged in as
+				<span>{{ usersData.email }}</span>
+			</p>
+		</h2>
+	</section>
+
+	<section
+		class="steps-second steps"
+		[ngClass]="{ active: selectedIndex == 2 }"
+	>
+		<h2 class="heading" (click)="setCurrentState(2)">
+			<small class="number-steps">2/4</small> SHIPPING INFORMATION
+		</h2>
+		<div class="content content-address-tab">
+			<div class="address-tab">
+				<a
+					href=""
+					id="address-tab--saved"
+					(click)="addressTab = 'saved'"
+					[ngClass]="{ active: addressTab == 'saved' }"
+					style="width: 50%;    display: inline-block;
+							"
+				>
+				</a>
+				<a
+					href=""
+					id="address-tab--new"
+					(click)="addressTab = 'newAdrs'"
+					[ngClass]="{ active: addressTab == 'newAdrs' }"
+					style="width: 50%;"
+				>
+					<span></span>
+				</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="content-address-detail">
+				<mat-tab-group>
+					<mat-tab
+						label="SAVED ADDRESS"
+						*ngIf="
+							usersData &&
+							usersData['address'] &&
+							usersData['address'].length > 0
+						"
+					>
+						<section class="address-tab--saved">
+							<div
+								[ngClass]="{
+									active: address.index == selectedAddress.index
+								}"
+								class="address-slot"
+								*ngFor="let address of usersData.address; let i = index"
+								(click)="changeExistingAddress(address, i); initCheckoutCart()"
+							>
+								<!-- <input
+											[ngClass]="{
+												active: address.index == selectedAddress.index
+											}"
+											class="address-slot-btn"
+											type="radio"
+											name="address-raio"
+										/> -->
+								<!-- <em></em> -->
+								<mat-radio-group
+									aria-label="Select an option"
+									class="radio-button-address"
+									(change)="changeExistingAddress(address, i)"
+								>
+									<mat-radio-button
+										[checked]="address.index == selectedAddress.index"
+										value="{{ selectedAddress.index }}"
+									></mat-radio-button>
+								</mat-radio-group>
+								<div class="address-content" style="text-transform:capitalize">
+									<h3 class="user-name">{{ address["name"] }}</h3>
+									<div class="user-address">
+										{{ address["address"] }}&nbsp;{{ address["pincode"] }}
+										<br />
+										{{ address["street"] }} <br />
+										{{ address["city"] }}-{{ address["pincode"] }} <br />
+										{{ address["state"] }} <br />
+										{{ address["country"] }} <br />
+										Tel : {{ address["mobile"] }}
+									</div>
+									<p
+										class="delete"
+										(click)="
+											removeAddress(address.index); $event.stopPropagation()
+										"
+									>
+										<img do-src="assets/images/checkout/delete.png" />
+									</p>
+									<!-- <input style="background: #ff931e;border-color: #ff931e;color: #fff;
+									padding: .5em 1em;
+									font-size: 1em;
+									width: 100%;" class="continue current__state" type="button" (click)="changeExistingAddress(address, i)"
+													value="USE THIS ADDRESS" /> -->
+
+									<button
+										mat-button
+										type="button"
+										*ngIf="address.index == selectedAddress.index"
+										(click)="moveToNextStep(3); saveContinue()"
+									>
+										USE THIS ADDRESS
+									</button>
+								</div>
+							</div>
+						</section>
+					</mat-tab>
+					<mat-tab *ngIf="usersData" label="NEW ADDRESS">
+						<div class="address-form-section">
+							<form name="postForm" class="new-address" #postForm="ngForm">
+								<mat-form-field class="form-element" appearance="outline">
+									<mat-label class="form-label">Enter Name</mat-label>
+									<input
+										matInput
+										class="inputText"
+										type="text"
+										title="Name"
+										[(ngModel)]="address['name']"
+										name="name"
+										#name="ngModel"
+										required
+									/>
+									<mat-error *ngIf="name.errors">
+										<div *ngIf="name.errors.required">
+											Name is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+								<mat-form-field class="form-element-left" appearance="outline">
+									<mat-label class="form-label">Mobile</mat-label>
+									<input
+										matInput
+										class="inputText"
+										type="text"
+										title="Mobile"
+										[(ngModel)]="address['mobile']"
+										name="mobile"
+										minlength="10"
+										maxlength="10"
+										pattern="^[1-9]{1}[0-9]{9}$"
+										#mobile="ngModel"
+										required
+									/>
+									<mat-error *ngIf="mobile.errors">
+										<div *ngIf="mobile.errors.required">
+											Mobile is required
+										</div>
+										<div *ngIf="mobile.errors.pattern">
+											Mobile must be a valid mobile number
+										</div>
+									</mat-error>
+								</mat-form-field>
+								<mat-form-field class="form-element-right" appearance="outline">
+									<mat-label class="form-label">Pincode</mat-label>
+									<input
+										matInput
+										class="inputText"
+										type="text"
+										title="Picode"
+										[(ngModel)]="address['pincode']"
+										name="pincode"
+										maxlength="6"
+										minlength="6"
+										required
+										#pincode="ngModel"
+										pattern="[0-9]{6}"
+										(input)="getPinCode(address['pincode'])"
+									/>
+									<mat-error *ngIf="pincode.errors">
+										<div *ngIf="pincode.errors.required">
+											Pin Code is required
+										</div>
+										<div *ngIf="pincode.errors.pattern">
+											Pin Code must be valid
+										</div>
+									</mat-error>
+								</mat-form-field>
+								<div class="clearfix"></div>
+
+								<mat-form-field class="form-element" appearance="outline">
+									<mat-label class="form-label">Address</mat-label>
+									<textarea
+										matInput
+										class="textArea"
+										type="text"
+										title="Street"
+										[(ngModel)]="address['street']"
+										name="street"
+										row="4"
+										#street="ngModel"
+										required
+									></textarea>
+									<mat-error *ngIf="street.errors">
+										<div *ngIf="street.errors.required">
+											Address is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+								<div class="clearfix"></div>
+								<mat-form-field class="form-element" appearance="outline">
+									<mat-label class="form-label">City</mat-label>
+									<input
+										matInput
+										class="inputText"
+										type="text"
+										title="City"
+										[(ngModel)]="address['city']"
+										name="city"
+										[value]="address['city']"
+										required
+										#city="ngModel"
+									/>
+									<mat-error *ngIf="city.errors">
+										<div *ngIf="city.errors.required">
+											City is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+								<div class="clearfix"></div>
+								<mat-form-field
+									class="form-element"
+									*ngIf="
+										CheckoutState &&
+										(CheckoutState.length > 0 || !CheckoutState)
+									"
+									appearance="outline"
+								>
+									<mat-label class="form-label">State</mat-label>
+									<div class="select-wrapper-theme">
+										<mat-select
+											class="select-theme"
+											type="text"
+											title="State"
+											[(ngModel)]="address['state']"
+											name="state"
+											[value]="address['state']"
+											required
+											#state="ngModel"
+										>
+											<mat-option
+												*ngFor="let state of CheckoutState; let i = index"
+												value="{{ state.name | uppercase }}"
+											>
+												{{ state.name }}</mat-option
+											>
+										</mat-select>
+									</div>
+									<mat-error *ngIf="state.errors">
+										<div *ngIf="state.errors.required">
+											State is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+								<div class="clearfix"></div>
+								<div class="no-information">
+									<p>
+										Your number will be used only for transaction confirmations
+										and not promototions
+									</p>
+								</div>
+								<button
+									mat-button
+									[disabled]="postForm.invalid"
+									(click)="
+										addNewAddress(); initCheckoutCart(); moveToNextStep(3)
+									"
+								>
+									SAVE CONTINUE
+								</button>
+							</form>
+						</div>
+					</mat-tab>
+				</mat-tab-group>
+			</div>
+		</div>
+	</section>
+
+	<section class="steps-third steps" [ngClass]="{ active: selectedIndex == 3 }">
+		<h2 class="heading" (click)="setCurrentState(3)">
+			<small class="number-steps">3/4</small> PAYMENT INFORMATION
+		</h2>
+		<div class="content content-address-tab">
+			<mat-accordion>
+				<mat-expansion-panel
+					*ngFor="let payment of paymentMethodList; let i = index"
+				>
+					<mat-expansion-panel-header (click)="setPaymentMethod(payment)">
+						<mat-panel-title>
+							<mat-icon
+								><img
+									appImageSrc
+									src="{{ payment.icon }}"
+									style="max-width: 100%;"
+							/></mat-icon>
+							<div class="payment-title-header">
+								{{ payment.title }}
+							</div>
+						</mat-panel-title>
+					</mat-expansion-panel-header>
+					<div
+						class="bank-choose"
+						*ngIf="
+							payment.identifier == 'netBankings' &&
+							payment.banks &&
+							payment.banks.length > 0
+						"
+					>
+						<div
+							class="bank-option"
+							*ngFor="let popularBankcode of payment.banks; let i = index"
+						>
+							<div class="popular-banks" *ngIf="popularBankcode.popular">
+								<mat-list class="netbanking-image-section">
+									<mat-list-item>
+										<div class="select-wrapper-theme" style="display:block;">
+											<div>
+												<div
+													(click)="setPaymentMethodCode(popularBankcode.code)"
+												>
+													<!-- <input
+																type="radio"
+																[ngClass]="{
+																	active:
+																		popularBankcode.code == paymentMethod ||
+																		popularBankcode.code == payGatewayValue
+																}"
+															/>
+															<em></em> -->
+													<mat-radio-group
+														style="position: absolute;left: 5%;top: 25%;"
+														aria-label="Select an option"
+														class=""
+														(change)="
+															setPaymentMethodCode(popularBankcode.code)
+														"
+													>
+														<mat-radio-button
+															[checked]="
+																popularBankcode.code == paymentMethod ||
+																popularBankcode.code == payGatewayValue
+															"
+															value="{{ paymentMethod }}"
+														></mat-radio-button>
+													</mat-radio-group>
+													<img
+														src="{{ imgCdnUrl }}{{ popularBankcode.image }}"
+														alt="{{ popularBankcode.name }}"
+													/>
+													<!-- {{ popularBankcode.name }} -->
+												</div>
+											</div>
+										</div>
+									</mat-list-item>
+								</mat-list>
+							</div>
+						</div>
+
+						<div class="select-wrapper-theme">
+							<mat-form-field class="form-select">
+								<mat-select
+									class="select-theme"
+									title="Bank"
+									[value]="payGatewayValue"
+									placeholder="Please Select Your Bank"
+									[(ngModel)]="bankcode"
+									name="bankcode"
+									id="bankcode"
+									(selectionChange)="setPaymentMethodCode($event.value)"
+								>
+									<mat-option
+										matInput
+										*ngFor="let bankcode of payment.banks; let i = index"
+										value="{{ bankcode.code }}"
+									>
+										{{ bankcode.name }}</mat-option
+									>
+								</mat-select>
+							</mat-form-field>
+						</div>
+					</div>
+					<div
+						class="bank-choose"
+						*ngIf="
+							payment.identifier == 'wallets' &&
+							payment.wallets &&
+							payment.wallets.length > 0
+						"
+					>
+						<div
+							class="bank-option"
+							*ngFor="let popularBankcode of payment.wallets; let i = index"
+						>
+							<div class="popular-banks" *ngIf="popularBankcode.popular">
+								<mat-list class="netbanking-image-section">
+									<mat-list-item>
+										<div class="select-wrapper-theme" style="display:block;">
+											<div>
+												<div
+													(click)="setPaymentMethodCode(popularBankcode.code)"
+												>
+													<!-- <input
+																type="radio"
+																[ngClass]="{
+																	active:
+																		popularBankcode.code == paymentMethod ||
+																		popularBankcode.code == payGatewayValue
+																}"
+															/>
+															<em></em> -->
+													<mat-radio-group
+														style="position: absolute;left: 5%;top: 25%;"
+														aria-label="Select an option"
+														class=""
+														(change)="
+															setPaymentMethodCode(popularBankcode.code)
+														"
+													>
+														<mat-radio-button
+															[checked]="
+																popularBankcode.code == paymentMethod ||
+																popularBankcode.code == payGatewayValue
+															"
+															value="{{ paymentMethod }}"
+														></mat-radio-button>
+													</mat-radio-group>
+													<img
+														src="{{ imgCdnUrl }}{{ popularBankcode.image }}"
+														alt="{{ popularBankcode.name }}"
+													/>
+													<!-- {{ popularBankcode.name }} -->
+												</div>
+											</div>
+										</div>
+									</mat-list-item>
+								</mat-list>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="select-wrapper-theme bank-choose"
+						*ngIf="payment.identifier == 'cards'"
+					>
+						<form
+							class="cardForm"
+							name="cardForm"
+							(ngSubmit)="setCardDetails()"
+							#cardForm="ngForm"
+						>
+							<!-- <button class="btn btn-primary">Register</button> -->
+							<div class="card-details-row">
+								<mat-form-field
+									class="mat-form-full-width"
+									appearance="outline"
+								>
+									<mat-label class="form-label">Card Number</mat-label>
+									<span class="card-input-wraper">
+										<input
+											matInput
+											class=""
+											type="text"
+											name="cardNumber"
+											[(ngModel)]="cardDetail.cardNumber"
+											#cardNumber="ngModel"
+											required
+											(input)="checkForCardNumberError($event.target.value)"
+										/>
+
+										<div class="card-type-wrap">
+											<span
+												class="card-type master active"
+												[ngClass]="{ active: cardType == 'master' }"
+											></span>
+											<span
+												class="card-type visa active"
+												[ngClass]="{ active: cardType == 'visa' }"
+											></span>
+											<span
+												class="card-type diner active"
+												[ngClass]="{ active: cardType == 'diner' }"
+											></span>
+											<span
+												class="card-type maestro active"
+												[ngClass]="{ active: cardType == 'maestro' }"
+											></span>
+											<span
+												class="card-type rupay active"
+												[ngClass]="{ active: cardType == 'rupay' }"
+											></span>
+											<span
+												class="card-type amex active"
+												[ngClass]="{ active: cardType == 'amex' }"
+											></span>
+										</div>
+									</span>
+									<mat-error *ngIf="cardNumber.errors">
+										<div *ngIf="cardNumber.errors.required">
+											CardNumber is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+							</div>
+							<div class="card__details--row">
+								<mat-form-field
+									class="mat-form-full-width"
+									appearance="outline"
+								>
+									<mat-label class="form-label">Name on Card</mat-label>
+									<input
+										matInput
+										class="card__details--input card__name_bg"
+										type="text"
+										name="cardName"
+										[(ngModel)]="cardDetail.cardName"
+										required
+										#cardName="ngModel"
+									/>
+
+									<div class="card-name">
+										<span class="user-icon">
+											<img
+												appImageSrc
+												src="/assets/images/checkout/name-1.svg"
+											/>
+										</span>
+									</div>
+									<mat-error *ngIf="cardName.errors">
+										<div *ngIf="cardName.errors.required">
+											Name is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+							</div>
+							<div class="card__expiry">
+								<mat-form-field
+									class="mat-form-full-width-left"
+									appearance="outline"
+								>
+									<mat-label class="form-label">Expiry Month</mat-label>
+									<mat-select
+										class="card__details--select"
+										name="cardExpMonth"
+										[(ngModel)]="cardDetail.cardExpMonth"
+										#cardExpMonth="ngModel"
+										required
+									>
+										<mat-option value="01">01</mat-option>
+										<mat-option value="02">02</mat-option>
+										<mat-option value="03">03</mat-option>
+										<mat-option value="04">04</mat-option>
+										<mat-option value="05">05</mat-option>
+										<mat-option value="06">06</mat-option>
+										<mat-option value="07">07</mat-option>
+										<mat-option value="08">08</mat-option>
+										<mat-option value="09">09</mat-option>
+										<mat-option value="10">10</mat-option>
+										<mat-option value="11">11</mat-option>
+										<mat-option value="12">12</mat-option>
+									</mat-select>
+									<mat-error *ngIf="cardExpMonth.errors">
+										<div *ngIf="cardExpMonth.errors.required">
+											Month is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+								<mat-form-field
+									class="mat-form-full-width-right"
+									appearance="outline"
+								>
+									<mat-label class="form-label">Expiry Year</mat-label>
+									<mat-select
+										class="card__details--select"
+										name="cardExpYear"
+										placeholder="Expiry Year"
+										[(ngModel)]="cardDetail.cardExpYear"
+										required="true"
+										#cardExpYear="ngModel"
+									>
+										<mat-option
+											matInput
+											*ngFor="let year of cardExpireYears"
+											value="{{ year }}"
+										>
+											{{ year }}
+										</mat-option>
+									</mat-select>
+									<mat-error *ngIf="cardExpYear.errors">
+										<div *ngIf="cardExpYear.errors.required">
+											Year is required
+										</div>
+									</mat-error>
+								</mat-form-field>
+							</div>
+							<div class="card__cvv">
+								<mat-form-field
+									class="mat-form-full-width"
+									appearance="outline"
+								>
+									<mat-label class="form-label">CVV</mat-label>
+									<input
+										matInput
+										class="card-details--input card-cvv-bg"
+										type="password"
+										name="cardCVV"
+										[(ngModel)]="cardDetail.cardCVV"
+										maxlength="3"
+										minlength="3"
+										required="true"
+										placeholder="CVV"
+										#cardCVV="ngModel"
+									/>
+									<mat-error *ngIf="cardCVV.errors">
+										<div *ngIf="cardCVV.errors.required">
+											CVV No. is required
+										</div>
+										<!-- <div *ngIf="cardCVV.errors.pattern">
+													Valid Cvv
+												</div> -->
+									</mat-error>
+									<div class="card-type-wrap">
+										<span class="cvv-icon">
+											<img
+												appImageSrc
+												src="/assets/images/banner/CVV-Code-Icon.png"
+											/>
+										</span>
+									</div>
+								</mat-form-field>
+								<span class="cvv-icon"></span>
+							</div>
+							<!-- <div class="clearfix"></div>
+								<div class="error_msg">
+									<span class="error" *ngIf="(checkoutForms.cardForm.cardNumber.$customError || checkoutForms.cardForm.cardNumber.$error.required) && (checkoutForms.cardForm.cardNumber.$dirty || checkoutForms.cardForm.$submitted)">Please
+										enter valid card number</span>
+									<span class="error" *ngIf="(checkoutForms.cardForm.cardName.$error.pattern || checkoutForms.cardForm.cardName.$error.required) && (checkoutForms.cardForm.cardName.$dirty || checkoutForms.cardForm.$submitted)">Please
+										enter your valid name as on card</span>
+									<span class="error" *ngIf="checkoutForms.cardForm.cardExpMonth.$error.required && (checkoutForms.cardForm.cardExpMonth.$dirty || checkoutForms.cardForm.$submitted)">Please
+										select valid card exp. month</span>
+									<span class="error" *ngIf="checkoutForms.cardForm.cardExpYear.$error.required && (checkoutForms.cardForm.cardExpYear.$dirty || checkoutForms.cardForm.$submitted)">Please
+										select valid card exp. year</span>
+									<span class="error" *ngIf="(checkoutForms.cardForm.cardCVV.$error.pattern || checkoutForms.cardForm.cardCVV.$error.required) && (checkoutForms.cardForm.cardCVV.$dirty || checkoutForms.cardForm.$submitted)">Please
+										enter valid card cvv</span>
+								</div> -->
+
+							<button
+								mat-button
+								*ngIf="payment.identifier === 'cards'"
+								[disabled]="cardForm.invalid"
+								(click)="moveToNextStep(4)"
+							>
+								CONTINUE
+							</button>
+						</form>
+						<div class="card-type-info">
+							<div class="card-types">
+								<img
+									appImageSrc
+									src="/assets/images/checkout/card-icon/maestro.svg"
+								/>
+							</div>
+							<div class="card-types">
+								<img
+									appImageSrc
+									src="/assets/images/checkout/card-icon/visa.svg"
+								/>
+							</div>
+							<div class="card-types">
+								<img
+									appImageSrc
+									src="/assets/images/checkout/card-icon/rupay.svg"
+								/>
+							</div>
+							<div class="card-types">
+								<img
+									appImageSrc
+									src="/assets/images/checkout/card-icon/master-card.svg"
+								/>
+							</div>
+							<div class="card-types">
+								<img
+									appImageSrc
+									src="/assets/images/checkout/card-icon/american-express.svg"
+								/>
+							</div>
+							<div class="card-types">
+								<img
+									appImageSrc
+									src="/assets/images/checkout/card-icon/diners-club.svg"
+								/>
+							</div>
+						</div>
+					</div>
+
+					<mat-list
+						*ngIf="
+							payment.identifier === 'paytm' ||
+							payment.identifier === 'mobikwik' ||
+							payment.identifier === 'upi' ||
+							payment.identifier === 'wallet' ||
+							payment.identifier === 'amazonpay' ||
+							payment.identifier === 'googlepay'
+						"
+					>
+						<mat-list-item>
+							<div class="select-wrapper-theme">
+								<img
+									src="{{ imgCdnUrl }}{{ payment.image }}"
+									alt="{{ payment.name }}"
+								/>
+							</div>
+						</mat-list-item>
+					</mat-list>
+
+					<mat-list *ngIf="payment.identifier === 'cod' && codAvailableForPin">
+						<mat-list-item
+							*ngIf="payment.status === false && payment.description !== ''"
+						>
+							<div class="select-wrapper-theme">
+								{{ payment.description }}
+							</div>
+						</mat-list-item>
+					</mat-list>
+					<div
+						class="no-cod-mesg"
+						*ngIf="paymentMethod === 'cod' && !codAvailableForPin; else codShow"
+					>
+						<span>{{ notCodMesg }}</span>
+					</div>
+					<ng-template #codShow>
+						<div
+							class="cod-strip"
+							*ngIf="paymentMethod === 'cod' && codStatusFlag === true"
+						>
+							‎₹‎49 as convenience charge for Cash on Delivery will be added.<br />
+							If you would like to save on COD charges, simply choose another
+							mode of payments
+						</div>
+					</ng-template>
+					<button
+						class="no-cod"
+						[disabled]="!codAvailableForPin"
+						mat-button
+						*ngIf="paymentMethod === 'cod' && payment.status === true"
+						(click)="scrolltop(); moveToNextStep(4)"
+					>
+						CONTINUE
+					</button>
+					<!-- <button
+								mat-button
+								*ngIf="paymentMethod === 'cards'"
+								matStepperNext
+								(click)="scrolltop()"
+								
+							>
+								CONTINUE
+							</button> -->
+					<button
+						mat-button
+						*ngIf="
+							payment.identifier !== 'cod' && payment.identifier !== 'cards'
+						"
+						(click)="scrolltop(); moveToNextStep(4)"
+					>
+						CONTINUE
+					</button>
+				</mat-expansion-panel>
+			</mat-accordion>
+
+			<!-- <button
+										*ngIf="payment.identifier !== 'cards'"
+										style="background: #ff931e;
+							border-color: #ff931e;
+							color: #fff;
+							padding: .5em 1em;
+							font-size: 1em;
+							width: 150px;"
+										matStepperNext
+										type="button"
+									>
+										PAY NOW
+									</button> -->
+		</div>
+	</section>
+
+	<section
+		class="steps-fourth steps"
+		[ngClass]="{ active: selectedIndex == 4 }"
+	>
+		<h2 class="heading" (click)="setCurrentState(4)">
+			<small class="number-steps">4/4</small> Order Summary
+		</h2>
+		<div class="order-section-mobile-checkout">
+			<div class="order-summery" *ngIf="cartTotals">
+				<ul class="list-no-style">
+					<li>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Total Items</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ cartTotals["cartItemsCount"] }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Sub Total</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["subTotal"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+
+					<li *ngIf="cartTotals && cartTotals['discount'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left discount">
+								<p>Discount</p>
+							</li>
+							<li class="order-details show-right discount">
+								<p>
+									-
+									{{ getPrice(cartTotals["discount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Total Amount</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["subTotalPostDiscount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li *ngIf="cartTotals['shippingCharges'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Shipping</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["shippingCharges"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li *ngIf="cartTotals['vat'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>GST</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["vat"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li *ngIf="cartTotals['codCharges'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>COD</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["codCharges"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li *ngIf="cartTotals['giftWrappingCharge'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Gift Wrap</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["giftWrappingCharge"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li class="order-details-total">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left total-payble">
+								<p>Total Payable</p>
+							</li>
+							<li class="order-details show-right total-payble">
+								<p>
+									{{ getPrice(cartTotals["grandTotal"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li
+						class="order-details-discount"
+						*ngIf="
+							paymentMethod != 'cod' &&
+							paymentMethod != 'undefined' &&
+							cartTotals['prepaidDiscount'] > 0
+						"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Prepaid Discount</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									(-)
+									{{ getPrice(cartTotals["prepaidDiscount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li
+						class="order-details-net"
+						*ngIf="paymentMethod != 'cod' && cartTotals['prepaidDiscount'] > 0"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>NetPayable</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["netPayable"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<!-- <input class="inputBtn current__state" type="button" value="CONTINUE" ng-click="afterOrderReview()"> -->
+				</ul>
+			</div>
+			<button
+				mat-button
+				class="inputBtn"
+				class="continue"
+				type="button"
+				(click)="makeOrders()"
+				value="PAY NOW >"
+			>
+				PAY NOW
+			</button>
+		</div>
+	</section>
+</div>
+
+<section class="checkout-section-desktop" fxShow.gt-sm fxHide.lt-md>
+	<div style="height:118px;"></div>
+
+	<div class="checkout-section-left">
+		<span style="margin-top:61px;display:block"></span>
+		<div class="check-tabs">
+			<ul class="nav-tabs">
+				<li [ngClass]="{ active: selectedIndex == 2 }">
+					<button
+						class="shipping-add"
+						mat-button
+						(click)="setCurrentStateDesktop(2)"
+					>
+						SHIPPING INFORMATION
+					</button>
+				</li>
+				<li [ngClass]="{ active: selectedIndex == 3 }">
+					<button
+						class="payment-info"
+						mat-button
+						(click)="setCurrentStateDesktop(3)"
+						[disabled]="step3IsDisabled"
+					>
+						PAYMENT INFORMATION
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<section
+			class="steps-second steps"
+			[ngClass]="{ active: selectedIndex == 2 }"
+		>
+			<div class="content content-address-tab">
+				<div
+					class="address__tab"
+					style="    border-bottom: 1px dashed #d2d2d2;
+									padding: 30px 0 15px;"
+					style="width:1000px;    display: block;
+							"
+				>
+					<a
+						href=""
+						id="address__tab--saved"
+						(click)="addressTab = 'saved'"
+						[ngClass]="{ active: addressTab == 'saved' }"
+						style="width: 50%;    display: inline-block;
+										"
+					>
+					</a>
+					<a
+						href=""
+						id="address__tab--new"
+						(click)="addressTab = 'newAdrs'"
+						[ngClass]="{ active: addressTab == 'newAdrs' }"
+						style="width: 50%;"
+					>
+						<span></span>
+					</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content-address-detail">
+					<mat-tab-group>
+						<mat-tab
+							class="mat-tab-label-desktop"
+							label="SAVED ADDRESS"
+							*ngIf="
+								usersData &&
+								usersData['address'] &&
+								usersData['address'].length > 0
+							"
+						>
+							<section class="address-tab--saved">
+								<div
+									class="address-slot"
+									*ngFor="let address of usersData.address; let i = index"
+									(click)="
+										changeExistingAddress(address, i); initCheckoutCart()
+									"
+									[ngClass]="{
+										active: address.index == selectedAddress.index
+									}"
+								>
+									<mat-radio-group
+										style="position: absolute;left: 2%;top: 6%;"
+										aria-label="Select an option"
+										class=""
+										(change)="changeExistingAddress(address, i)"
+									>
+										<mat-radio-button
+											[checked]="address.index === selectedAddress.index"
+											value="{{ selectedAddress.index }}"
+										></mat-radio-button>
+									</mat-radio-group>
+									<div class="address-content">
+										<h3 class="user-name">{{ address["name"] }}</h3>
+										<div class="user-address">
+											<div>{{ address["address"] }}</div>
+											<div class="street-wrap">{{ address["street"] }}</div>
+											<div>{{ address["city"] }}-{{ address["pincode"] }}</div>
+											<div>{{ address["state"] }}</div>
+											<div>{{ address["country"] }}</div>
+											<div>Tel : {{ address["mobile"] }}</div>
+										</div>
+									</div>
+
+									<button
+										mat-button
+										type="button"
+										[disabled]="address.index !== selectedAddress.index"
+										(click)="moveToNextStep(3)"
+									>
+										USE THIS ADDRESS
+									</button>
+								</div>
+								<div></div>
+							</section>
+						</mat-tab>
+						<mat-tab
+							*ngIf="usersData"
+							class="mat-tab-label-desktop"
+							label="NEW ADDRESS"
+						>
+							<div class="address-form-section">
+								<form name="postForm" class="new-address" #postForm="ngForm">
+									<mat-form-field class="form-element" appearance="outline">
+										<mat-label class="form-label">Enter Name</mat-label>
+										<input
+											matInput
+											class="inputText"
+											type="text"
+											title="Name"
+											[(ngModel)]="address['name']"
+											name="name"
+											#name="ngModel"
+											required
+										/>
+										<mat-error *ngIf="name.errors">
+											<div *ngIf="name.errors.required">
+												Name is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+
+									<mat-form-field class="form-element-new" appearance="outline">
+										<mat-label class="form-label">Mobile</mat-label>
+										<input
+											matInput
+											class="inputText"
+											type="text"
+											title="Mobile"
+											[(ngModel)]="address['mobile']"
+											name="mobile"
+											minlength="10"
+											maxlength="10"
+											required
+											#mobile="ngModel"
+											minlength="10"
+											maxlength="10"
+											pattern="^[1-9]{1}[0-9]{9}$"
+										/>
+										<mat-error *ngIf="mobile.errors">
+											<div *ngIf="mobile.errors.required">
+												Mobile is required
+											</div>
+											<div *ngIf="mobile.errors.pattern">
+												Mobile must be a valid mobile number
+											</div>
+										</mat-error>
+									</mat-form-field>
+									<mat-form-field class="form-element-new" appearance="outline">
+										<mat-label class="form-label">Pincode</mat-label>
+										<input
+											matInput
+											class="inputText"
+											type="text"
+											title="Pincode"
+											[(ngModel)]="address['pincode']"
+											name="pincode"
+											maxlength="6"
+											minlength="6"
+											required
+											(input)="getPinCode(address['pincode'])"
+											#pincode="ngModel"
+											pattern="[0-9]{6}"
+										/>
+										<mat-error *ngIf="pincode.errors">
+											<div *ngIf="pincode.errors.required">
+												Pin Code is required
+											</div>
+											<div *ngIf="pincode.errors.pattern">
+												Pin Code must be valid
+											</div>
+										</mat-error>
+									</mat-form-field>
+									<div class="clearfix"></div>
+
+									<mat-form-field class="form-element" appearance="outline">
+										<mat-label class="form-label">Address</mat-label>
+										<textarea
+											matInput
+											class="textArea"
+											type="text"
+											title="Street"
+											[(ngModel)]="address['street']"
+											name="street"
+											row="4"
+											#street="ngModel"
+											required
+										></textarea>
+										<mat-error *ngIf="street.errors">
+											<div *ngIf="street.errors.required">
+												Address is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+									<mat-form-field
+										class="form-element form-element-new"
+										appearance="outline"
+									>
+										<mat-label class="form-label">City</mat-label>
+										<input
+											matInput
+											class="inputText"
+											type="text"
+											title="City"
+											[(ngModel)]="address['city']"
+											name="city"
+											[value]="address['city']"
+											#city="ngModel"
+											required
+										/>
+										<mat-error *ngIf="city.errors">
+											<div *ngIf="city.errors.required">
+												City is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+									<mat-form-field
+										class="form-element form-element-new"
+										*ngIf="
+											CheckoutState &&
+											(CheckoutState.length > 0 || !CheckoutState)
+										"
+										appearance="outline"
+									>
+										<mat-label class="form-label">State</mat-label>
+										<div class="select-wrapper-theme">
+											<mat-select
+												class="select-theme"
+												type="text"
+												title="State"
+												[(ngModel)]="address['state']"
+												name="state"
+												[value]="address['state']"
+												id="state"
+												#state="ngModel"
+												required
+											>
+												<mat-option
+													*ngFor="let state of CheckoutState; let i = index"
+													value="{{ state.name | uppercase }}"
+												>
+													{{ state.name }}</mat-option
+												>
+											</mat-select>
+										</div>
+										<mat-error *ngIf="state.errors">
+											<div *ngIf="state.errors.required">
+												State is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+									<div class="clearfix"></div>
+									<button
+										[disabled]="postForm.invalid"
+										class="continue-shipping"
+										(click)="
+											addNewAddress(); initCheckoutCart(); moveToNextStep(3)
+										"
+									>
+										SAVE & CONTINUE
+									</button>
+								</form>
+							</div>
+						</mat-tab>
+					</mat-tab-group>
+				</div>
+			</div>
+		</section>
+		<section
+			class="steps-third steps"
+			[ngClass]="{ active: selectedIndex == 3 }"
+		>
+			<div class="content-desktop-third">
+				<div class="content content-address-tab">
+					<div
+						class="checkout-pay-option pay-opt"
+						*ngFor="let payment of paymentMethodList; let i = index"
+						(click)="listClick($event, payment.title)"
+						[ngClass]="{ active: selectedItem == payment.title }"
+					>
+						<div
+							class="checkout-pay-option-list"
+							(click)="setPaymentMethod(payment)"
+						>
+							{{ payment.title }}
+						</div>
+						<i
+							class="payment-arrow"
+							[ngClass]="{ active: selectedItem == payment.title }"
+						>
+							<img
+								src="https://cdn.dailyobjects.com/assets/images/arrow-checkout.png"
+							/>
+						</i>
+					</div>
+				</div>
+				<div class="content-desktop-step-third">
+					<div
+						class="pay-option-blocks"
+						*ngFor="let payment of paymentMethodList; let i = index"
+					>
+						<div
+							id="{{ payment.identifier }}"
+							class="bank-choose active"
+							[ngClass]="{ active: paymentMethod == 'netBankings' }"
+							*ngIf="
+								payment.identifier === 'netBankings' &&
+								payment.banks &&
+								payment.banks.length > 0
+							"
+						>
+							<div
+								class="bank-option"
+								*ngFor="let popularBankcode of payment.banks; let i = index"
+							>
+								<div class="popular-banks" *ngIf="popularBankcode.popular">
+									<mat-list class="netbanking-image-section">
+										<mat-list-item>
+											<div class="select-wrapper-theme" style="display:block;">
+												<div>
+													<div
+														(click)="setPaymentMethodCode(popularBankcode.code)"
+													>
+														<mat-radio-group
+															class="radio-button-banks"
+															aria-label="Select an option"
+															class="radio-button-banks"
+															(change)="
+																setPaymentMethodCode(popularBankcode.code)
+															"
+														>
+															<mat-radio-button
+																[checked]="
+																	popularBankcode.code == paymentMethod ||
+																	popularBankcode.code == payGatewayValue
+																"
+																value="{{ paymentMethod }}"
+															></mat-radio-button>
+														</mat-radio-group>
+														<img
+															src="{{ imgCdnUrl }}{{ popularBankcode.image }}"
+															alt="{{ popularBankcode.name }}"
+														/>
+													</div>
+												</div>
+											</div>
+										</mat-list-item>
+									</mat-list>
+								</div>
+							</div>
+							<div class="select-wrapper-theme">
+								<mat-form-field class="form-select">
+									<mat-select
+										class="select-theme"
+										title="Bank"
+										[value]="payGatewayValue"
+										placeholder="Please Select Your Bank"
+										[(ngModel)]="bankcode"
+										name="bankcode"
+										id="bankcode"
+										(selectionChange)="setPaymentMethodCode($event.value)"
+									>
+										<mat-option
+											matInput
+											*ngFor="let bankcode of payment.banks; let i = index"
+											value="{{ bankcode.code }}"
+										>
+											{{ bankcode["name"] }}</mat-option
+										>
+									</mat-select>
+								</mat-form-field>
+							</div>
+							<p class="payments-description">
+								We will redirect you to your bank website to authorize the
+								payment.
+							</p>
+						</div>
+						<div
+							id="{{ payment.identifier }}"
+							class="bank-choose"
+							[ngClass]="{ active: paymentMethod == 'wallets' }"
+							*ngIf="
+								payment.identifier == 'wallets' &&
+								payment.wallets &&
+								payment.wallets.length > 0
+							"
+						>
+							<div class="wallets-list">
+								<div
+									class="bank-option"
+									*ngFor="let popularBankcode of payment.wallets; let i = index"
+								>
+									<div class="popular-banks" *ngIf="popularBankcode.popular">
+										<mat-list class="netbanking-image-section">
+											<mat-list-item>
+												<div
+													class="select-wrapper-theme"
+													style="display:block;"
+												>
+													<div>
+														<div
+															(click)="
+																setPaymentMethodCode(popularBankcode.code)
+															"
+														>
+															<mat-radio-group
+																aria-label="Select an option"
+																class="radio-button-banks"
+																(change)="
+																	setPaymentMethodCode(popularBankcode.code)
+																"
+															>
+																<mat-radio-button
+																	[checked]="
+																		popularBankcode.code == paymentMethod ||
+																		popularBankcode.code == payGatewayValue
+																	"
+																	value="{{ paymentMethod }}"
+																></mat-radio-button>
+															</mat-radio-group>
+															<img
+																src="{{ imgCdnUrl }}{{ popularBankcode.image }}"
+																alt="{{ popularBankcode.name }}"
+															/>
+														</div>
+													</div>
+												</div>
+											</mat-list-item>
+										</mat-list>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div
+							id="{{ payment.identifier }}"
+							*ngIf="payment.identifier === 'paytm'"
+							class="bank-choose"
+							[ngClass]="{ active: paymentMethod == 'paytm' }"
+						>
+							<div>
+								<div class="select-wrapper-theme">
+									<img
+										src="{{ imgCdnUrl }}{{ payment.image }}"
+										alt="{{ payment.name }}"
+									/>
+								</div>
+							</div>
+							<p class="payments-description">
+								We will redirect you to your Paytm wallet's website to authorize
+								the payment.
+							</p>
+						</div>
+						<div
+							id="{{ payment.identifier }}"
+							*ngIf="payment.identifier === 'amazonpay'"
+							class="bank-choose"
+							[ngClass]="{ active: paymentMethod == 'amazonpay' }"
+						>
+							<div>
+								<div class="select-wrapper-theme">
+									<img
+										src="{{ imgCdnUrl }}{{ payment.image }}"
+										alt="{{ payment.name }}"
+									/>
+								</div>
+							</div>
+							<p class="payments-description">
+								We will redirect you to your Amazon Pay wallet's website to
+								authorize the payment.
+							</p>
+						</div>
+						<div
+							class="select-wrapper-theme bank-choose"
+							*ngIf="payment.identifier == 'cards'"
+							[ngClass]="{ active: paymentMethod == 'cards' }"
+						>
+							<form
+								class="cardForm"
+								name="cardForm"
+								(ngSubmit)="setCardDetails()"
+								#cardForm="ngForm"
+							>
+								<div class="card-details-row">
+									<mat-form-field
+										class="mat-form-full-width"
+										appearance="outline"
+									>
+										<mat-label class="form-label">Card Number</mat-label>
+										<span class="card-input-wraper">
+											<input
+												matInput
+												class=""
+												type="text"
+												name="cardNumber"
+												placeholder="Card Number"
+												[(ngModel)]="cardDetail.cardNumber"
+												#cardNumber="ngModel"
+												required
+												(input)="checkForCardNumberError($event.target.value)"
+											/>
+
+											<div class="card-type-wrap">
+												<span
+													class="card-type master active"
+													[ngClass]="{ active: cardType === 'master' }"
+												></span>
+												<span
+													class="card-type visa active"
+													[ngClass]="{ active: cardType === 'visa' }"
+												></span>
+												<span
+													class="card-type diner active"
+													[ngClass]="{ active: cardType === 'diner' }"
+												></span>
+												<span
+													class="card-type maestro active"
+													[ngClass]="{ active: cardType === 'maestro' }"
+												></span>
+												<span
+													class="card-type rupay active"
+													[ngClass]="{ active: cardType === 'rupay' }"
+												></span>
+												<span
+													class="card-type amex active"
+													[ngClass]="{ active: cardType === 'amex' }"
+												></span>
+											</div>
+										</span>
+										<mat-error *ngIf="cardNumber.errors">
+											<div *ngIf="cardNumber.errors.required">
+												CardNumber is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+								</div>
+								<div class="card__details--row">
+									<mat-form-field
+										class="mat-form-full-width"
+										appearance="outline"
+									>
+										<mat-label class="form-label">Name on Card</mat-label>
+										<input
+											matInput
+											class="card__details--input card__name_bg"
+											type="text"
+											name="cardName"
+											[(ngModel)]="cardDetail.cardName"
+											#cardName="ngModel"
+											required
+											placeholder="Name on Card"
+										/>
+
+										<div class="card-name">
+											<span class="user-icon">
+												<img
+													appImageSrc
+													src="/assets/images/checkout/name-1.svg"
+												/>
+											</span>
+										</div>
+										<mat-error *ngIf="cardName.errors">
+											<div *ngIf="cardName.errors.required">
+												Name is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+								</div>
+								<div class="card__expiry">
+									<mat-form-field
+										class="mat-form-full-width-new-left"
+										appearance="outline"
+									>
+										<mat-label class="form-label">Expiry Month</mat-label>
+										<mat-select
+											class="card__details--select"
+											name="cardExpMonth"
+											placeholder="Expiry Month"
+											#cardExpMonth="ngModel"
+											[(ngModel)]="cardDetail.cardExpMonth"
+											required
+										>
+											<mat-option value="01">01</mat-option>
+											<mat-option value="02">02</mat-option>
+											<mat-option value="03">03</mat-option>
+											<mat-option value="04">04</mat-option>
+											<mat-option value="05">05</mat-option>
+											<mat-option value="06">06</mat-option>
+											<mat-option value="07">07</mat-option>
+											<mat-option value="08">08</mat-option>
+											<mat-option value="09">09</mat-option>
+											<mat-option value="10">10</mat-option>
+											<mat-option value="11">11</mat-option>
+											<mat-option value="12">12</mat-option>
+										</mat-select>
+										<mat-error *ngIf="cardExpMonth.errors">
+											<div *ngIf="cardExpMonth.errors.required">
+												Month is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+									<mat-form-field
+										class="mat-form-full-width-new-right"
+										appearance="outline"
+									>
+										<mat-label class="form-label">Expiry Year</mat-label>
+										<mat-select
+											class="card__details--select"
+											name="cardExpYear"
+											placeholder="Expiry Year"
+											[(ngModel)]="cardDetail.cardExpYear"
+											#cardExpYear="ngModel"
+											required="true"
+										>
+											<mat-option
+												matInput
+												*ngFor="let year of cardExpireYears"
+												value="{{ year }}"
+												>{{ year }}
+											</mat-option>
+										</mat-select>
+										<mat-error *ngIf="cardExpYear.errors">
+											<div *ngIf="cardExpYear.errors.required">
+												Year is required
+											</div>
+										</mat-error>
+									</mat-form-field>
+								</div>
+								<div class="card__cvv">
+									<mat-form-field
+										class="mat-form-full-width"
+										appearance="outline"
+									>
+										<mat-label class="form-label">CVV</mat-label>
+										<input
+											matInput
+											placeholder="CVV"
+											class="card__details--input card__cvv_bg"
+											type="password"
+											name="cardCVV"
+											[(ngModel)]="cardDetail.cardCVV"
+											maxlength="3"
+											minlength="3"
+											required="true"
+											#cardCVV="ngModel"
+											placeholder="CVV"
+										/>
+										<mat-error *ngIf="cardCVV.errors">
+											<div *ngIf="cardCVV.errors.required">
+												CVV is required
+											</div>
+										</mat-error>
+										<div class="card-type-wrap">
+											<span class="cvv-icon">
+												<img
+													appImageSrc
+													src="/assets/images/banner/CVV-Code-Icon.png"
+												/>
+											</span>
+										</div>
+									</mat-form-field>
+									<span class="card__cvv-icon"></span>
+								</div>
+								<img
+									class="payment-iconn"
+									appImageSrc
+									src="/assets/images/checkout/new/payment-strip-color.jpg"
+								/>
+								<button
+									class="card-pay-button"
+									mat-button
+									*ngIf="paymentMethod === 'cards'"
+									[disabled]="cardForm.invalid"
+									(click)="makeOrders(); scrolltop()"
+								>
+									PAY NOW
+								</button>
+							</form>
+						</div>
+
+						<div
+							*ngIf="paymentMethod === 'cod' && codAvailableForPin"
+							class="bank-choose cod"
+							[ngClass]="{ active: paymentMethod === 'cod' }"
+						>
+							<div
+								class="no-cod-message"
+								*ngIf="payment.status === false && payment.description !== ''"
+							>
+								<div class="cod-img" style="width:15%">
+									<img
+										src="https://cdn.dailyobjects.com/assets/images/desktop/icons/warning.svg"
+									/>
+								</div>
+								<div
+									class="cod-description"
+									style="width:80%"
+									[innerHTML]="payment.description.replace('-', '<br>')"
+								></div>
+							</div>
+						</div>
+
+						<div
+							id="{{ payment.identifier }}"
+							*ngIf="payment.identifier === 'mobikwik'"
+							class="bank-choose"
+							[ngClass]="{ active: paymentMethod == 'mobikwik' }"
+						>
+							<div>
+								<div class="select-wrapper-theme">
+									<img
+										src="{{ imgCdnUrl }}{{ payment.image }}"
+										alt="{{ payment.name }}"
+									/>
+								</div>
+							</div>
+							<p class="payments-description">
+								We will redirect you to your Mobikwik wallet's website to
+								authorize the payment.
+							</p>
+						</div>
+						<div
+							id="{{ payment.identifier }}"
+							*ngIf="payment.identifier === 'upi'"
+							class="bank-choose"
+							[ngClass]="{ active: paymentMethod == 'upi' }"
+						>
+							<div>
+								<div class="select-wrapper-theme">
+									<img
+										src="{{ imgCdnUrl }}{{ payment.image }}"
+										alt="{{ payment.name }}"
+									/>
+								</div>
+							</div>
+						</div>
+						<div
+							id="{{ payment.identifier }}"
+							*ngIf="payment.identifier === 'googlepay'"
+							class="bank-choose"
+							[ngClass]="{ active: paymentMethod == 'googlepay' }"
+						>
+							<div>
+								<div class="select-wrapper-theme">
+									<img
+										src="{{ imgCdnUrl }}{{ payment.image }}"
+										alt="{{ payment.name }}"
+									/>
+								</div>
+							</div>
+						</div>
+						<div
+							id="{{ payment.identifier }}"
+							*ngIf="payment.identifier === 'wallet'"
+							class="bank-choose"
+							[ngClass]="{ active: paymentMethod == 'wallet' }"
+						>
+							<div>
+								<div class="select-wrapper-theme">
+									<img
+										src="{{ imgCdnUrl }}{{ payment.image }}"
+										alt="{{ payment.name }}"
+									/>
+								</div>
+							</div>
+							<p class="payments-description">
+								We will redirect you to your wallet's website to authorize the
+								payment.
+							</p>
+						</div>
+					</div>
+					<div
+						class="cod-heading"
+						*ngIf="paymentMethod === 'cod' && !codAvailableForPin"
+						style="margin-left:30%; margin-bottom:10px; text-align: left"
+					>
+						<span>Cash On Delivery</span>
+					</div>
+					<div
+						class="no-cod-msg"
+						*ngIf="!codAvailableForPin && paymentMethod === 'cod'; else codShow"
+						style="margin-left:30%; margin-bottom:10px; text-align: left"
+					>
+						<span>{{ notCodMesg }}</span>
+					</div>
+					<ng-template #codShow>
+						<div
+							class="cod-strip"
+							*ngIf="paymentMethod === 'cod' && codStatusFlag === true"
+						>
+							‎₹‎49 as convenience charge for Cash on Delivery will be added.<br />
+							If you would like to save on COD charges, simply choose another
+							mode of payments
+						</div>
+					</ng-template>
+					<div class="btn-checkout-section">
+						<button
+							[disabled]="!codAvailableForPinCode()"
+							class="btn-pay-now"
+							*ngIf="paymentMethod === 'cod' && codStatusFlag === true"
+							(click)="makeOrders()"
+							type="button"
+						>
+							PLACE ORDER
+						</button>
+						<button
+							class="btn-pay-now"
+							*ngIf="paymentMethod !== 'cod' && paymentMethod !== 'cards'"
+							(click)="makeOrders()"
+							type="button"
+						>
+							PAY NOW
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="checkout-section-right">
+		<section class="steps-fourth steps">
+			<h4>Order Summary</h4>
+			<hr class="solid" />
+
+			<div class="order-summery" *ngIf="cartTotals">
+				<ul class="list-no-style">
+					<li>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Total Items</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ cartTotals["cartItemsCount"] }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Sub Total</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["subTotal"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+
+					<li *ngIf="cartTotals['discount'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left discount">
+								<p>Discount</p>
+							</li>
+							<li class="order-details show-right discount">
+								<p>
+									-
+									{{ getPrice(cartTotals["discount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<!-- <li>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Total Amount</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["subTotalPostDiscount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li> -->
+					<li *ngIf="cartTotals['shippingCharges'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Shipping</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["shippingCharges"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li *ngIf="cartTotals['vat'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>GST</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["vat"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li *ngIf="cartTotals['codCharges'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>COD</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["codCharges"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li *ngIf="cartTotals['giftWrappingCharge'] > 0">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Gift Wrap</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["giftWrappingCharge"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<hr class="solid" />
+					<li class="order-details-total">
+						<ul class="unorder-list-style">
+							<li class="order-details show-left total-payble">
+								<p>Total Payable</p>
+							</li>
+							<li class="order-details show-right total-payble">
+								<p>
+									{{ getPrice(cartTotals["grandTotal"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li
+						class="order-details-discount"
+						*ngIf="
+							paymentMethod != 'cod' &&
+							paymentMethod != 'undefined' &&
+							cartTotals['prepaidDiscount'] > 0
+						"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>Prepaid Discount</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									(-)
+									{{ getPrice(cartTotals["prepaidDiscount"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<li
+						class="order-details-net"
+						*ngIf="paymentMethod != 'cod' && cartTotals['prepaidDiscount'] > 0"
+					>
+						<ul class="unorder-list-style">
+							<li class="order-details show-left">
+								<p>NetPayable</p>
+							</li>
+							<li class="order-details show-right">
+								<p>
+									{{ getPrice(cartTotals["netPayable"]) }}
+								</p>
+							</li>
+						</ul>
+					</li>
+					<!-- <input class="inputBtn current__state" type="button" value="CONTINUE" ng-click="afterOrderReview()"> -->
+				</ul>
+			</div>
+
+			<!-- <input
+					class="inputBtn"
+					style="background: #ff931e;
+							border-color: #ff931e;
+							color: #fff;
+							padding: .5em 1em;
+							font-size: 1em;
+							width: 100%;"
+					class="continue"
+					type="button"
+					(click)="makeOrders()"
+					value="PAY NOW >"
+				/> -->
+		</section>
+		<div
+			class="selected-address-checkout"
+			*ngIf="selectedAddress && selectedAddress['name']"
+		>
+			<div id="checkout-summery">
+				<h4>SHIPPING ADDRESS</h4>
+				<p class="change-add">
+					{{ selectedAddress.name }} <br />
+					{{ selectedAddress.street }} <br />{{ selectedAddress.city }},
+					{{ selectedAddress.state }}, {{ selectedAddress.pincode }} <br />
+					{{ selectedAddress.country }} <br />
+					T: {{ selectedAddress.mobile }}
+				</p>
+			</div>
+		</div>
+	</div>
+</section>

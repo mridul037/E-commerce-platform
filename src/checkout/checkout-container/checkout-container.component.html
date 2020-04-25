@@ -1,0 +1,48 @@
+<app-header-container
+	[showCartIcon]="false"
+	[showMenuList]="false"
+	[showNavOptionsCartPage]="true"
+	[showSearchIcon]="false"
+	[showUser]="false"
+	[showUserOption]="false"
+	[showUserOptionMdView]="false"
+	[showSigninRegister]="false"
+	[showMobileHeaderSearch]="false"
+	[showMobileHeaderCart]="false"
+>
+</app-header-container>
+
+<div
+	*ngIf="(cartData$ | async) || (guestUserCartData$ | async) as response"
+	ngClass="ngClass desktop-checkout mobile-checkout"
+	[ngClass.lt-md]="{ 'desktop-checkout': false, 'mobile-checkout': true }"
+	[ngClass.lt-md]="{ 'desktop-checkout': true, 'mobile-checkout': false }"
+>
+	<app-checkout-address
+		[CheckoutState]="(checkoutState$ | async)?.checkoutStateData"
+		[usersData]="currentUser$ | async"
+		[resPincode]="checkoutPincode$ | async"
+		[cartData]="cartData$ | async"
+		[cartAllData]="cartAllData$ | async"
+		[cartTotals]="cartTotals$ | async"
+		[cartDataGet]="guestUserCartData$ | async"
+		[paymentMethodListData]="checkoutPaymentListData$ | async"
+		[fetchAddress]="(checkoutAddress$ | async)?.response"
+		(fetchUserPincode)="fetchUserByPincode($event)"
+		(addNewAddressData)="addNewAddressByUser($event)"
+		(getCheckoutPaymentLists)="getCheckoutPaymentLists($event)"
+		[device]="device"
+	>
+	</app-checkout-address>
+</div>
+
+<app-footer-container
+	[showSubscribeUser]="false"
+	[showHelpDesk]="false"
+	[showAboutDO]="false"
+	[showDOFeatures]="true"
+	[showDesignerInvite]="false"
+	[showCompanyLinks]="false"
+	[showSocial]="false"
+	(subscribeToNewsletter)="subscribeToNewsletter($event)"
+></app-footer-container>

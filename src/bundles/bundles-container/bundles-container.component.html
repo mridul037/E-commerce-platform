@@ -1,0 +1,99 @@
+<app-header-container></app-header-container>
+<div *ngIf="device === 'mobile'" style="height:60px;"></div>
+<div *ngIf="device === 'website'" style="height:130px;"></div>
+<ng-container *ngIf="(intermediateData$ | async) as intermediateData">
+	<app-intermediate-page
+		[categorySlug]="bags - and - sleeves"
+		[brandSlug]="laptop - sleeves"
+		[modelSlug]="dailyobjects"
+		[intermediateData]="intermediateData[0]"
+		[device]="device"
+	></app-intermediate-page>
+</ng-container>
+
+<section class="bottomSection cms-page">
+	<div
+		ngclass="stationery-bottom stationery-bottom-mobile"
+		[ngClass.lt-md]="{
+			'stationery-bottom-mobile': true,
+			'stationery-bottom': false
+		}"
+		[ngClass.gt-sm]="{
+			'stationery-bottom': true,
+			'stationery-bottom-mobile': false
+		}"
+	>
+		<div
+			ngclass="stationery-text stationery-text-mobile"
+			[ngClass.lt-md]="{
+				'stationery-text-mobile': true,
+				'stationery-text': false
+			}"
+			[ngClass.gt-sm]="{
+				'stationery-text': true,
+				'stationery-text-mobile': false
+			}"
+		>
+			<h3>Buy Gift Sets Online at DailyObjects Gift Sets Collection</h3>
+			<p>
+				A sure shot solution to finding the right present for any occasion. From
+				birthday parties, to corporate gift items, you have a wide range of
+				gifting option on DailyObjects. Our Crossbody Bags, Tote Bags, Wallets
+				and other accessories makes for the perfect gifting option for a close
+				friend or even family. You can pick from modern-ethnic designs or plain
+				solid colours or even match patterns to create gift sets. What better
+				way to celebrate an occasion than with the perfect present. If after all
+				these ideas, you still can’t seem to decide on what to gift them, you
+				can choose from our gift sets online collection that will help you pick
+				a wonderful present for your loved one. Apart from choosing a gift for
+				an occasion, there are also options and pre-made corporate gifts for
+				employees that they’ll definitely love.
+			</p>
+
+			<h3>Gift Sets for Festive, Corporate and Travel</h3>
+			<p>
+				<!-- Gone are the days when you had to rely on plain notebook and the sheets
+				and they were only meant for students. Nowadays, corporate people are
+				also using the beauty of the
+				<a routerLink="/stationery/dailyobjects/a5-notebook">A5 size notebooks</a>
+				. They come with vivacious prints and cover designs and feature 96
+				pages, 80 gsm manufacturing and natural white Italian paper. -->
+				If there’s a festival coming up, and you’re looking for presents for
+				your family as well as<a routerLink="/corporate-style-gift-box">
+					corporate gift items</a
+				>
+				for your employees, you can choose from a range of leather accessories
+				like Crossbody Bags, Wallets, Laptop Sleeves & Bags and so much more!
+				The best part is that these corporate gifts for employees are
+				accessories that can be used by anyone and everyone in their daily life.
+				If a loved one is headed for a trip or moving away, you can also choose
+				gifts from our travel accessories or buy a
+				<a routerLink="/travel-cool-gift-box"> travel gift set</a> that includes
+				a Passport Cover, Card Wallet, Cable Wrap, Eyewear Case and a Stash
+				Pouch to make travel easier and packing lighter; it’s a win-win for you.
+				You can also gift your Apple lover friends a
+				<a routerLink="/apple-fashion-gift-box">gift set</a> created with
+				accessories for their gadgets. The set includes a case for your iPhone,
+				a Charging Cable and Cable Protectors, an AirPods Case Cover and a Strap
+				for your Apple Watch.
+			</p>
+			<h3>Why Choose Gift Sets from DailyObjects</h3>
+			<p>
+				Find an array of gifting option on DailyObjects for every occasion. From
+				festivals, to birthday gifts, to promotion gifts, you will find
+				everything here. Premium quality leather accessories and fashionable
+				tech accessories make for the perfect gifting options. DailyObjects’
+				gift sets online come bundled up in a teal box so you don’t have to go
+				through the trouble of gift wrapping every present on every occasion.
+			</p>
+		</div>
+	</div>
+</section>
+<app-footer-container
+	[showSubscribeUser]="true"
+	[showHelpDesk]="true"
+	[showAboutDO]="true"
+	[showDesignerInvite]="true"
+	[showCompanyLinks]="true"
+	[showSocial]="true"
+></app-footer-container>

@@ -1,0 +1,133 @@
+<app-mobile-offer-popup></app-mobile-offer-popup>
+<ng-container
+	*ngIf="device === 'website'; then desktopView; else mobileView"
+></ng-container>
+<ng-template #desktopView>
+	<app-header-container></app-header-container>
+	<section class="case-collection-intermediate-page">
+		<div class="height-gap"></div>
+		<div
+			class="main-container"
+			*ngIf="(intermediateData$ | async) as intermediateData"
+		>
+			<div class="heading-container">
+				<h1 class="heading">
+					Choose the best {{ transformModelName(modelSlug) }} Case with us!
+				</h1>
+				<a
+					class="view-all"
+					[routerLink]="['', 'designer-cases', brandSlug, modelSlug]"
+				>
+					View All >
+				</a>
+			</div>
+
+			<div
+				class="image-container"
+				fxLayout="row wrap"
+				fxLayoutAlign="center center"
+			>
+				<ng-container *ngFor="let image of intermediateData[0]['feed']">
+					<a class="image" routerLink="{{ image['url'] }}">
+						<div class="card-div">
+							<img appImageSrc src="{{ image['desktopImage'] }}" />
+							<div class="image-text">
+								<div class="image-heading">
+									<span>{{ image["title"] }}</span>
+								</div>
+								<div class="image-description">
+									<span>{{ image["subtitle"] }}</span>
+								</div>
+
+								<div class="btn-text">
+									<button mat-stroked-button color="accent">SHOP NOW</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="item-name-description">
+							<span class="theme-item-name">{{ item["title"] }}</span>
+							<br />
+							<span class="theme-item-description">
+								{{ item["subtitle"] }}
+							</span>
+						</div> -->
+					</a>
+				</ng-container>
+			</div>
+		</div>
+		<app-footer-container
+			[showSubscribeUser]="true"
+			[showHelpDesk]="true"
+			[showAboutDO]="false"
+			[showDesignerInvite]="true"
+			[showCompanyLinks]="true"
+			[showSocial]="true"
+			[showFooterStripMobile]="false"
+			(subscribeToNewsletter)="subscribeToNewsletter($event)"
+		></app-footer-container>
+	</section>
+</ng-template>
+<ng-template #mobileView>
+	<app-header-container></app-header-container>
+	<div class="height-gap" style="height:60px;"></div>
+	<ng-template #loadingTemplate>
+		<div style="min-height:450px;"></div>
+	</ng-template>
+	<div
+		class="mobile-main-container"
+		*ngIf="
+			(intermediateData$ | async) as intermediateData;
+			else loadingTemplate
+		"
+	>
+		<div class="heading-container">
+			<h1 class="heading">
+				Choose the best {{ transformModelName(modelSlug) }} Case with us!
+			</h1>
+			<a
+				class="view-all"
+				[routerLink]="['', 'designer-cases', brandSlug, modelSlug]"
+				style="color:#4d4d4d;font-weight: 600;text-decoration: underline;"
+			>
+				View All >
+			</a>
+		</div>
+
+		<!-- <div
+			class="image-container"
+			fxLayout="row wrap"
+			fxLayoutAlign="center center"
+			style="padding: 20px 20px;"
+		> -->
+		<ng-container *ngFor="let image of intermediateData[0]['feed']">
+			<a
+				class="image"
+				routerLink="{{ image['url'] }}"
+				style="margin-bottom: 20px;"
+			>
+				<div class="card-div">
+					<img
+						appImageSrc
+						src="{{ image['image'] }}"
+						width="{{ screenWidth }}"
+						style="max-width: 100%;"
+					/>
+					<div class="image-text">
+						<div class="image-heading">
+							<span>{{ image["title"] }}</span>
+						</div>
+						<div class="image-description">
+							<span>{{ image["subtitle"] }}</span>
+						</div>
+						<div class="btn-text">
+							<button mat-stroked-button color="accent">SHOP NOW</button>
+						</div>
+					</div>
+				</div>
+			</a>
+		</ng-container>
+		<!-- </div> -->
+	</div>
+	<app-footer-container [showFooterStripMobile]="true"></app-footer-container>
+</ng-template>

@@ -1,0 +1,55 @@
+<!-- <div
+	*ngIf="
+		couponCode &&
+		couponCode['cartData']['offerCartData'] &&
+		couponCode['cartData']['offerCartData'] &&
+		couponCode['cartData']['offerCartData']['data']
+	"
+>
+	<div style="position:relative;" class="title border-btm clearfix">
+		<label>Apply Coupon</label>
+		<button class="remove-dialog" type="button" (click)="dialogClose()">
+			<img
+				src="https://cdn.dailyobjects.com/assets/images/desktop/icons/remove.svg"
+				width="16px"
+				height="16px"
+				alt=""
+			/>
+		</button>
+	</div>
+	<mat-form-field class="apply-coupon">
+		<input matInput placeholder="Please Enter CouponCode" required />
+		<button class="apply-in-input" type="button" id="applyCodeBtn">
+			<span>
+				Apply
+			</span>
+		</button>
+	</mat-form-field>
+	<div class="coupon-list">
+		<div
+			class="coupon-list-wrapper"
+			*ngFor="let couponData of couponCode['cartData']['offerCartData']['data']"
+		>
+			<div class="coupon-details-container">
+				<div class="coupon-code-name">
+					<span>{{ couponData.couponCode }}</span>
+				</div>
+				<div class="coupon-title">
+					<span>{{ couponData.offerCartTitle }}</span>
+				</div>
+				<div class="coupon-details-container">
+					<div class="" *ngFor="let couponDetail of couponData['offerMessage']">
+						<span>{{ couponDetail }}</span>
+					</div>
+				</div>
+			</div>
+			<div class="coupon-apply-container" style="width:20%;">
+				<button type="button">
+					<span>
+						Apply
+					</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div> -->

@@ -1,0 +1,204 @@
+@import "../../../styles/common-util";
+@import "../../../styles/placeholders";
+
+.cart-mob-accessory-mobile {
+	.list-mat {
+		padding: 0;
+	}
+	.accessory-header-section {
+		font-weight: 700;
+		font-size: 4vw;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #4d4d4d;
+	}
+	.accessory-section {
+		height: auto;
+		.mob-accessory {
+			width: 100%;
+			padding-bottom: 5%;
+			.image-container {
+				width: 30%;
+				display: inline-block;
+				img {
+					max-width: 100%;
+				}
+			}
+			.mob-accessory-product {
+				vertical-align: top;
+				padding-top: 4%;
+				width: 70%;
+				display: inline-block;
+				.product-name {
+					padding-bottom: 4%;
+					p {
+						font-size: 5vw;
+						font-weight: 600;
+					}
+				}
+				.price-section {
+					padding-bottom: 4%;
+					.mrp-price {
+						padding-left: 4%;
+						font-weight: 700;
+						font-size: 3.6vw;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.33;
+						letter-spacing: 0.3px;
+						text-align: left;
+						color: #4d4d4d;
+						text-decoration: line-through;
+					}
+					.selling-price {
+						font-size: 3.6vw;
+						font-weight: 700;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.33;
+						letter-spacing: 0.3px;
+						text-align: left;
+						color: #ff7baa;
+					}
+				}
+				.btn-section {
+					padding-bottom: 3%;
+					text-align: center;
+					button {
+						text-transform: uppercase;
+						background: #ff931e;
+						font-stretch: normal;
+						font-style: normal;
+						font-size: 4vw;
+						font-weight: 700;
+
+						border: 0;
+						padding: 0;
+						letter-spacing: 1px;
+						color: #fff;
+					}
+				}
+				.offer-section {
+					text-align: center;
+					font-weight: 600;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.67;
+					letter-spacing: 0.5px;
+					color: #ff931e;
+				}
+			}
+		}
+	}
+}
+.cart-mob-accessory-desktop {
+	margin-top: 20px;
+	width: 64%;
+	display: inline-block;
+	.mat-list-item-content {
+		padding: 0 !important;
+	}
+	.accessories-header {
+		background: #fff1e8;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+	}
+	.list-mat {
+		padding: 0;
+	}
+	.accessory-header-section {
+		font-family: SharpSans;
+		font-size: 14px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 0.8px;
+		text-align: left;
+		text-transform: uppercase;
+		color: #323233;
+	}
+	.accessory-section {
+		height: auto;
+		.mob-accessory {
+			width: 100%;
+			padding-bottom: 5%;
+			.image-container {
+				width: 15%;
+				display: inline-block;
+				text-align: center;
+				img {
+					max-width: 100%;
+				}
+			}
+			.mob-accessory-product {
+				vertical-align: top;
+				padding-top: 4%;
+				width: 40%;
+				display: inline-block;
+				.product-name {
+					padding-bottom: 4%;
+					p {
+						font-size: 16px;
+						font-weight: 600;
+					}
+				}
+				.price-section {
+					padding-bottom: 4%;
+					.mrp-price {
+						padding-left: 4%;
+						font-weight: 700;
+						font-size: 14px;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.33;
+						letter-spacing: 0.3px;
+						text-align: left;
+						color: #4d4d4d;
+						text-decoration: line-through;
+					}
+					.selling-price {
+						font-size: 14px;
+						font-weight: 700;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 1.33;
+						letter-spacing: 0.3px;
+						text-align: left;
+						color: #ff7baa;
+					}
+				}
+			}
+			.mob-accessory-product {
+				.btn-section {
+					padding-bottom: 3%;
+					text-align: center;
+					button {
+						text-transform: uppercase;
+						background: #ff931e;
+						font-stretch: normal;
+						font-style: normal;
+						font-size: 16px;
+						font-weight: 700;
+
+						border: 0;
+						padding: 0;
+						letter-spacing: 1px;
+						color: #fff;
+					}
+				}
+				.offer-section {
+					text-align: center;
+					font-weight: 600;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 1.67;
+					letter-spacing: 0.5px;
+					color: #ff931e;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,251 @@
+<app-header-container></app-header-container>
+
+<div fxShow fxHide.gt-sm="true" style="height:60px;"></div>
+
+<div fxHide fxShow.gt-sm="true" style="height: 98px;"></div>
+
+<div class="login-section" [ngStyle.lt-md]="{ 'padding-top': '0px' }">
+	<mat-card
+		class="login-dialog-wrapper"
+		[ngStyle.lt-md]="{
+			width: '100%',
+			padding: '20px'
+		}"
+		[ngStyle.md]="{
+			'box-shadow': 'rgba(0, 0, 0, 0.1) 0px 2px 15px !important'
+		}"
+		fxLayout="row"
+		fxLayoutAlign="center start"
+	>
+		<div class="image-container" fxHide.lt-md="true">
+			<img
+				appImageSrc
+				width="500"
+				style="object-fit: contain;"
+				height="500"
+				src="/dodesktop/images/Login-Image.jpg"
+				alt=""
+			/>
+		</div>
+		<div
+			class="login-form-container"
+			fxLayout="column"
+			fxLayoutAlign="center center"
+			[ngStyle.lt-sm]="{ padding: '15px 0px' }"
+		>
+			<div
+				class="login-via-text-container"
+				fxLayout="row"
+				fxLayoutAlign="space-between center"
+			>
+				<div class="border"></div>
+				<div class="sign-in-text-container">
+					<span>SIGN IN</span>
+				</div>
+				<div class="border"></div>
+			</div>
+
+			<div class="register-form-container">
+				<form [formGroup]="mobileOTPForm" (ngSubmit)="getOTP()">
+					<mat-form-field
+						class="mobile-input-form-control"
+						appearance="outline"
+						color="accent"
+					>
+						<mat-label class="form-label">Mobile number</mat-label>
+						<input
+							matInput
+							appOnlyNumbers
+							formControlName="mobile"
+							pattern="^[1-9]{1}[0-9]{9}$"
+							maxlength="10"
+						/>
+						<mat-error
+							*ngIf="mobileOTPForm.controls.mobile.errors"
+							class="invalid-feedback"
+						>
+							<div *ngIf="mobileOTPForm.controls.mobile.errors.required">
+								Mobile is required
+							</div>
+							<div *ngIf="mobileOTPForm.controls.mobile.errors.pattern">
+								Mobile must be a valid mobile number
+							</div>
+						</mat-error>
+					</mat-form-field>
+					<div
+						class="error-message"
+						[hidden]="showSpinner"
+						#MobileNumberErrorField
+					></div>
+					<ng-container
+						*ngIf="showSpinner && showGetOTPSpinner && !showOTPField"
+					>
+						<ng-container *ngTemplateOutlet="loader"></ng-container>
+					</ng-container>
+					<button
+						mat-raised-button
+						color="accent"
+						class="get-otp-btn"
+						type="submit"
+						*ngIf="!showOTPField"
+					>
+						REQUEST OTP
+					</button>
+				</form>
+				<form [formGroup]="otpInputForm" [hidden]="!showOTPField">
+					<div class="opt-container">
+						<div class="otp-field-label" [class.disabled]="isOTPVerified">
+							<label for="otp">One time password (OTP)</label>
+						</div>
+						<div
+							fxLayout="row"
+							fxLayoutAlign="space-between center"
+							class="otp-form-control-container"
+							*ngIf="!showSpinner"
+							#inputContainer
+						>
+							<div
+								class="otp-input-container"
+								fxLayout="row"
+								fxLayoutAlign="space-between center"
+							>
+								<input
+									type="number"
+									appOnlyNumbers
+									maxlength="1"
+									class="otp-input"
+									(keyup)="OnOTPKeyUp($event)"
+									*ngFor="let input of ['first', 'second', 'third', 'fourth']"
+									formControlName="{{ input }}OTPDigit"
+									[class.disabled]="isOTPVerified"
+								/>
+							</div>
+							<div class="otp-icon-container">
+								<mat-icon
+									*ngIf="isOTPVerified"
+									aria-label="Verified"
+									class="verified-icon"
+									>check_circle</mat-icon
+								>
+								<mat-icon
+									*ngIf="invalidOTP"
+									aria-label="Not Verified"
+									class="not-verified-icon"
+									>cancel</mat-icon
+								>
+							</div>
+						</div>
+						<div
+							fxLayout="column"
+							fxLayoutAlign="center center"
+							class="resend-otp-container"
+							*ngIf="!showSpinner && !isOTPVerified"
+						>
+							<button
+								mat-flat-button
+								class="resend-otp-link"
+								(click)="getOTP()"
+								[disabled]="(resendOtpCountDown$ | async) !== 0"
+								[class.disabled]="(resendOtpCountDown$ | async) !== 0"
+							>
+								<span>Resend OTP</span>
+								<span
+									class="resend-otp-timer"
+									*ngIf="(resendOtpCountDown$ | async) !== 0"
+									>(
+									{{ resendOtpCountDown$ | async | formatTime: "true" }} )</span
+								>
+							</button>
+						</div>
+						<div
+							class="error-message"
+							[hidden]="showSpinner"
+							#OTPErrorField
+						></div>
+					</div>
+					<ng-container *ngIf="showSpinner && showOTPField">
+						<ng-container *ngTemplateOutlet="loader"></ng-container>
+					</ng-container>
+					<button
+						mat-raised-button
+						color="accent"
+						class="login-btn"
+						*ngIf="showOTPField"
+						(click)="login()"
+					>
+						LOGIN
+					</button>
+				</form>
+			</div>
+			<div class="or-text-container" *ngIf="!hideOauthOptions">
+				<span>or</span>
+			</div>
+			<div
+				class="oauth-options-wrapper"
+				fxLayout="row"
+				fxLayoutAlign="space-between center"
+				*ngIf="!hideOauthOptions"
+			>
+				<div class="fb-login-container">
+					<button mat-stroked-button (click)="socialLogin('facebook')">
+						<img
+							src="/assets/icons/facebook.png"
+							alt=""
+							width="20px"
+							style="margin: 0px 5px;"
+						/>
+						<span>Facebook</span>
+					</button>
+				</div>
+				<div class="google-login-container">
+					<button mat-stroked-button (click)="socialLogin('google')">
+						<img
+							src="/assets/icons/google-768x768.png"
+							alt=""
+							width="20px"
+							style="margin: 0px 5px;"
+						/>
+						<span>Google</span>
+					</button>
+				</div>
+			</div>
+			<div
+				class="error-message"
+				[hidden]="showSpinner"
+				#defaultErrorField
+			></div>
+			<ng-template #loader>
+				<div fxLayout="column" fxLayoutAlign="center center" class="spinner">
+					<mat-progress-spinner
+						color="accent"
+						mode="indeterminate"
+						diameter="30"
+					>
+					</mat-progress-spinner>
+				</div>
+			</ng-template>
+
+			<div class="existing-user-link-container">
+				<span class="text">Don't have an account ?</span>
+				<a class="register-btn" (click)="goToRegister()">
+					Register
+				</a>
+			</div>
+			<div class="upgraded-text-container">
+				<span
+					>(<strong>We’ve upgraded!</strong> &nbsp; Please register again for
+					your old profile.)</span
+				>
+			</div>
+		</div>
+	</mat-card>
+</div>
+
+<app-footer-container
+	[showSubscribeUser]="false"
+	[showHelpDesk]="true"
+	[showAboutDO]="true"
+	[showDesignerInvite]="true"
+	[showCompanyLinks]="true"
+	[showSocial]="true"
+></app-footer-container>
