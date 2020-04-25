@@ -1,0 +1,287 @@
+{
+	"models": [
+		{
+			"modelName": "iPhone 11 Pro Max",
+			"modelSlug": "designer-cases/apple/iphone-11-pro-max",
+			"sup": "new"
+		},
+		{
+			"modelName": "iPhone 11 Pro",
+			"modelSlug": "designer-cases/apple/iphone-11-pro",
+			"sup": "new"
+		},
+		{
+			"modelName": "iPhone 11",
+			"modelSlug": "designer-cases/apple/iphone-11",
+			"sup": "new"
+		},
+		{
+			"modelName": "OnePlus 7T",
+			"modelSlug": "designer-cases/oneplus/oneplus-7t",
+			"sup": "new"
+		},
+
+		{
+			"modelName": "OnePlus 7 Pro",
+			"modelSlug": "designer-cases/oneplus/oneplus-7-pro",
+			"sup": "new"
+		},
+		{
+			"modelName": "OnePlus 6T",
+			"modelSlug": "/designer-cases/oneplus/oneplus-6t",
+			"sup": "new"
+		},
+		{
+			"modelName": "OnePlus 6",
+			"modelSlug": "/designer-cases/oneplus/oneplus-6",
+			"sup": "new"
+		},
+		{
+			"modelName": "OnePlus 5T",
+			"modelSlug": "/designer-cases/oneplus/oneplus-5t",
+			"sup": "new"
+		},
+		{
+			"modelName": "OnePlus 3T",
+			"modelSlug": "/designer-cases/oneplus/oneplus-3t",
+			"sup": "new"
+		},
+		{
+			"modelName": "OnePlus 3",
+			"modelSlug": "/designer-cases/oneplus/oneplus-3",
+			"sup": "new"
+		},
+		{
+			"modelName": "iPhone XS MAX",
+			"modelSlug": "/designer-cases/apple/iphone-xs-max",
+			"sup": "new"
+		},
+		{
+			"modelName": "iPhone XS",
+			"modelSlug": "/designer-cases/apple/iphone-xs",
+			"sup": "new"
+		},
+		{
+			"modelName": "iPhone XR",
+			"modelSlug": "/designer-cases/apple/iphone-xr",
+			"sup": "new"
+		},
+		{
+			"modelName": "iPhone X",
+			"modelSlug": "/designer-cases/apple/iphone-x"
+		},
+		{
+			"modelName": "iPhone 8 Plus",
+			"modelSlug": "/designer-cases/apple/iphone-8-plus"
+		},
+		{
+			"modelName": "iPhone 8",
+			"modelSlug": "/designer-cases/apple/iphone-8"
+		},
+		{
+			"modelName": "iPhone 7 Plus",
+			"modelSlug": "/designer-cases/apple/iphone-7-plus"
+		},
+		{
+			"modelName": "iPhone 7",
+			"modelSlug": "/designer-cases/apple/iphone-7"
+		},
+		{
+			"modelName": "iPhone-6S Plus",
+			"modelSlug": "/designer-cases/apple/iphone-6s-plus"
+		},
+		{
+			"modelName": "iPhone 6S",
+			"modelSlug": "/designer-cases/apple/iphone-6s"
+		},
+		{
+			"modelName": "iPhone 6",
+			"modelSlug": "/designer-cases/apple/iphone-6"
+		},
+		{
+			"modelName": "iPhone 5/5S",
+			"modelSlug": "/designer-cases/apple/iphone-5"
+		},
+		{
+			"modelName": "iPhone SE",
+			"modelSlug": "/designer-cases/apple/iphone-se"
+		},
+		{
+			"modelName": "Galaxy S20 Plus",
+			"modelSlug": "/designer-cases/samsung/galaxy-s20-plus",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy S20 Ultra",
+			"modelSlug": "/designer-cases/samsung/galaxy-s20-ultra",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy S20",
+			"modelSlug": "/designer-cases/samsung/galaxy-s20",
+			"sup": "new"
+		},
+
+		{
+			"modelName": "Galaxy S9 Plus",
+			"modelSlug": "/designer-cases/samsung/galaxy-s9-plus",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy S9",
+			"modelSlug": "/designer-cases/samsung/galaxy-s9",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy S8",
+			"modelSlug": "/designer-cases/samsung/galaxy-s8",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy S10 Plus",
+			"modelSlug": "/designer-cases/samsung/galaxy-s10-plus",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy S10",
+			"modelSlug": "/designer-cases/samsung/galaxy-s10",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy S10E",
+			"modelSlug": "/designer-cases/samsung/galaxy-s10e",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy Note 9",
+			"modelSlug": "/designer-cases/samsung/galaxy-note-9",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy Note 8",
+			"modelSlug": "/designer-cases/samsung/galaxy-note-8",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy M20",
+			"modelSlug": "/designer-cases/samsung/galaxy-m20",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy A7 2018",
+			"modelSlug": "/designer-cases/samsung/galaxy-a7-2018",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy A50",
+			"modelSlug": "/designer-cases/samsung/galaxy-a50",
+			"sup": "new"
+		},
+		{
+			"modelName": "Galaxy A30",
+			"modelSlug": "/designer-cases/samsung/galaxy-a30",
+			"sup": "new"
+		},
+		{
+			"modelName": "Pixel 3",
+			"modelSlug": "/designer-cases/google/pixel-3",
+			"sup": "new"
+		},
+		{
+			"modelName": "Pixel 2 XL",
+			"modelSlug": "/designer-cases/google/pixel-2-xl"
+		},
+		{
+			"modelName": "Pixel 2",
+			"modelSlug": "/designer-cases/google/pixel-2"
+		},
+		{
+			"modelName": "Honor 8X",
+			"modelSlug": "/designer-cases/huawei/honor-8x",
+			"sup": "new"
+		},
+		{
+			"modelName": "Vivo V11 Pro",
+			"modelSlug": "/designer-cases/vivo/vivo-v11-pro",
+			"sup": "new"
+		},
+		{
+			"modelName": "Vivo V15",
+			"modelSlug": "/designer-cases/vivo/vivo-v15",
+			"sup": "new"
+		},
+		{
+			"modelName": "Vivo V9",
+			"modelSlug": "/designer-cases/vivo/vivo-v9",
+			"sup": "new"
+		},
+		{
+			"modelName": "Nokia 7.1",
+			"modelSlug": "/designer-cases/nokia/nokia-7.1",
+			"sup": "new"
+		},
+		{
+			"modelName": "Nokia 6.1 Plus",
+			"modelSlug": "/designer-cases/nokia/nokia-6.1-plus"
+		},
+		{
+			"modelName": "Oppo F9 Pro",
+			"modelSlug": "/designer-cases/oppo/oppo-f9-pro",
+			"sup": "new"
+		},
+		{
+			"modelName": "Apple Watch Straps",
+			"modelSlug": "/watch-accessories/apple/apple-watch-bands"
+		},
+		{
+			"modelName": "Apple Cases",
+			"modelSlug": "/designer-cases/apple"
+		},
+		{
+			"modelName": "OnePlus Cases",
+			"modelSlug": "/designer-cases/oneplus"
+		},
+		{
+			"modelName": "Samsung Cases",
+			"modelSlug": "/designer-cases/samsung"
+		},
+		{
+			"modelName": "Xiaomi Cases",
+			"modelSlug": "/designer-cases/xiaomi"
+		},
+		{
+			"modelName": "Vivo Cases",
+			"modelSlug": "/designer-cases/vivo"
+		},
+		{
+			"modelName": "Oppo Cases",
+			"modelSlug": "/designer-cases/oppo"
+		},
+		{
+			"modelName": "Google Cases",
+			"modelSlug": "/designer-cases/google"
+		},
+		{
+			"modelName": "Huawei Cases",
+			"modelSlug": "/designer-cases/huawei"
+		}
+	],
+	"watchStraps": [
+		{
+			"modelName": "Samsung Watch Straps",
+			"modelSlug": "/designer-collections/samsung-watch/straps"
+		},
+		{
+			"modelName": "Fossil Watch Straps",
+			"modelSlug": "/designer-collections/fossil-watch/straps"
+		},
+		{
+			"modelName": "Fitbit Watch Straps",
+			"modelSlug": "/designer-collections/fitbit-watch/straps"
+		},
+		{
+			"modelName": "Garmin Watch Straps",
+			"modelSlug": "/designer-collections/garmin-watch/straps"
+		}
+	]
+}

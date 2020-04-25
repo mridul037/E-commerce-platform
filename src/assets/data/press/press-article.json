@@ -1,0 +1,183 @@
+{
+	"economic": {
+		"logo": "dodesktop/images/dopress/economics-times.png",
+		"content": [
+			{
+				"text": "The Economic Times website features an interesting interview with DailyObjects CEO Pankaj Garg.",
+				"image": "dodesktop/images/prcoverage/economic-times1-article.jpg"
+			},
+			{
+				"text": "",
+				"image": "dodesktop/images/prcoverage/economic-times2-article.jpg"
+			},
+			{
+				"text": "Economic Times’ magazine section, Panache, spotlights some great gift ideas for Father’s Day,including a cool DailyObjects designer case.",
+				"image": "dodesktop/images/prcoverage/economic-times-article1.jpg"
+			}
+		]
+	},
+	"indian-express": {
+		"logo": "dodesktop/images/dopress/indianexpress.png",
+		"content": [
+			{
+				"text": "The Indian Express covers our tie-up with Anurag Kashyap’s Bombay Velvet, for an exclusive collection of cases.",
+				"image": "dodesktop/images/prcoverage/indian-express.jpg"
+			}
+		]
+	},
+	"cnn-ibn": {
+		"logo": "dodesktop/images/dopress/cnnibn.png",
+		"content": [
+			{
+				"text": "IBNLive talks with DailyObects CEO Pankaj Garg about the gamble we took in releasing iPhone6 cases before the phone even launched. We won!",
+				"image": "dodesktop/images/prcoverage/ibn-7-article.png"
+			}
+		]
+	},
+	"stuff-india": {
+		"logo": "dodesktop/images/dopress/stuff.png",
+		"content": [
+			{
+				"text": "Stuff Magazine also has Comic-fans covered, pointing them at DailyObjects' unbelievably cool Comic Collection.",
+				"image": "dodesktop/images/prcoverage/stuff-india1.jpg"
+			},
+			{
+				"text": "",
+				"image": "dodesktop/images/prcoverage/stuff-india2.jpg"
+			},
+			{
+				"text": "",
+				"image": "dodesktop/images/prcoverage/stuff-india3.jpg"
+			}
+		]
+	},
+	"mid-day": {
+		"logo": "dodesktop/images/dopress/mid-day.png",
+		"content": [
+			{
+				"text": "Someone at Mid-Day loves our hilarious Bollywood cases!",
+				"image": "dodesktop/images/prcoverage/mid-day-1.png"
+			},
+			{
+				"text": "More love from Mid-Day; this time for DailyObjects customisable cases.",
+				"image": "dodesktop/images/prcoverage/mid-day-2.png"
+			}
+		]
+	},
+	"ibn7": {
+		"logo": "dodesktop/images/dopress/ibn7.png",
+		"content": [
+			{
+				"text": "IBN7 does a piece about DailyObjects exclusive Bombay Velvet film themed cases.",
+				"image": "dodesktop/images/prcoverage/IBN-7.jpg"
+			}
+		]
+	},
+	"india-today": {
+		"logo": "dodesktop/images/dopress/india-today.png",
+		"content": [
+			{
+				"text": "India’s leading media brand, IndiaToday features the DailyObjects Automobile Collection, on their site.",
+				"image": "dodesktop/images/prcoverage/FOR-INDIA-TODAY.png"
+			}
+		]
+	},
+	"hindustan-times": {
+		"logo": "dodesktop/images/dopress/ht-png.png",
+		"content": [
+			{
+				"text": "Hindustan Times’ magazine section does a special on Mother’s Day gift ideas,featuring a customisable smartphone case from DailyObjects.com.",
+				"image": "dodesktop/images/prcoverage/hindustan-times1.jpg"
+			},
+			{
+				"text": "",
+				"image": "dodesktop/images/prcoverage/hindustan-times2.jpg"
+			}
+		]
+	},
+	"the-hindu": {
+		"logo": "dodesktop/images/dopress/the-hindu.png",
+		"content": [
+			{
+				"text": "The Hindu Metro Plus Melange section shows off a DailyObjects Bleed Blue case during the Cricket World Cup.",
+				"image": "dodesktop/images/prcoverage/the-hindu.jpg"
+			}
+		]
+	},
+	"statesman": {
+		"logo": "dodesktop/images/dopress/statesman.png",
+		"content": [
+			{
+				"text": "The Statesman does a short piece highlighting the fact that DailyObjects is first-to-market with cases for the Samsung Galaxy S6.",
+				"image": "dodesktop/images/prcoverage/the-statesman1.jpg"
+			},
+			{
+				"text": "What is the Statesman’s top tip for Mother’s Day Gifts? Custom cases from DailyObjects.com",
+				"image": "dodesktop/images/prcoverage/THE-STATESMAN2.jpg"
+			}
+		]
+	},
+	"business-india": {
+		"logo": "dodesktop/images/dopress/business-india.png",
+		"content": [
+			{
+				"text": "India’s premier business magazine, Business India, does a short piece about us.",
+				"image": "dodesktop/images/prcoverage/business-india.png"
+			}
+		]
+	},
+	"z-news": {
+		"logo": "/dodesktop/images/dopress/z-news.png",
+		"content": [
+			{
+				"text": "The Zee News website covers DailyObjects’ tie-up with Anurag Kashyap’s film Bombay Velvet, for a line of exclusive smartphone cases.",
+				"image": "dodesktop/images/prcoverage/zee-news.jpg"
+			}
+		]
+	},
+	"sme-times": {
+		"logo": "dodesktop/images/dopress/sme-times-logo.png",
+		"content": [
+			{
+				"text": "DailyObjects CEO Pankaj Garg goes one-on-one with industry magazine SME Times, for an in-depth look into the Indian eCommerce scene.",
+				"image": "dodesktop/images/prcoverage/sme-times.png"
+			}
+		]
+	},
+	"your-story": {
+		"logo": "dodesktop/images/dopress/your-story.png",
+		"content": [
+			{
+				"text": "Yourstory.com does a feature about our founders Pankaj & Saurav and talks about DailyObjects in our early days.",
+				"image": "dodesktop/images/prcoverage/your-story.png"
+			}
+		]
+	},
+	"tech-circle": {
+		"logo": "dodesktop/images/dopress/tech-circle.gif",
+		"content": [
+			{
+				"text": "Techcircle.in features an article covering the launch of DailyObjects customisable cases and or future plans.",
+				"image": "dodesktop/images/prcoverage/tech-circle.in.png"
+			}
+		]
+	},
+	"pc-tablet": {
+		"logo": "dodesktop/images/dopress/pc-tablet.png",
+		"content": [
+			{
+				"text": "PC-Tablet talks about the eagerly anticipated Samsung Galaxy S6 and how DailyObjects has thousands of cases available for it, even before the smartphone is launched in India.",
+				"image": "dodesktop/images/prcoverage/PC-Tablet.jpg"
+			}
+		]
+	},
+	"focus-news": {
+		"logo": "dodesktop/images/dopress/focus-news-logo.png",
+		"content": [
+			{
+				"text": "Focusnews.com covers the launch of DailyObjects’ exclusive Bombay Velvet Collection.",
+				"image": "dodesktop/images/prcoverage/focus-news.png"
+			}
+		]
+	}
+}

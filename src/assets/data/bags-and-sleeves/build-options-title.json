@@ -1,0 +1,319 @@
+{
+	"card-wallet": {
+		"default": {
+			"title": "Credit/Debit Cards Wallets"
+		},
+		"classic": {
+			"title": "Designer Classic Card Wallets"
+		},
+		"flip": {
+			"title": "Flip Card Wallets"
+		},
+		"skinny": {
+			"title": "Designer Skinny Card Wallets"
+		},
+		"zip": {
+			"title": "Designer Zipper Slim Card & Coin Wallets"
+		},
+		"clipper": {
+			"title": "Designer Clipper Card Wallets"
+		}
+	},
+	"pouches": {
+		"default": {
+			"title": "Designer Pouches"
+		},
+		"designer": {
+			"title": "Designer Pouches"
+		},
+		"metallic": {
+			"title": "Metallic Pouches"
+		},
+		"leather": {
+			"title": "Leather Pouches"
+		},
+		"felt": {
+			"title": "Felt Pouches"
+		},
+		"nylon": {
+			"title": "Nylon Pouches"
+		},
+		"vegan-leather": {
+			"title": "Vegan Leather Pouches"
+		}
+	},
+	"tote-bag": {
+		"default": {
+			"title": "Designer Tote Bags"
+		},
+		"fatty": {
+			"title": "Designer Fatty Tote Bags"
+		},
+		"classic": {
+			"title": "Designer Classic Tote Bags"
+		},
+		"baesic": {
+			"title": "Designer Baesic Tote Bags"
+		},
+		"nylon": {
+			"title": "Nylon Tote Bags"
+		}
+	},
+	"crossbody-bags": {
+		"default": {
+			"title": "Designer Crossbody Bags"
+		},
+		"trapeze": {
+			"title": "Designer Trapeze Crossbody Bags"
+		},
+		"arch": {
+			"title": "Designer Arch Crossbody Bags"
+		},
+		"orbis": {
+			"title": "Designer Orbis Crossbody Bags"
+		},
+		"mini": {
+			"title": "Designer Mini Crossbody Bags"
+		},
+		"box": {
+			"title": "Designer Box Crossbody Bags"
+		},
+		"long": {
+			"title": "Designer Long Crossbody Bags"
+		},
+		"tallboi": {
+			"title": "Designer Tallboi Crossbody Bags"
+		}
+	},
+	"messenger-bags": {
+		"default": {
+			"title": "Designer Messenger Bags"
+		},
+		"city-compact": {
+			"title": "Designer City Compact Messenger Bags"
+		},
+		"ambassador": {
+			"title": "Designer Ambassador Messenger Bags"
+		}
+	},
+	"macbook-sleeves": {
+		"default": {
+			"title": "Bags and Sleeves for MacBook"
+		},
+		"pro-13-in": {
+			"title": "Designer Pro 13 In MacBook Sleeves"
+		},
+		"pro-15-in": {
+			"title": "Designer Pro 15 In MacBook Sleeves"
+		},
+		"12-in": {
+			"title": "Designer 12 In MacBook Sleeves"
+		},
+		"air-13-in": {
+			"title": "Designer Air 13 In MacBook Sleeves"
+		},
+		"air-11-in": {
+			"title": "Designer Air 11 In MacBook Sleeves"
+		}
+	},
+	"laptop-sleeves": {
+		"default": {
+			"title": "Bags and Sleeves for Laptop"
+		},
+		"11-in": {
+			"title": "Designer 11 In Laptop Sleeves"
+		},
+		"13-in": {
+			"title": "Designer 13 In Laptop Sleeves"
+		},
+		"14-in": {
+			"title": "Designer 14 In Laptop Sleeves"
+		},
+		"15-in": {
+			"title": "Designer 15 In Laptop Sleeves"
+		},
+		"16-in": {
+			"title": "Designer 15 In Laptop Sleeves"
+		}
+	},
+	"backpacks": {
+		"default": {
+			"title": "Designer Backpacks Collection"
+		},
+		"compact": {
+			"title": "Designer Compact Backpacks"
+		},
+		"drawstring": {
+			"title": "Designer Drawstring Backpacks"
+		}
+	},
+	"passport-wallet": {
+		"default": {
+			"title": "Passport Wallets"
+		},
+		"wallet": {
+			"title": "Designer Passport Wallets"
+		},
+		"cover": {
+			"title": "Designer Passport Covers"
+		}
+	},
+	"zip-wallet": {
+		"default": {
+			"title": "Zip Wallets"
+		}
+	},
+	"women-classic-wallets": {
+		"default": {
+			"title": "Women's Classic Wallets"
+		}
+	},
+	"men-wallet": {
+		"default": {
+			"title": "Men's Wallets"
+		},
+		"urbangentleman": {
+			"title": "UrbanGentleman Wallet"
+		},
+		"urbanhipster": {
+			"title": "UrbanHipster Wallet"
+		}
+	},
+	"belt-bags": {
+		"default": {
+			"title": "Pebble Belt Bags"
+		}
+	},
+	"ipad-9-7-2018": {
+		"default": {
+			"title": "Covers & Sleeves for iPad 9.7 2018"
+		}
+	},
+	"ipad-air-2": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Air 2"
+		}
+	},
+	"ipad-air-1": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Air 1"
+		}
+	},
+	"ipad-air-10-5": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Air 10.5"
+		}
+	},
+	"ipad-mini-5": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Mini 5"
+		}
+	},
+	"ipad-pro-10-5": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Pro 10.5"
+		}
+	},
+	"ipad-pro-11-2018": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Pro 11 2018"
+		},
+		"sleeves": {
+			"title": "Designer Sleeves IPad Pro 11 2018"
+		},
+		"folio": {
+			"title": "Designer Folio IPad Pro 11 2018"
+		}
+	},
+	"ipad-pro-9-7": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Pro 9.7"
+		}
+	},
+	"ipad-pro-12-9": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Pro 12.9"
+		}
+	},
+	"ipad-pro-12-9-2018": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Pro 12.9 2018"
+		}
+	},
+	"ipad-mini-4": {
+		"default": {
+			"title": "Covers & Sleeves for iPad Mini 4"
+		},
+		"sleeves": {
+			"title": "Designer Sleeves IPad Mini 4"
+		},
+		"folio": {
+			"title": "Designer Folio IPad Mini 4"
+		}
+	},
+	"ipad": {
+		"default": {
+			"title": "Covers & Sleeves for iPad"
+		}
+	},
+	"kindle-e-reader": {
+		"default": {
+			"title": "Sleeves for Amazon Kindle E-Reader"
+		}
+	},
+	"kindle-voyage": {
+		"default": {
+			"title": "Covers & Sleeves for Amazon Kindle Voyage"
+		}
+	},
+	"kindle-paperwhite": {
+		"default": {
+			"title": "Covers & Sleeves for Amazon Kindle Paperwhite"
+		}
+	},
+	"galaxy-tab-a": {
+		"default": {
+			"title": "Covers & Sleeves for Samsung Galaxy Tab A"
+		}
+	},
+	"galaxy-tab-e": {
+		"default": {
+			"title": "Covers & Sleeves for Samsung Galaxy Tab E"
+		}
+	},
+	"galaxy-s2-tab": {
+		"default": {
+			"title": "Covers & Sleeves for Samsung Galaxy S2 Tab"
+		}
+	},
+	"galaxy-s3-tab": {
+		"default": {
+			"title": "Covers & Sleeves for Samsung Galaxy S3 Tab"
+		}
+	},
+	"galaxy-j-max": {
+		"default": {
+			"title": "Covers & Sleeves for Samsung Galaxy J Max"
+		}
+	},
+	"phab-2": {
+		"default": {
+			"title": "Covers & Sleeves for Lenovo Phab 2"
+		}
+	},
+	"phab-2-plus": {
+		"default": {
+			"title": "Covers & Sleeves for Lenovo Phab 2 Plus"
+		}
+	},
+	"phab-2-pro": {
+		"default": {
+			"title": "Covers & Sleeves for Lenovo Phab 2 Pro"
+		}
+	},
+	"tab-3": {
+		"default": {
+			"title": "Covers & Sleeves for Lenovo Tab 3"
+		}
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"press": {
+		"categoryTitle": "Press News | DailyObjects.com",
+		"categoryDescription": "See what fashion magazines, newspapers and blogs have to say about DailyObjects.com and their accessories.",
+		"cnn-ibn": {
+			"categoryPressTitle": "Press News | CNN IBN",
+			"categoryPressDescription": "IBNLive talks with DailyObjects CEO Pankaj Garg about the gamble we took in releasing iPhone 6 cases before the phone even launched."
+		},
+		"india-today": {
+			"categoryPressTitle": "Press News | India Today",
+			"categoryPressDescription": "India’s leading media brand, IndiaToday features the DailyObjects Automobile Collection, on their site."
+		},
+		"indian-express": {
+			"categoryPressTitle": "Press News | Indian Express",
+			"categoryPressDescription": "The Indian Express covers our tie-up with Anurag Kashyap’s Bombay Velvet, for an exclusive collection of cases."
+		},
+		"mid-day": {
+			"categoryPressTitle": "Press News | Mid Day",
+			"categoryPressDescription": "Someone at Mid-Day loves our hilarious Bollywood Designer cases and more love with DailyObjects customisable cases."
+		},
+		"sme-times": {
+			"categoryPressTitle": "Press News | SME Times",
+			"categoryPressDescription": "DailyObjects CEO Pankaj Garg goes one-on-one with industry magazine SME Times, for an in-depth look into the Indian eCommerce scene."
+		},
+		"economic": {
+			"categoryPressTitle": "Press News | The Economics Times",
+			"categoryPressDescription": "The Economic Times website features an interesting interview with DailyObjects CEO Pankaj Garg."
+		},
+		"stuff-india": {
+			"categoryPressTitle": "Press News | Stuff India",
+			"categoryPressDescription": "Stuff Magazine also has Comic-fans covered, pointing them at DailyObjects unbelievably cool Comic case and covers Collection."
+		},
+		"ibn7": {
+			"categoryPressTitle": "Press News | IBN 7",
+			"categoryPressDescription": "IBN7 does a piece about DailyObjects.com exclusive Bombay Velvet film themed cases and covers."
+		},
+		"hindustan-times": {
+			"categoryPressTitle": "Press News | Hindustan Times",
+			"categoryPressDescription": "Hindustan Times's magazine section does a special on Mother's Day gift ideas, featuring a customisable smartphone case and covers from DailyObjects.com."
+		},
+		"the-hindu": {
+			"categoryPressTitle": "Press News | The Hindu",
+			"categoryPressDescription": "The Hindu Metro Plus Melange section shows off a DailyObjects.com Bleed Blue case during the Cricket World Cup."
+		},
+		"statesman": {
+			"categoryPressTitle": "Press News | Statesman",
+			"categoryPressDescription": "The Statesman does a short piece highlighting the fact that DailyObjects's is first-to-market with cases for the Samsung Galaxy S6."
+		},
+		"buisness-india": {
+			"categoryPressTitle": "Press News | Business India",
+			"categoryPressDescription": "India’s premier business magazine, Business India, does a short piece about DailyObjects.com."
+		},
+		"z-news": {
+			"categoryPressTitle": "Press News | Zee News",
+			"categoryPressDescription": "The Zee News website covers DailyObjects’ tie-up with Anurag Kashyap’s film Bombay Velvet, for a line of exclusive smartphone cases."
+		},
+		"your-story": {
+			"categoryPressTitle": "Press News | Your Story",
+			"categoryPressDescription": "Yourstory.com does a feature about our founders Pankaj & Saurav and talks about DailyObjects in our early days."
+		},
+		"tech-circle": {
+			"categoryPressTitle": "Press News | Tech Circle",
+			"categoryPressDescription": "Techcircle.in features an article covering the launch of DailyObjects customisable cases and or future plans."
+		},
+		"pc-tablet": {
+			"categoryPressTitle": "Press News | PC Tablets",
+			"categoryPressDescription": "PC-Tablet talks about the eagerly anticipated Samsung Galaxy S6 and how DailyObjects has thousands of cases available for it, even before the smartphone is launched in India."
+		},
+		"focus-news": {
+			"categoryPressTitle": "Press News | Focus News",
+			"categoryPressDescription": "Focusnews.com covers the launch of DailyObjects’ exclusive Bombay Velvet Collection."
+		}
+	}
+}

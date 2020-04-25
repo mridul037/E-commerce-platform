@@ -1,0 +1,46 @@
+{
+	"collections": [
+		{
+			"name": "Floral",
+			"icon": "assets/images/listing/collectionsv2/floral.png",
+			"slug": "floral",
+			"checked": false
+		},
+		{
+			"name": "Love",
+			"icon": "assets/images/listing/collectionsv2/love.png",
+			"slug": "love",
+			"checked": false
+		},
+		{
+			"name": "Marble",
+			"icon": "assets/images/listing/collectionsv2/marble.png",
+			"slug": "marble",
+			"checked": false
+		},
+		{
+			"name": "Music",
+			"icon": "assets/images/listing/collectionsv2/music.png",
+			"slug": "music",
+			"checked": false
+		},
+		{
+			"name": "Pattern",
+			"icon": "assets/images/listing/collectionsv2/pattern.png",
+			"slug": "pattern",
+			"checked": false
+		},
+		{
+			"name": "Travel",
+			"icon": "assets/images/listing/collectionsv2/travel.png",
+			"slug": "travel",
+			"checked": false
+		},
+		{
+			"name": "Words & Quotes",
+			"icon": "assets/images/listing/collectionsv2/words-quotes.png",
+			"slug": "words-quotes",
+			"checked": false
+		}
+	]
+}

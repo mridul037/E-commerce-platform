@@ -1,0 +1,63 @@
+{
+	"apple-watch-bands": {
+		"default": {
+			"title": "Apple WatchBands"
+		},
+		"silicone": {
+			"title": "Silicone WatchBands"
+		},
+		"milanese-loop": {
+			"title": "Milanese Loop WatchBands"
+		},
+		"leather-loop": {
+			"title": "Leather Loop WatchBands"
+		},
+		"nylon-sports": {
+			"title": "Nylon WatchBands"
+		},
+		"croco-leather": {
+			"title": "Croco Leather WatchBands"
+		},
+		"napa-leather": {
+			"title": "Napa Leather WatchBands"
+		},
+		"saffiano-leather": {
+			"title": "Saffiano Leather WatchBands"
+		},
+		"apple-designer-leather-strap": {
+			"title": "Designer Leather WatchBands"
+		},
+		"luxury-leather": {
+			"title": "Luxury Leather WatchBands"
+		},
+		"classic-leather": {
+			"title": "Classic Leather WatchBands"
+		}
+	},
+	"universal-watch-bands": {
+		"default": {
+			"title": "Universal WatchBands"
+		},
+		"universal-designer-leather-strap": {
+			"title": "Designer Leather WatchBands"
+		},
+		"universal-milanese-loop-leather": {
+			"title": "Milanese Loop WatchBands"
+		},
+		"universal-napa-loop-leather": {
+			"title": "Napa Leather WatchBands"
+		},
+		"universal-saffiano-leather": {
+			"title": "Saffiano Leather WatchBands"
+		},
+		"universal-croco-leather": {
+			"title": "Croco Leather WatchBands"
+		},
+		"universal-silicone": {
+			"title": "Silicone WatchBands"
+		},
+		"universal-nylon": {
+			"title": "Nylon WatchBands"
+		}
+	}
+}

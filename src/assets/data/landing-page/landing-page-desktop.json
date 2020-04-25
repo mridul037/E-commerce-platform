@@ -1,0 +1,250 @@
+{
+	"category": {
+		"bags-and-sleeves": {
+			"meta": {
+				"displayHeading": "Bags and Sleeves"
+			},
+			"page": [
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/bags-sleeves/city-compact-messanger-bags-02.png",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/city-compact-messenger-bags.png",
+					"name": "Messenger Bags",
+					"url": "/bags-and-sleeves/dailyobjects/messenger-bags"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/mob-home/Category/bags-sleeves/crossbody-bags-bagsandsleeves-intermediate-page-desktop-revised.png",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/crossbody-bags-intermediate-bags-and-sleeves-page-mobile.png",
+					"name": "Crossbody Bags",
+					"url": "/designer-collections/dailyobjects/crossbody-bags"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/bags-sleeves/tote-bags-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/tote-bags.png",
+					"name": "Tote Bags",
+					"url": "/designer-collections/dailyobjects/tote-bag"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/bags-sleeves/pouches-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/pouches.png",
+					"name": "Pouches",
+					"url": "/designer-collections/dailyobjects/pouches"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/intermediate-page/sleeve/06-03-18/macbook-sleeves-03.jpg",
+					"image-mobile": "/assets/images/banners/macbook-sleeves.png",
+					"name": "Laptop Sleeves",
+					"url": "/sleeves"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/bags-sleeves/wallets-01.jpg",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/wallets.png",
+					"name": "Wallets",
+					"url": "/wallets"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/intermediate-page/wallet/06-03-18/Tablet-Sleeve-01.jpg",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/tablet-sleeves.png",
+					"name": "Tablet Sleeves",
+					"url": "/tablet-sleeves"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/mob-home/Category/bags-sleeves/intermediate-page-city-compact-backpack-01.jpg",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/intermediate-page-city-compact-backpack.png",
+					"name": "Backpacks",
+					"url": "/bags-and-sleeves/dailyobjects/backpacks"
+				}
+			]
+		},
+		"home-decor": {
+			"meta": {
+				"displayHeading": "Home Décor Products"
+			},
+			"page": [
+				{
+					"designType": "two",
+					"image-desktop": "/Banner/homepage_desk/category/home/cushion-covers-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/home/cushion.png",
+					"name": "Cushion Covers",
+					"url": "/home-decor/dailyobjects/cushion-cover/12x12-in"
+				},
+				{
+					"designType": "two",
+					"image-desktop": "/Banner/homepage_desk/category/home/posters-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/home/poster.png",
+					"name": "Posters",
+					"url": "/home-decor/dailyobjects/poster"
+				}
+			]
+		},
+		"stationery": {
+			"meta": {
+				"displayHeading": "Office Stationery Products"
+			},
+			"page": [
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/stationery/designer-notebook.jpg",
+					"image-mobile": "/Banner/mob-home/Category/stationery/notebook.png",
+					"name": "Notebooks",
+					"url": "/designer-collections/dailyobjects/notebooks"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/stationery/elemental-pouch-01.jpg",
+					"image-mobile": "/Banner/mob-home/Category/stationery/elemental-pouch.png",
+					"name": "Elemental Pouches",
+					"url": "/stationery/dailyobjects/elemental-pouches"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/stationery/mousepad-04.jpg",
+					"image-mobile": "/Banner/mob-home/Category/stationery/mouse-pad.png",
+					"name": "Mouse Pad",
+					"url": "/dailyobjects-beige-precision-leather-mouse-pad"
+				}
+			]
+		},
+		"travel": {
+			"meta": {
+				"displayHeading": "Travel Products & Accessories"
+			},
+			"page": [
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/bags-sleeves/city-compact-messanger-bags-01.jpg",
+					"image-mobile": "/Banner/mob-home/Category/bags-sleeves/city-compact-messenger-bags.png",
+					"name": "Messenger Bags",
+					"url": "/bags-and-sleeves/dailyobjects/messenger-bags"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/travel/pouches-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/travel/pouches.png",
+					"name": "Pouches",
+					"url": "/bags-and-sleeves/dailyobjects/pouches/designer"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/travel/passport-wallets-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/travel/passport.png",
+					"name": "Passport Wallets",
+					"url": "/bags-and-sleeves/dailyobjects/passport-wallet"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/travel/wallets-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/travel/wallets.png",
+					"name": "Wallets",
+					"url": "/wallets"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/travel/foldaway-eyewear-square.jpg",
+					"image-mobile": "/Banner/mob-home/Category/travel/eyewear-cases-01.png",
+					"name": "Eyewear Cases",
+					"url": "/travel/dailyobjects/eyewear-case"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/homepage_desk/category/travel/keychains-03.jpg",
+					"image-mobile": "/Banner/mob-home/Category/travel/keychain.png",
+					"name": "Keychains",
+					"url": "dailyobjects/keychain"
+				}
+			]
+		},
+		"mobile-accessories": {
+			"meta": {
+				"displayHeading": "Mobile Accessories Products"
+			},
+			"page": [
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/intermediate-page/mobile-accessories/phone-grippr.png",
+					"image-mobile": "/Banner/mob-home/Category/mobile-accessories/pop-holder.png",
+					"name": "Phone Gripprs",
+					"url": "/mobile-accessories/dailyobjects/phone-grippr"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/intermediate-page/mobile-accessories/Wander-Wallet.png",
+					"image-mobile": "/assets/images/homepage/app/banner-intermediate-page-mobile-accessories-designer-wander-wallet.png.png",
+					"name": "Designer Wander Wallet",
+					"url": "/mobile-accessories/dailyobjects/wander-wallet"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/intermediate-page/mobile-accessories/airpod-04.png",
+					"image-mobile": "/Banner/mob-home/Category/mobile-accessories/airpod.png",
+					"name": "Air Pods Case Cover",
+					"url": "/mobile-accessories/dailyobjects/airpods-case-cover"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/intermediate-page/mobile-accessories/sync-charge-cable.jpg",
+					"image-mobile": "/Banner/mob-home/Category/mobile-accessories/sync-charge-cable.png",
+					"name": "Sync & Charge Cable",
+					"url": "/apple-mfi-lightning-sync-charge-cable"
+				},
+				{
+					"designType": "three",
+					"image-desktop": "/Banner/intermediate-page/mobile-accessories/wire-protector-01.jpg",
+					"image-mobile": "/Banner/mob-home/Category/mobile-accessories/cable-protector.png",
+					"name": "Cable Protector",
+					"url": "/spiral-cable-protector-set-of-2-black"
+				}
+			]
+		},
+		"watch-accessories": {
+			"meta": {
+				"displayHeading": "Watch Accessories Products"
+			},
+			"page": [
+				{
+					"designType": "four",
+					"image-desktop": "/Banner/intermediate-page/apple-watch-straps/desktop/silicone-watch-strap-04.jpg",
+					"image-mobile": "/Banner/intermediate-page/apple-watch-straps/mobile/silicon-watch-strap-05.jpg",
+					"url": "/watch-accessories/apple-watch/straps/silicone"
+				},
+				{
+					"designType": "four",
+					"image-desktop": "/Banner/intermediate-page/apple-watch-straps/desktop/luxury-leather-watch-strap-04.jpg",
+					"image-mobile": "/Banner/intermediate-page/apple-watch-straps/mobile/luxury_leather-watch-strap-05.jpg",
+					"url": "/watch-accessories/apple-watch/straps/luxury-leather"
+				},
+				{
+					"designType": "four",
+					"image-desktop": "/Banner/intermediate-page/apple-watch-straps/desktop/milanese-loop-watch-strap-04.jpg",
+					"image-mobile": "/Banner/intermediate-page/apple-watch-straps/mobile/milanese-loop-watch-strap-05.jpg",
+					"url": "/watch-accessories/apple-watch/straps/milanese-loop"
+				},
+				{
+					"designType": "four",
+					"image-desktop": "/Banner/intermediate-page/apple-watch-straps/desktop/leather-loop-watch-strap-04.jpg",
+					"image-mobile": "/Banner/intermediate-page/apple-watch-straps/mobile/leather-loop-watch-strap-04.jpg",
+					"url": "/watch-accessories/apple-watch/straps/leather-loop"
+				},
+				{
+					"designType": "four",
+					"image-desktop": "/Banner/intermediate-page/apple-watch-straps/desktop/nylon-watch-strap-04.jpg",
+					"image-mobile": "/Banner/intermediate-page/apple-watch-straps/mobile/nylon-watch-strap-04.jpg",
+					"url": "/watch-accessories/apple-watch/straps/nylon-sports"
+				},
+				{
+					"designType": "four",
+					"image-desktop": "/Banner/intermediate-page/apple-watch-straps/desktop/classic-leather-watch-strap-04.jpg",
+					"image-mobile": "/Banner/intermediate-page/apple-watch-straps/mobile/classic-leather-watch-strap-04.jpg",
+					"url": "/watch-accessories/apple-watch/straps/classic-leather"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"card-wallet": {
+		"option": "cardWalletShape",
+		"type": {}
+	},
+	"pouches": {
+		"option": "material",
+		"type": {}
+	},
+	"tote-bag": {
+		"option": "bagType",
+		"type": {
+			"material": ["metallic", "designer", "felt"]
+		}
+	},
+	"crossbody-bags": {
+		"option": "crossbodyBagType",
+		"type": {}
+	},
+	"messenger-bags": {
+		"option": "type",
+		"type": {}
+	},
+	"macbook-sleeves": {
+		"option": "size",
+		"type": {}
+	},
+	"laptop-sleeves": {
+		"option": "size",
+		"type": {}
+	},
+	"backpacks": {
+		"option": "bagType",
+		"type": {}
+	},
+	"passport-wallet": {
+		"option": "passportWalletType",
+		"type": {}
+	},
+	"ipad-mini-4": {
+		"option": "sleevesType",
+		"type": {}
+	},
+	"ipad-pro-11-2018": {
+		"option": "sleevesType",
+		"type": {}
+	},
+	"men-wallet": {
+		"option": "type",
+		"type": {}
+	}
+}

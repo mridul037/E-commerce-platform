@@ -1,0 +1,12 @@
+{
+	"notebooks": {
+		"option": "size",
+		"type": {
+			"bookType": ["slim", "spiral"]
+		}
+	},
+	"greeting-cards": {
+		"option": "greetingSize",
+		"type": {}
+	}
+}

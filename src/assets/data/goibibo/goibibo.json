@@ -1,0 +1,64 @@
+{
+	"models": [
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/backpacks.png",
+			"url": "/bags-and-sleeves/dailyobjects/backpacks",
+			"title": "Backpacks"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/watchbands.png",
+			"url": "/designer-collections/watch/bands",
+			"title": "Watchband"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/poches.png",
+			"url": "/designer-collections/dailyobjects/pouches",
+			"title": "Pouches"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/wallets.png",
+			"url": "/wallets",
+			"title": "wallets"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/laptop-bags.png",
+			"url": "/sleeves",
+			"title": "laptop bags"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/eyewear-case.png",
+			"url": "/travel/dailyobjects/eyewear-case",
+			"title": "Eyeware case"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/tote-bags.png",
+			"url": "/designer-collections/dailyobjects/tote-bag",
+			"title": "tote bags"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/stationary.png",
+			"url": "/stationery",
+			"title": "stationery"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/crossbody-bags.png",
+			"url": "/designer-collections/dailyobjects/crossbody-bags",
+			"title": "cross body"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/mens-wallet.png",
+			"url": "/bags-and-sleeves/dailyobjects/men-wallet",
+			"title": "men wallet"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/airpods-case-covers.png",
+			"url": "/mobile-accessories/dailyobjects/airpods-case-cover",
+			"title": "airpods-cases"
+		},
+		{
+			"imageUrl": "/Banner/intermediate-page/sbi/4-03-2020/passport-wallets.png",
+			"url": "/bags-and-sleeves/dailyobjects/passport-wallet",
+			"title": "passport wallet"
+		}
+	]
+}

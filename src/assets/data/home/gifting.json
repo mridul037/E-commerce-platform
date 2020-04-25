@@ -1,0 +1,33 @@
+{
+	"topBannerDesktop": "/assets/images/rakhi/rakhi-hamper-banner.jpg",
+	"topBannerMobile": "/assets/images/homepage/mobile/rakhi-gift-19/rakhi-gift-boxes-banner.png",
+	"gift": [
+		{
+			"designType": "three",
+			"image-desktop": "/Banner/intermediate-page/rakhi-gift-19/box-of-cheerful-love-desktop.jpg",
+			"image-mobile": "/Banner/intermediate-page/rakhi-gift-19/box-of-cheerful-love-mobile.jpg",
+
+			"url": "/the-box-of-cheerful-love"
+		},
+		{
+			"designType": "three",
+			"image-desktop": "/Banner/intermediate-page/rakhi-gift-19/box-of-happiness-desktop.jpg",
+			"image-mobile": "/Banner/intermediate-page/rakhi-gift-19/box-of-happiness-mobile.jpg",
+
+			"url": "/the-box-of-happiness"
+		},
+		{
+			"designType": "three",
+			"image-desktop": "/Banner/intermediate-page/rakhi-gift-19/box-of-pure-bonding-desktop01.jpg",
+			"image-mobile": "/Banner/intermediate-page/rakhi-gift-19/box-of-pure-bonding-mobile.jpg",
+
+			"url": "/the-box-of-pure-bonding"
+		},
+		{
+			"designType": "three",
+			"image-desktop": "/Banner/intermediate-page/rakhi-gift-19/box-of-warmth-desktop.jpg",
+			"image-mobile": "/Banner/intermediate-page/rakhi-gift-19/box-of-warmth-mobile.jpg",
+			"url": "/the-box-of-warmth"
+		}
+	]
+}

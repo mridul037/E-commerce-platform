@@ -1,0 +1,863 @@
+{
+	"category": {
+		"SMARTPHONE CASES": {
+			"url": "/designer-cases",
+			"brands": {
+				"apple": {
+					"name": "Apple",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "iPhone 11 Pro Max",
+							"url": "/case-collections/apple/iphone-11-pro-max"
+						},
+						{
+							"name": "iPhone 11 Pro",
+							"url": "/case-collections/apple/iphone-11-pro"
+						},
+						{
+							"name": "iPhone 11",
+							"url": "/case-collections/apple/iphone-11"
+						},
+						{
+							"name": "iPhone XS Max",
+							"url": "/case-collections/apple/iphone-xs-max"
+						},
+						{
+							"name": "iPhone XS",
+							"url": "/case-collections/apple/iphone-xs"
+						},
+						{
+							"name": "iPhone XR",
+							"url": "/case-collections/apple/iphone-xr"
+						},
+						{
+							"name": "iPhone X",
+							"url": "/case-collections/apple/iphone-x"
+						}
+					]
+				},
+				"motorola": {
+					"name": "Motorola",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "Moto E5 Plus",
+							"url": "/designer-cases/motorola/moto-e5-plus"
+						},
+						{
+							"name": "Moto E5",
+							"url": "/designer-cases/motorola/moto-e5"
+						},
+						{
+							"name": "Moto G5S Plus",
+							"url": "/designer-cases/motorola/moto-g5s-plus"
+						},
+						{
+							"name": "Moto G6",
+							"url": "/designer-cases/motorola/moto-g6"
+						},
+						{
+							"name": "Moto G6 Plus",
+							"url": "/designer-cases/motorola/moto-g6-plus"
+						}
+					]
+				},
+				"samsung": {
+					"name": "Samsung",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "Galaxy S20 Plus",
+							"url": "/case-collections/samsung/galaxy-s20-plus"
+						},
+						{
+							"name": "Galaxy S20 Ultra",
+							"url": "/case-collections/samsung/galaxy-s20-ultra"
+						},
+						{
+							"name": "Galaxy S20",
+							"url": "/case-collections/samsung/galaxy-s20"
+						},
+						{
+							"name": "Galaxy Note 10 Plus",
+							"url": "/case-collections/samsung/galaxy-note-10-plus"
+						},
+						{
+							"name": "Galaxy S10 Plus",
+							"url": "/case-collections/samsung/galaxy-s10-plus"
+						},
+						{
+							"name": "Galaxy S10",
+							"url": "/case-collections/samsung/galaxy-s10"
+						},
+						{
+							"name": "Galaxy A70",
+							"url": "/case-collections/samsung/galaxy-a70"
+						}
+					]
+				},
+				"vivo": {
+					"name": "Vivo",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "Vivo V17 Pro",
+							"url": "/case-collections/vivo/vivo-v17-pro"
+						},
+						{
+							"name": "Vivo Z1X",
+							"url": "/case-collections/vivo/vivo-z1x"
+						},
+						{
+							"name": "Vivo S1",
+							"url": "/case-collections/vivo/vivo-s1"
+						},
+						{
+							"name": "Vivo Z1 Pro",
+							"url": "/case-collections/vivo/vivo-z1-pro"
+						}
+					]
+				},
+				"oneplus": {
+					"name": "OnePlus",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "OnePlus 7T Pro",
+							"url": "/case-collections/oneplus/oneplus-7t-pro"
+						},
+						{
+							"name": "OnePlus 7T",
+							"url": "/case-collections/oneplus/oneplus-7t"
+						},
+						{
+							"name": "OnePlus 7 Pro",
+							"url": "/case-collections/oneplus/oneplus-7-pro"
+						},
+						{
+							"name": "OnePlus 7",
+							"url": "/case-collections/oneplus/oneplus-7"
+						},
+						{
+							"name": "OnePlus 6T",
+							"url": "/case-collections/oneplus/oneplus-6t"
+						},
+						{
+							"name": "OnePlus 6",
+							"url": "/case-collections/oneplus/oneplus-6"
+						},
+						{
+							"name": "OnePlus 5T",
+							"url": "/designer-cases/oneplus/oneplus-5t"
+						}
+					]
+				},
+				"xiaomi": {
+					"name": "Xiaomi",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "Xiaomi Redmi Note 8 Pro",
+							"url": "/case-collections/xiaomi/redmi-note-8-pro"
+						},
+						{
+							"name": "Xiaomi Redmi Note 8",
+							"url": "/case-collections/xiaomi/redmi-note-8"
+						},
+						{
+							"name": "Xiaomi Mi A3",
+							"url": "/case-collections/xiaomi/mi-a3"
+						},
+						{
+							"name": "Xiaomi Redmi K20 Pro",
+							"url": "/case-collections/xiaomi/xiaomi-redmi-k20-pro"
+						},
+						{
+							"name": "Xiaomi Redmi K20",
+							"url": "/case-collections/xiaomi/xiaomi-redmi-k20"
+						},
+						{
+							"name": "Redmi Note 7 Pro",
+							"url": "/case-collections/xiaomi/redmi-note-7-pro"
+						},
+						{
+							"name": "Redmi Note 7s",
+							"url": "/case-collections/xiaomi/redmi-note-7s"
+						}
+					]
+				},
+				"google": {
+					"name": "Google",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "Pixel 3 Xl",
+							"url": "/designer-cases/google/pixel-3-xl"
+						},
+						{
+							"name": "Pixel 3",
+							"url": "/designer-cases/google/pixel-3"
+						},
+						{
+							"name": "Pixel 2 Xl",
+							"url": "/designer-cases/google/pixel-2-xl"
+						},
+						{
+							"name": "Pixel 2",
+							"url": "/designer-cases/google/pixel-2"
+						}
+					]
+				},
+				"oppo": {
+					"name": "Oppo",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "Oppo Reno 2F",
+							"url": "/case-collections/oppo/oppo-reno-2f"
+						},
+						{
+							"name": "Oppo Reno 2Z",
+							"url": "/case-collections/oppo/oppo-reno-2z"
+						},
+						{
+							"name": "Oppo Realme XT",
+							"url": "/case-collections/oppo/oppo-realme-xt"
+						},
+						{
+							"name": "Oppo Realme 5 Pro",
+							"url": "/designer-cases/oppo/oppo-realme-5-pro"
+						},
+						{
+							"name": "Oppo Realme X",
+							"url": "/case-collections/oppo/oppo-realme-x"
+						}
+					]
+				},
+				"huawei": {
+					"name": "Huawei",
+					"url": "/designer-cases",
+					"models": [
+						{
+							"name": "Huawei P30 Pro",
+							"url": "/case-collections/huawei/huawei-p30-pro"
+						},
+						{
+							"name": "Huawei P30",
+							"url": "/case-collections/huawei/huawei-p30"
+						},
+						{
+							"name": "Huawei Mate 20 Pro",
+							"url": "/designer-cases/huawei/huawei-mate-20-pro"
+						},
+						{
+							"name": "Honor 10 Lite",
+							"url": "/designer-cases/huawei/honor-10-lite"
+						}
+					]
+				}
+			},
+			"offer": [
+				{
+					"offer": "Buy 1 Get 1 Free",
+					"url": "/designer-cases"
+				}
+			]
+		},
+		"BAGS & SLEEVES": {
+			"url": "/bags-and-sleeves",
+			"brands": {
+				"tote-bags": {
+					"name": "Tote Bags",
+					"url": "/designer-collections/dailyobjects/tote-bag",
+					"models": [
+						{
+							"name": "Fatty Tote Bags",
+							"url": "/bags-and-sleeves/dailyobjects/tote-bag/fatty"
+						},
+						{
+							"name": "Classic Tote Bags",
+							"url": "/bags-and-sleeves/dailyobjects/tote-bag/classic"
+						},
+						{
+							"name": "Baesic Tote Bags",
+							"url": "/bags-and-sleeves/dailyobjects/tote-bag/baesic"
+						}
+					]
+				},
+				"cross-body-bags": {
+					"name": "Crossbody Bags",
+					"url": "/designer-collections/dailyobjects/crossbody-bags",
+					"models": [
+						{
+							"name": "Trapeze Crossbody Bags",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/trapeze"
+						},
+						{
+							"name": "Arch Crossbody Bags",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/arch"
+						},
+						{
+							"name": "Orbis Crossbody Bags",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/orbis"
+						},
+						{
+							"name": "TallBoi Crossbody Bags",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/tallboi",
+							"sup": "new"
+						}
+					]
+				},
+				"laptop-sleeves": {
+					"name": "Laptop Bags & Sleeves",
+					"url": "/sleeves",
+					"models": [
+						{
+							"name": "Messenger Bags",
+							"url": "/bags-and-sleeves/dailyobjects/messenger-bags/city-compact"
+						},
+						{
+							"name": "Laptop/Macbook Sleeves",
+							"url": "/sleeves"
+						}
+					]
+				},
+				"tablet-sleeves": {
+					"name": "Tablet Sleeves & Covers",
+					"url": "/tablet-sleeves",
+					"models": [
+						{
+							"name": "For iPad",
+							"url": "/bags-and-sleeves/apple/ipad-9-7-2018"
+						},
+						{
+							"name": "For Kindle",
+							"url": "/bags-and-sleeves/amazon/kindle-e-reader"
+						},
+						{
+							"name": "For Samsung",
+							"url": "/bags-and-sleeves/samsung/galaxy-tab-a"
+						}
+					]
+				},
+				"backpack": {
+					"name": "Backpacks",
+					"url": "/bags-and-sleeves/dailyobjects/backpacks"
+				}
+			},
+			"offer": [
+				{
+					"offer": "Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/tote-bag"
+				},
+				{
+					"offer": "Tablet Sleeves: Buy 1 Get 1 Free",
+					"url": "/tablet-sleeves"
+				},
+				{
+					"offer": "Laptop Sleeves: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/laptop-sleeves/13-in"
+				},
+				{
+					"offer": "MacBook Sleeves: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/apple/macbook-sleeves/pro-13-in"
+				},
+				{
+					"offer": "Pouches: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/pouches"
+				},
+				{
+					"offer": "Crossbody Bags: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/crossbody-bags"
+				},
+				{
+					"offer": "Messenger Bags: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/messenger-bags"
+				},
+				{
+					"offer": "Pebble Belt Bags:  Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/belt-bags"
+				},
+				{
+					"offer": "BackPack: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/backpacks"
+				}
+			],
+			"images": [
+				{
+					"name": "ORBIS CROSSBODY BAGS",
+					"image": "/assets/images/desktop/dropdown/category/category/orbis-crossbody.jpg ",
+					"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/orbis"
+				},
+				{
+					"name": "MACBOOK SLEEVES",
+					"image": "/assets/images/desktop/dropdown/category/category/macbook-sleeves2.jpg",
+					"url": "/bags-and-sleeves/apple/macbook-sleeves/pro-13-in"
+				}
+			]
+		},
+		"TRAVEL": {
+			"url": "/travel",
+			"brands": {
+				"wallets": {
+					"name": "Travel",
+					"url": "/wallets",
+					"models": [
+						{
+							"name": "Passport Wallets & Covers",
+							"url": "/bags-and-sleeves/dailyobjects/passport-wallet/wallet"
+						},
+						{
+							"name": "Backpacks",
+							"url": "/bags-and-sleeves/dailyobjects/backpacks"
+						},
+						{
+							"name": "Eyewear Cases",
+							"url": "/travel/dailyobjects/eyewear-case"
+						},
+						{
+							"name": "Pouches",
+							"url": "/designer-collections/dailyobjects/pouches"
+						},
+						{
+							"name": "Cable Wraps",
+							"url": "/travel/dailyobjects/cable-wrap"
+						},
+						{
+							"name": "Key Chains",
+							"url": "/travel/dailyobjects/keychain"
+						}
+					]
+				},
+				"backpack": {
+					"name": "BackPack",
+					"url": "/bags-and-sleeves/dailyobjects/backpacks"
+				},
+				"eyewear-cases": {
+					"name": "Eyewear Cases",
+					"url": "/travel/dailyobjects/eyewear-case"
+				},
+				"cross-body-bags": {
+					"name": "Crossbody Bags",
+					"url": "/designer-collections/dailyobjects/crossbody-bags",
+					"models": [
+						{
+							"name": "Trapeze Crossbody Bag",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/trapeze"
+						},
+						{
+							"name": "Arch Crossbody Bag",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/arch"
+						},
+						{
+							"name": "Orbis Crossbody Bag",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/orbis"
+						},
+						{
+							"name": "TallBoi Crossbody Bag",
+							"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/tallboi",
+							"sup": "new"
+						}
+					]
+				},
+				"messenger-bags": {
+					"name": "Messenger Bags",
+					"url": "/designer-collections/dailyobjects/messenger-bags"
+				},
+				"pebble-belt-bags": {
+					"name": "Pebble Belt Bags",
+					"url": "/bags-and-sleeves/dailyobjects/belt-bags"
+				},
+				"keychains": {
+					"name": "Keychains",
+					"url": "/travel/dailyobjects/keychain"
+				}
+			},
+			"offer": [
+				{
+					"offer": "Zip Wallets: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/zip-wallet"
+				},
+				{
+					"offer": "Passport Wallets: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/passport-wallet"
+				},
+				{
+					"offer": "Card Wallets: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/card-wallet"
+				},
+				{
+					"offer": "Women's Wallets: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/women-classic-wallets"
+				},
+				{
+					"offer": "Men's Wallets: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/crossbody-bags"
+				},
+				{
+					"offer": "Eyewear Cases: Buy 1 Get 1 Free",
+					"url": "/travel/dailyobjects/eyewear-case"
+				},
+				{
+					"offer": "Cable Wraps:  Buy 1 Get 1 Free",
+					"url": "/travel/dailyobjects/cable-wrap"
+				},
+				{
+					"offer": "Keychains: Buy 1 Get 1 Free",
+					"url": "/travel/dailyobjects/keychain"
+				},
+				{
+					"offer": "Crossbody Bags: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/crossbody-bags"
+				},
+				{
+					"offer": "Pebble Belt Bags: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/belt-bags"
+				},
+				{
+					"offer": "Backpacks: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/backpacks"
+				}
+			],
+			"images": [
+				{
+					"name": "Passport Covers",
+					"image": "/assets/images/desktop/dropdown/category/category/paasport-wallet01.png",
+					"url": "/bags-and-sleeves/dailyobjects/passport-wallet/cover"
+				},
+				{
+					"name": "EyeWear Cases",
+					"image": "/assets/images/desktop/dropdown/category/category/eyewear.png",
+					"url": "/travel/dailyobjects/eyewear-case"
+				},
+				{
+					"name": "Backpacks",
+					"image": "/assets/images/desktop/dropdown/category/category/backpacks.png",
+					"url": "/bags-and-sleeves/dailyobjects/backpacks"
+				},
+				{
+					"name": "Cable Wraps",
+					"image": "/Banner/intermediate-page/app/wallet/mobile-accessories/cable-wrapt-intermediate.jpg",
+					"url": "/travel/dailyobjects/cable-wrap"
+				}
+			]
+		},
+		"WALLETS & POUCHES": {
+			"url": "/wallets",
+			"brands": {
+				"card-wallets": {
+					"name": "Cards Wallets",
+					"url": "/designer-collections/dailyobjects/card-wallet",
+					"models": [
+						{
+							"name": "Zipper Card & Coin Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/card-wallet/zip"
+						},
+						{
+							"name": "Money Clipper Card Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/card-wallet/clipper"
+						},
+						{
+							"name": "Flip Top Card Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/card-wallet/flip"
+						},
+						{
+							"name": "Classic Card Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/card-wallet/classic"
+						},
+						{
+							"name": "Skinny Fit Card Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/card-wallet/skinny"
+						}
+					]
+				},
+				"wallet": {
+					"name": "Wallets",
+					"url": "/bags-and-sleeves/dailyobjects/men-wallet",
+					"models": [
+						{
+							"name": "Zip Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/zip-wallet"
+						},
+						{
+							"name": "Women's Classic Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/women-classic-wallets"
+						},
+						{
+							"name": "Men's Wallets",
+							"url": "/bags-and-sleeves/dailyobjects/men-wallet"
+						}
+					]
+				},
+				"pouches": {
+					"name": "Pouches",
+					"url": "/designer-collections/dailyobjects/pouches"
+				}
+			},
+			"offer": [
+				{
+					"offer": "Zip Wallets: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/zip-wallet"
+				},
+				{
+					"offer": "Passport Wallets: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/passport-wallet"
+				},
+				{
+					"offer": "Card Wallets: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/card-wallet"
+				},
+				{
+					"offer": "Women's Wallets: Buy 1 Get 1 Free",
+					"url": "/bags-and-sleeves/dailyobjects/women-classic-wallets"
+				},
+				{
+					"offer": "Men's Wallets: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/crossbody-bags"
+				}
+			],
+			"images": [
+				{
+					"name": "Wallets",
+					"image": "/assets/images/desktop/dropdown/category/category/women-wallet.png",
+					"url": "/wallets"
+				},
+				{
+					"name": "Stash Pouches",
+					"image": "/assets/images/desktop/dropdown/category/category/pouch.png",
+					"url": "/designer-collections/dailyobjects/pouches"
+				}
+			]
+		},
+		"STATIONERY": {
+			"url": "/stationery",
+			"brands": {
+				"notebooks": {
+					"name": "Notebooks",
+					"url": "/designer-collections/dailyobjects/notebooks",
+					"models": [
+						{
+							"name": "Slim",
+							"url": "/stationery/dailyobjects/notebooks/a5",
+							"queryParams": {
+								"type": "slim"
+							}
+						},
+						{
+							"name": "Spiral",
+							"url": "/stationery/dailyobjects/notebooks/a5",
+							"queryParams": {
+								"type": "spiral"
+							},
+							"sup": "new"
+						}
+					]
+				},
+				"mouse-pad": {
+					"name": "Mouse Pad",
+					"url": "/dailyobjects-beige-precision-leather-mouse-pad"
+				},
+				"greeting-card": {
+					"name": "Greeting Cards",
+					"url": "/stationery/dailyobjects/greeting-cards"
+				},
+				"elemental-pouches": {
+					"name": "Elemental Pouches",
+					"url": "/stationery/dailyobjects/elemental-pouches"
+				}
+			},
+			"offer": [
+				{
+					"offer": "Elemental Pouches: Buy 1 Get 1 Free",
+					"url": "/stationery/dailyobjects/elemental-pouches"
+				},
+				{
+					"offer": "Notebooks: Buy 1 Get 1 Free",
+					"url": "/designer-collections/dailyobjects/notebooks"
+				},
+				{
+					"offer": "Greeting Cards: Buy 1 Get 1 Free",
+					"url": "/stationery/dailyobjects/greeting-cards"
+				},
+				{
+					"offer": "Mouse Pad: Buy 1 Get 1 Free",
+					"url": "/dailyobjects-beige-precision-leather-mouse-pad"
+				}
+			],
+			"images": [
+				{
+					"name": "Designer Notebooks",
+					"image": "/assets/images/desktop/dropdown/category/category/notebooks.png",
+					"url": "/stationery/dailyobjects/notebooks/a5",
+					"queryParams": {
+						"type": "slim"
+					}
+				},
+				{
+					"name": "Elemental Pouches",
+					"image": "/assets/images/desktop/dropdown/category/category/elemental-pouches01.png",
+					"url": "/stationery/dailyobjects/elemental-pouches"
+				}
+			]
+		},
+		"HOME DECOR": {
+			"url": "/home-decor",
+			"brands": {
+				"cushion-covers": {
+					"name": "Cushion Covers",
+					"url": "/home-decor/dailyobjects/cushion-cover",
+					"models": [
+						{
+							"name": "12 inches",
+							"url": "/home-decor/dailyobjects/cushion-cover/12x12-in"
+						},
+						{
+							"name": "16 inches",
+							"url": "/home-decor/dailyobjects/cushion-cover/16x16-in"
+						},
+						{
+							"name": "18 inches",
+							"url": "/home-decor/dailyobjects/cushion-cover/18x18-in"
+						}
+					]
+				},
+				"poster-collection": {
+					"name": "Poster Collection",
+					"images": [
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/animal.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "animal"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/fashion.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "fashion"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/floral.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "floral"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/funny.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "funny"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/green-van.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "car-bike"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/music.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "music"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/religion.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "religion"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/vintage.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "vintage"
+							}
+						},
+						{
+							"src": "/assets/images/desktop/dropdown/category/collection/words-quotes.jpg",
+							"url": "/home-decor/dailyobjects/poster/medium",
+							"queryParams": {
+								"tags": "words-quotes"
+							}
+						}
+					]
+				}
+			},
+			"offer": [
+				{
+					"offer": "Cushion Covers: Buy 1 Get 1 Free",
+					"url": "/home-decor/dailyobjects/cushion-cover/12x12-in"
+				},
+				{
+					"offer": "Posters: Buy 1 Get 1 Free",
+					"url": "/home-decor/dailyobjects/poster"
+				}
+			],
+			"images": [
+				{
+					"name": "Cushion Covers",
+					"image": "/assets/images/desktop/dropdown/category/category/cushion-covers.jpg",
+					"url": "/home-decor/dailyobjects/cushion-cover/12x12-in"
+				},
+				{
+					"name": "Posters",
+					"image": "/assets/images/desktop/dropdown/category/category/posters.jpg",
+					"url": "/home-decor/dailyobjects/poster"
+				}
+			]
+		},
+		"MOBILE ACCESSORIES": {
+			"url": "/designer-collections/dailyobjects/mobile-accessories",
+			"sup": "new",
+			"images": [
+				{
+					"title": "Wander Wallets",
+					"image": "/assets/images/desktop/dropdown/category/category/wander-wallet-dropdown-03.png?tr=f-png",
+					"url": "/mobile-accessories/dailyobjects/wander-wallet"
+				},
+				{
+					"title": "AirPod Case",
+					"sub-title": "Covers",
+					"image": "/assets/images/desktop/dropdown/category/category/airpod-cases-05.jpg?tr=f-jpg",
+					"url": "/mobile-accessories/dailyobjects/airpods-case-cover"
+				},
+				{
+					"title": "cable wraps",
+					"sub-title": "and protectors",
+					"image": "/assets/images/desktop/dropdown/category/category/cable-protector-01.jpg?tr=f-jpg",
+					"url": "/travel/dailyobjects/cable-wrap"
+				}
+			]
+		},
+		"WATCH ACCESSORIES": {
+			"url": "/designer-collections/watch/bands",
+			"sup": "new",
+			"images": [
+				{
+					"image-md": "/assets/images/desktop/dropdown/category/WatchBands-Banner-dropdown02.jpg",
+					"image-xl": "/assets/images/desktop/dropdown/category/WatchBands-Banner-dropdown02.jpg",
+					"url": "/designer-collections/watch/bands"
+				}
+			]
+		},
+		"GIFT SETS": {
+			"url": "/gifts/dailyobjects/hampers"
+		},
+		"DAILY DEALS": {
+			"url": "/offers/daily-deals",
+			"sup": "new"
+		},
+		"CLEARANCE SALE": {
+			"url": "/designer-collections/dailyobjects/sale",
+			"sup": "new"
+		}
+	}
+}

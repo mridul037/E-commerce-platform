@@ -1,0 +1,76 @@
+{
+	"caseType": {
+		"slim": {
+			"grey": "/assets/images/product-page/filters/cases/slim-case.png",
+			"pink": "/assets/images/product-page/filters/cases/slim-case.png"
+		},
+		"leather-wallet": {
+			"grey": "/assets/images/product-page/filters/cases/leather-wallet-case.png",
+			"pink": "/assets/images/product-page/filters/cases/leather-wallet-case.png"
+		},
+		"real-wood": {
+			"grey": "/assets/images/product-page/filters/cases/wood-case.jpg",
+			"pink": "/assets/images/product-page/filters/cases/wood-case.jpg"
+		},
+		"tough": {
+			"grey": "/dodesktop/images/toughcase.svg",
+			"pink": "/dodesktop/images/toughcase-hover.svg"
+		},
+		"cristal-mirror": {
+			"grey": "/assets/images/product-page/filters/cases/mirror-case.png",
+			"pink": "/assets/images/product-page/filters/cases/mirror-case.png"
+		},
+		"holographic-glass": {
+			"grey": "/assets/images/product-page/filters/cases/holographic-glass-case.png",
+			"pink": "/assets/images/product-page/filters/cases/holographic-glass-case.png"
+		},
+		"glass": {
+			"grey": "/assets/images/product-page/filters/cases/glass-case.png",
+			"pink": "/assets/images/product-page/filters/cases/glass-case.png"
+		},
+		"designer-glass": {
+			"grey": "/assets/images/product-page/filters/cases/designer-glass-case.png",
+			"pink": "/assets/images/product-page/filters/cases/designer-glass-case.png"
+		},
+		"classic-clear": {
+			"grey": "/assets/images/product-page/filters/cases/clear-case.png",
+			"pink": "/assets/images/product-page/filters/cases/clear-case.png"
+		},
+		"clear": {
+			"grey": "",
+			"pink": ""
+		},
+		"air-thin": {
+			"grey": "",
+			"pink": ""
+		},
+		"vibrant-color": {
+			"grey": "",
+			"pink": ""
+		},
+		"ultra-soft-clear-silicone": {
+			"grey": "",
+			"pink": ""
+		}
+	},
+	"texture": {
+		"maple": {
+			"image": "/dodesktop/images/wood3.png"
+		},
+		"zebra": {
+			"image": "/assets/images/zebra-wood-texture.png"
+		},
+		"bamboo": {
+			"image": "/dodesktop/images/wood1.png"
+		},
+		"cherry": {
+			"image": "/dodesktop/images/wood2.png"
+		},
+		"red-chestnut": {
+			"image": "/dodesktop/images/wood4.png"
+		},
+		"sapele": {
+			"image": "/assets/images/saple-texture.png"
+		}
+	}
+}

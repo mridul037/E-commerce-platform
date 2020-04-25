@@ -1,0 +1,24 @@
+{
+	"name": "Apple",
+	"slug": "apple",
+	"models": [
+		{
+			"name": "iPhone 11 Pro Max",
+			"slug": "iphone-11-pro-max",
+			"icon": null,
+			"intermediatePage": true
+		},
+		{
+			"name": "iPhone 11 Pro",
+			"slug": "iphone-11-pro",
+			"icon": null,
+			"intermediatePage": true
+		},
+		{
+			"name": "iPhone 11",
+			"slug": "iphone-11",
+			"icon": null,
+			"intermediatePage": true
+		}
+	]
+}

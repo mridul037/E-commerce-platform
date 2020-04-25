@@ -1,0 +1,12 @@
+{
+	"eyewear-case": [
+		{
+			"eyewearType": {
+				"foldaway": {
+					"grey": "/Icon/Listing-icon/designer-eyewear-gray.svg",
+					"pink": "/Icon/Listing-icon/designer-eyewear-gray.svg"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"wander-wallet": [
+		{
+			"type": {
+				"designer": {
+					"grey": "/assets/images/product-page/sizes/wander-wallet-designer-icon-black.svg",
+					"pink": "/assets/images/product-page/sizes/wander-wallet-designer-icon-pink.svg"
+				},
+				"croco": {
+					"grey": "/assets/images/product-page/sizes/wander-wallet-croco-icon-black.svg",
+					"pink": "/assets/images/product-page/sizes/wander-wallet-croco-icon-pink.svg"
+				},
+				"saffiano": {
+					"grey": "/assets/images/product-page/sizes/wander-wallet-saffiano-icon-black.svg",
+					"pink": "/assets/images/product-page/sizes/wander-wallet-saffiano-icon-pink.svg"
+				},
+				"silicone": {
+					"grey": "/assets/images/product-page/sizes/silicon-plainwanderwallet-black.svg",
+					"pink": "/assets/images/product-page/sizes/silicon%20-plainwanderwallet-pink.svg"
+				},
+				"silicone-stand": {
+					"grey": "/assets/images/product-page/sizes/siliconwanderwallet-with-holder-black.svg",
+					"pink": "/assets/images/product-page/sizes/siliconwanderwallet-with-holder-pink.svg"
+				}
+			}
+		}
+	],
+	"airpods-case-cover": [
+		{
+			"type": {
+				"airpod-pro": {
+					"grey": "/Icon/Listing-icon/png/airpod-pro-black.png",
+					"pink": "/Icon/Listing-icon/png/airpod-pro-pink.png"
+				},
+				"airpods": {
+					"grey": "/Icon/Listing-icon/png/airpod1-black.png",
+					"pink": "/Icon/Listing-icon/png/airpod1-pink.png"
+				}
+			}
+		}
+	]
+}

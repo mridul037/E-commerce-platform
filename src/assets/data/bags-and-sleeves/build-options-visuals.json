@@ -1,0 +1,278 @@
+{
+	"card-wallet": [
+		{
+			"cardWalletShape": {
+				"classic": {
+					"grey": "/Icon/Listing-icon/listing-card-wallet-gray.svg",
+					"pink": "/Icon/Listing-icon/listing-card-wallet-pink.svg"
+				},
+				"flip": {
+					"grey": "/Icon/Listing-icon/flip.svg",
+					"pink": "/Icon/Listing-icon/flip-active.svg"
+				},
+				"skinny": {
+					"grey": "/Icon/Listing-icon/skinny.svg",
+					"pink": "/Icon/Listing-icon/skiny-active.svg"
+				},
+				"zip": {
+					"grey": "/Icon/Listing-icon/zipppered-coin-card-black.svg",
+					"pink": "/Icon/Listing-icon/zipppered-coin-card-pink.svg"
+				},
+				"clipper": {
+					"grey": "/assets/images/product-page/sizes/clipper-wallet-designer-icon-gray.svg",
+					"pink": "/assets/images/product-page/sizes/clipper-wallet-designer-icon-pink.svg"
+				}
+			}
+		}
+	],
+	"pouches": [
+		{
+			"material": {
+				"designer": {
+					"grey": "/Icon/Listing-icon/designer-icon-listing-pouches.svg",
+					"pink": "/Banner/mob-home/Designer-Pouhes-Pink.svg"
+				},
+				"metallic": {
+					"grey": "/Icon/Listing-icon/metallic-icon-listing-pouches.svg",
+					"pink": "/Banner/mob-home/Metallic-pouches-pink.svg"
+				},
+				"leather": {
+					"grey": "/Icon/Listing-icon/leather-pouches-gray2.svg",
+					"pink": "/Icon/Listing-icon/leather-pouches-pink2.svg"
+				},
+				"felt": {
+					"grey": "/Icon/Listing-icon/felt-pouch-gray2.svg",
+					"pink": "/Icon/Listing-icon/felt-pouch-pink2.svg"
+				},
+				"nylon": {
+					"grey": "/Icon/Listing-icon/nylonpouch-61.svg",
+					"pink": "/Icon/Listing-icon/nylonpouchPink_Artboard98.svg"
+				}
+			},
+			"size": {
+				"medium": {
+					"grey": "/Icon/Listing-icon/designer-icon-listing-pouches.svg",
+					"pink": ""
+				},
+				"large": {
+					"grey": "/Icon/Listing-icon/metallic-icon-listing-pouches.svg",
+					"pink": ""
+				},
+				"small": {
+					"grey": "/Icon/Listing-icon/leather-pouches-gray2.svg",
+					"pink": ""
+				},
+				"combo": {
+					"grey": "/Icon/Listing-icon/felt-pouch-gray2.svg",
+					"pink": ""
+				}
+			}
+		}
+	],
+	"tote-bag": [
+		{
+			"bagType": {
+				"fatty": {
+					"grey": "/assets/images/listing/new-tote-bag/fatte-tote-bag-gray.svg",
+					"pink": "/assets/images/listing/new-tote-bag/fatte-tote-bag-pink.svg"
+				},
+				"classic": {
+					"grey": "/assets/images/listing/new-tote-bag/classic-tote-bag-gray.svg",
+					"pink": "/assets/images/listing/new-tote-bag/classic-tote-bag-pink.svg"
+				},
+				"baesic": {
+					"grey": "/assets/images/listing/new-tote-bag/baesic-tote-bag-gray.svg",
+					"pink": "/assets/images/listing/new-tote-bag/baesic-tote-bag-pink.svg"
+				},
+				"nylon": {
+					"grey": "/assets/images/banners/Nylon-Tote-Bag-Bag-Type.svg",
+					"pink": "/assets/images/banners/Nylon-Tote-Bag_Bag-Type_Pink-01.svg"
+				}
+			},
+			"material": {
+				"metallic": {
+					"grey": "/assets/images/listing/new-tote-bag/classic-metallic-tote-bag-gray.svg",
+					"pink": "/assets/images/listing/new-tote-bag/classic-metallic-tote-bag-pink.svg"
+				},
+				"designer": {
+					"grey": "/assets/images/listing/new-tote-bag/classic-tote-bag-gray.svg",
+					"pink": "/assets/images/listing/new-tote-bag/classic-tote-bag-pink.svg"
+				},
+				"felt": {
+					"grey": "/assets/images/listing/new-tote-bag/felt-tote-bag-gray.svg",
+					"pink": "/assets/images/listing/new-tote-bag/felt-tote-bag-pink.svg"
+				}
+			}
+		}
+	],
+	"crossbody-bags": [
+		{
+			"crossbodyBagType": {
+				"trapeze": {
+					"grey": "/assets/images/product-page/sizes/trapeze-crossbody-bags-black.svg",
+					"pink": "/assets/images/product-page/sizes/trapeze-crossbody-bags-pink.svg"
+				},
+				"arch": {
+					"grey": "/assets/images/product-page/sizes/arch-crossbody-bag-black-01.svg",
+					"pink": "/assets/images/product-page/sizes/arch-crossbody-bag-pink-01.svg"
+				},
+				"tallboi": {
+					"grey": "/assets/images/product-page/sizes/tall-boi-crossbody-black-icon.svg",
+					"pink": "/assets/images/product-page/sizes/tall-boi-crossbody-pink-icon.svg"
+				},
+				"orbis": {
+					"grey": "/assets/images/product-page/sizes/orbis-crossbody-bag-black.svg",
+					"pink": "/assets/images/product-page/sizes/orbis-crossbody-bag-pink.svg"
+				},
+				"mini": {
+					"grey": "/assets/images/product-page/sizes/crossbody-bag-mini-black.svg",
+					"pink": "/assets/images/product-page/sizes/crossbody-bag-mini-pink.svg"
+				},
+				"box": {
+					"grey": "/assets/images/product-page/sizes/crossbody-bag-box-black.svg",
+					"pink": "/assets/images/product-page/sizes/crossbody-bag-box-pink.svg"
+				},
+				"long": {
+					"grey": "/assets/images/product-page/sizes/long-crossbody-bag-black.svg",
+					"pink": "/assets/images/product-page/sizes/long-crossbody-bag-pink.svg"
+				}
+			}
+		}
+	],
+	"messenger-bags": [
+		{
+			"type": {
+				"city-compact": {
+					"grey": "/Icon/Listing-icon/city-compact-messenger-black.svg",
+					"pink": "/Icon/Listing-icon/city-compact-messenger-pink.svg"
+				},
+				"ambassador": {
+					"grey": "/Icon/Listing-icon/ambassador-messenger-bag-black.svg",
+					"pink": "/Icon/Listing-icon/ambassador-messenger-bag-pink.svg"
+				}
+			}
+		}
+	],
+	"macbook-sleeves": [
+		{
+			"size": {
+				"pro-13-in": {
+					"grey": "/assets/images/desktop/icons/macbook-icon/macbook-Pro-13.png",
+					"pink": "/assets/images/desktop/icons/macbook-icon/macbook-Pro-13_Pink.png"
+				},
+				"pro-15-in": {
+					"grey": "/assets/images/desktop/icons/macbook-icon/Macbook-Pro-15.png",
+					"pink": "/assets/images/desktop/icons/macbook-icon/Macbook-Pro-15_Pink.png"
+				},
+				"12-in": {
+					"grey": "/assets/images/desktop/icons/macbook-icon/Macbook-12.png",
+					"pink": "/assets/images/desktop/icons/macbook-icon/Macbook-12_Pink.png"
+				},
+				"air-13-in": {
+					"grey": "/assets/images/desktop/icons/macbook-icon/Macbook-Air-13_.png",
+					"pink": "/assets/images/desktop/icons/macbook-icon/Macbook-Air-13_Pink.png"
+				},
+				"air-11-in": {
+					"grey": "/assets/images/desktop/icons/macbook-icon/Macbook-Air-11.png",
+					"pink": "/assets/images/desktop/icons/macbook-icon/Macbook-Air-11_Pink.png"
+				}
+			}
+		}
+	],
+	"laptop-sleeves": [
+		{
+			"size": {
+				"11-in": {
+					"grey": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon-11.svg",
+					"pink": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon_Pink-11.svg"
+				},
+				"13-in": {
+					"grey": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon-13.svg",
+					"pink": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon_Pink-13.svg"
+				},
+				"14-in": {
+					"grey": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon-14.svg",
+					"pink": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon_Pink-14.svg"
+				},
+				"15-in": {
+					"grey": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon-15.svg",
+					"pink": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon_Pink-15.svg"
+				},
+				"16-in": {
+					"grey": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon-15.svg",
+					"pink": "/assets/images/desktop/icons/laptop-icons/laptop_Sleeve_icon_Pink-15.svg"
+				}
+			}
+		}
+	],
+	"backpacks": [
+		{
+			"bagType": {
+				"compact": {
+					"grey": "/Icon/Listing-icon/compact-backpack-gray.svg",
+					"pink": "/Icon/Listing-icon/compact-backpack-pink.svg"
+				},
+				"drawstring": {
+					"grey": "/Icon/Listing-icon/drawstring-bags-gray.svg",
+					"pink": "/Icon/Listing-icon/drawstring-bags-pink.svg"
+				}
+			}
+		}
+	],
+	"passport-wallet": [
+		{
+			"passportWalletType": {
+				"wallet": {
+					"grey": "/assets/images/product-page/sizes/passport-wallets-black.svg",
+					"pink": "/assets/images/product-page/sizes/passport-wallets-black.svg"
+				},
+				"cover": {
+					"grey": "/assets/images/product-page/sizes/passport-cover-black.svg",
+					"pink": "/assets/images/product-page/sizes/passport-cover-black.svg"
+				}
+			}
+		}
+	],
+	"ipad-mini-4": [
+		{
+			"sleevesType": {
+				"sleeves": {
+					"grey": "/assets/images/desktop/icons/ipad-sleeves-black.svg",
+					"pink": "/assets/images/desktop/icons/ipad-sleeves-pink.svg"
+				},
+				"folio": {
+					"grey": "/assets/images/desktop/icons/ipad-cover-black.svg",
+					"pink": "/assets/images/desktop/icons/ipad-cover-pink.svg"
+				}
+			}
+		}
+	],
+	"ipad-pro-11-2018": [
+		{
+			"sleevesType": {
+				"sleeves": {
+					"grey": "/assets/images/desktop/icons/ipad-sleeves-black.svg",
+					"pink": "/assets/images/desktop/icons/ipad-sleeves-pink.svg"
+				},
+				"folio": {
+					"grey": "/assets/images/desktop/icons/ipad-cover-black.svg",
+					"pink": "/assets/images/desktop/icons/ipad-cover-pink.svg"
+				}
+			}
+		}
+	],
+	"men-wallet": [
+		{
+			"type": {
+				"urbangentleman": {
+					"grey": "/Icon/Listing-icon/png/urbangentleman-wallet_grey.png",
+					"pink": "/Icon/Listing-icon/png/urbangentleman-wallet_pink.png"
+				},
+				"urbanhipster": {
+					"grey": "/Icon/Listing-icon/png/urbanhipster-wallet-grey.png",
+					"pink": "/Icon/Listing-icon/png/urbanhipster-wallet-pink.png"
+				}
+			}
+		}
+	]
+}

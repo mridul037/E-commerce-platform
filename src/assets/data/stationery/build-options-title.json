@@ -1,0 +1,29 @@
+{
+	"notebooks": {
+		"default": {
+			"title": "Shop Designer Notebooks"
+		},
+		"a5": {
+			"title": "Designer A5 Notebooks"
+		},
+		"a6": {
+			"title": "Designer A6 Notebooks"
+		}
+	},
+	"greeting-cards": {
+		"default": {
+			"title": "Designer Greeting Cards"
+		},
+		"a5": {
+			"title": "Designer A5 Greeting Cards"
+		},
+		"a6": {
+			"title": "Designer A6 Greeting Cards"
+		}
+	},
+	"elemental-pouches": {
+		"default": {
+			"title": "Designer Elemental Pouches"
+		}
+	}
+}

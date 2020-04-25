@@ -1,0 +1,82 @@
+[
+	{
+		"label": "Macbook Sleeves",
+		"value": "macbook-sleeves"
+	},
+	{
+		"label": "Laptop Sleeves",
+		"value": "laptop-sleeves"
+	},
+	{
+		"label": "A5",
+		"value": "a5-notebook"
+	},
+	{
+		"label": "A6",
+		"value": "a6-notebook"
+	},
+	{
+		"label": "Kindle Voyage",
+		"value": "kindle-voyage"
+	},
+	{
+		"label": "Galaxy Tab A",
+		"value": "galaxy-tab-a"
+	},
+	{
+		"label": "Phab 2",
+		"value": "phab-2"
+	},
+	{
+		"label": "iPad",
+		"value": "ipad"
+	},
+	{
+		"label": "Cross body Bags",
+		"value": "crossbody-bags"
+	},
+	{
+		"label": "Men's Wallets",
+		"value": "men-wallet"
+	},
+	{
+		"label": "Passport Wallets",
+		"value": "passport-wallet"
+	},
+	{
+		"label": "Zip Wallets",
+		"value": "zip-wallet"
+	},
+	{
+		"label": "Women's Wallets",
+		"value": "women-classic-wallets"
+	},
+	{
+		"label": "Card Wallets",
+		"value": "card-wallet"
+	},
+	{
+		"label": "Tote Bags",
+		"value": "tote-bag"
+	},
+	{
+		"label": "Pouches",
+		"value": "pouches"
+	},
+	{
+		"label": "Greeting Cards",
+		"value": "greeting-cards"
+	},
+	{
+		"label": "Elemental Pouches",
+		"value": "elemental-pouches"
+	},
+	{
+		"label": "Posters",
+		"value": "poster"
+	},
+	{
+		"label": "Cushion Covers",
+		"value": "cushion-cover"
+	}
+]

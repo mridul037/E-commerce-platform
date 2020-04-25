@@ -1,0 +1,544 @@
+{
+	"success": true,
+	"data": {
+		"feed": [
+			{
+				"layoutType": "banner",
+				"title": "",
+				"subtitle": "",
+				"image": "/Offers/15-02-19/app-homepage-offer-strip-FIRKI.jpg",
+				"height": 100,
+				"deeplink": "",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"hasStaticPosition": true,
+					"timerActive": true,
+					"timerTextColorCode": "#ffffff",
+					"timerEndDate": "2019-03-25T16:00:00.000Z"
+				}
+			},
+			{
+				"layoutType": "showcase",
+				"height": 308,
+				"padding": false,
+				"active": true,
+				"feed": [
+					{
+						"title": "ARCH CROSSBODY BAGS",
+						"subtitle": "BUY 1 GET 1 FREE",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags",
+						"image": "/assets/images/app/homepage/banner/static/arch-crossbody-bag.jpg"
+					},
+					{
+						"title": "POP HOLDERS",
+						"subtitle": "BUY 1 GET 1 FREE",
+						"url": "/mobile-accessories/dailyobjects/phone-grippr",
+						"image": "/assets/images/app/homepage/slider/top-slider/pop-holders.jpg"
+					},
+					{
+						"title": "TRAPEZE BAGS",
+						"subtitle": "BUY 1 GET 1 FREE",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags",
+						"image": "/assets/images/app/homepage/slider/top-slider/trapeze-bags.jpg"
+					},
+					{
+						"title": "ZIP WALLETS",
+						"subtitle": "BUY 1 GET 1 FREE",
+						"url": "/bags-and-sleeves/dailyobjects/zip-wallet",
+						"image": "/assets/images/app/homepage/slider/top-slider/zip-wallets.jpg"
+					},
+					{
+						"title": "MESSENGER BAGS",
+						"subtitle": "BUY 1 GET 1 FREE",
+						"url": "/bags-and-sleeves/dailyobjects/messenger-bags",
+						"image": "/assets/images/app/homepage/slider/top-slider/messenger-bags.jpg"
+					}
+				],
+				"meta": {
+					"offerText": "CODE: BOGO",
+					"offerBackgroundColorCode": "#F5F5F5",
+					"hasStaticPosition": true
+				}
+			},
+			{
+				"layoutType": "bannerWithText",
+				"title": "SMARTPHONE CASES",
+				"subtitle": "BUY 1 GET 1 FREE",
+				"image": "/Offers/26-12-18/cases-app-homepage-banner-FIRKI.jpg",
+				"height": 308,
+				"url": "/designer-cases",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"offerText": "CODE: BOGO",
+					"offerBackgroundColorCode": "#F5F5F5",
+					"hasStaticPosition": true
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "HOT SELLING",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/trapeze",
+						"image": "/assets/images/app/homepage/banner/small-carousel/crossbody-bags/trapeze-bag.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/messenger-bags",
+						"image": "/assets/images/app/homepage/banner/small-carousel/new-arrivals/city-compact-messenger-bags-app-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/orbis",
+						"image": "/assets/images/app/homepage/banner/small-carousel/crossbody-bags/orbis-crossbody-bags-02.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/pouches/designer",
+						"image": "/assets/images/app/homepage/banner/small-carousel/pouch/canvas-pouch-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/travel/dailyobjects/eyewear-case/foldaway",
+						"image": "/assets/images/app/homepage/banner/static/eyewears-foldaway-designer.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true
+				}
+			},
+			{
+				"layoutType": "banner",
+				"title": "",
+				"subtitle": "",
+				"image": "/Offers/12-12-18/dod-mobile.jpg",
+				"height": 119,
+				"url": "/offers/daily-deals",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"hasStaticPosition": true
+				}
+			},
+			{
+				"layoutType": "bannerWithText",
+				"title": "",
+				"subtitle": "",
+				"image": "/assets/images/banner/classic-stripes/stripe-app-homepage.jpg",
+				"height": 308,
+				"url": "/collection/classic-stripe",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"offerText": "CODE: BOGO",
+					"offerBackgroundColorCode": "#F5F5F5",
+					"hasStaticPosition": true
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "CROSSBODY BAGS",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/arch",
+						"image": "/assets/images/app/homepage/banner/static/arch-crossbody-bag.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/trapeze",
+						"image": "/assets/images/app/homepage/banner/small-carousel/crossbody-bags/trapeze-bag.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/orbis",
+						"image": "/assets/images/app/homepage/banner/small-carousel/crossbody-bags/orbis-crossbody-bags-02.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/mini",
+						"image": "/assets/images/app/homepage/banner/small-carousel/crossbody-bags/mini-crossbody-bags-02.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/crossbody-bags/box",
+						"image": "/assets/images/app/homepage/banner/small-carousel/crossbody-bags/box-crossbody-bags3X-01.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves",
+					"modelSlug": "crossbody-bags"
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "WALLETS",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/zip-wallet",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/zipper-wallet-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/card-wallet/flip",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/flip-top-card-wallets3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/passport-wallet",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/passport-wallet-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/card-wallet/skinny",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/skinny-fit-card-wallets3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/women-classic-wallets",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/womens-classic-wallet-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/card-wallet/classic",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/classic-card-wallet.3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/card-wallet/zip",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/zipper-card-coin-wallets3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/men-wallet",
+						"image": "/assets/images/app/homepage/banner/small-carousel/wallet/mens-wallet-01.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves",
+					"modelSlug": "card-wallet"
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "TOTE BAGS",
+				"subtitle": "",
+				"image": "",
+				"height": 400,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/tote-bag/fatty",
+						"image": "/assets/images/app/homepage/banner/big-carousel/Bag/fatty-tote-bag.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/tote-bag/classic",
+						"image": "/assets/images/app/homepage/banner/big-carousel/Bag/classic-tote-bag.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/tote-bag/fatty",
+						"queryParam": {
+							"type": "metallic"
+						},
+						"image": "/assets/images/app/homepage/banner/big-carousel/Bag/matallic-tote-bag.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/tote-bag/baesic",
+						"image": "/assets/images/app/homepage/banner/big-carousel/Bag/baesic-tote-bag.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/tote-bag/classic",
+						"queryParam": {
+							"type": "felt"
+						},
+						"image": "/assets/images/app/homepage/banner/big-carousel/Bag/felt-tote-bag.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves",
+					"modelSlug": "tote-bag"
+				}
+			},
+			{
+				"layoutType": "bannerWithText",
+				"title": "CITY COMPACT MESSENGER BAGS",
+				"subtitle": "BUY 1 GET 1 FREE",
+				"image": "/assets/images/app/homepage/banner/static/city-compact-messenger-bag-app-01.jpg",
+				"height": 308,
+				"url": "/bags-and-sleeves/dailyobjects/messenger-bags",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"offerText": "CODE: BOGO",
+					"offerBackgroundColorCode": "#F5F5F5",
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves",
+					"modelSlug": "messenger-bags"
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "POUCHES",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/pouches/designer",
+						"image": "/assets/images/app/homepage/banner/small-carousel/pouch/canvas-pouch-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/pouches/metallic",
+						"image": "/assets/images/app/homepage/banner/small-carousel/pouch/metallic-pouch-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/pouches/nylon",
+						"image": "/assets/images/app/homepage/banner/small-carousel/pouch/nylon-pouch-01.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/pouches/felt",
+						"image": "/assets/images/app/homepage/banner/small-carousel/pouch/felt-pouch-01.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves",
+					"modelSlug": "pouches"
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "LAPTOP SLEEVES",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/dailyobjects/laptop-sleeves",
+						"image": "/assets/images/app/homepage/banner/small-carousel/sleeve/ballastic-nylon-sleeve.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/bags-and-sleeves/apple/macbook-sleeves",
+						"image": "/assets/images/app/homepage/banner/small-carousel/sleeve/macbook-sleeve.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves"
+				}
+			},
+			{
+				"layoutType": "bannerWithText",
+				"title": "TABLET SLEEVES",
+				"subtitle": "BUY 1 GET 1 FREE",
+				"image": "/assets/images/app/homepage/banner/static/tablet-sleeve.jpg",
+				"height": 308,
+				"url": "/tablet-sleeves-and-bags",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"offerText": "CODE: BOGO",
+					"offerBackgroundColorCode": "#F5F5F5",
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves"
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "STATIONERY",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "designer-collections/dailyobjects/notebooks",
+						"image": "/assets/images/app/homepage/banner/small-carousel/stationery/designer-notebooks3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/stationery/dailyobjects/elemental-pouches",
+						"image": "/assets/images/app/homepage/banner/small-carousel/stationery/elemental-pouches3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/stationery/dailyobjects/greeting-cards",
+						"image": "/assets/images/app/homepage/banner/small-carousel/stationery/greeting-cards3X.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "stationery"
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "LEATHER ORGANISERS",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/travel/dailyobjects/cable-wrap",
+						"image": "/assets/images/app/homepage/banner/small-carousel/leather-organisers/cable-wraps3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/travel/dailyobjects/keychain",
+						"image": "/assets/images/app/homepage/banner/small-carousel/leather-organisers/tassels-keychains3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/travel/dailyobjects/eyewear-case/foldaway",
+						"image": "/assets/images/app/homepage/banner/static/eyewears-foldaway-designer.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/dailyobjects-tan-leather-eyewear-case",
+						"image": "/assets/images/app/homepage/banner/small-carousel/leather-organisers/eyewear-cases3X.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "travel"
+				}
+			},
+			{
+				"layoutType": "bannerWithText",
+				"title": "BACKPACKS",
+				"subtitle": "BUY 1 GET 1 FREE",
+				"image": "/assets/images/app/homepage/banner/static/city-compact-backpack.jpg",
+				"height": 308,
+				"url": "/bags-and-sleeves/dailyobjects/backpacks/compact",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"offerText": "CODE: BOGO",
+					"offerBackgroundColorCode": "#F5F5F5",
+					"hasStaticPosition": true,
+					"categorySlug": "bags-and-sleeves",
+					"modelSlug": "backpacks"
+				}
+			},
+			{
+				"layoutType": "slider",
+				"title": "HOME DÉCOR",
+				"subtitle": "",
+				"image": "",
+				"height": 208,
+				"deeplink": "",
+				"active": true,
+				"feed": [
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/home-decor/dailyobjects/cushion-cover/12x12-in",
+						"image": "assets/images/app/homepage/banner/small-carousel/home-decor/cushion-covers3X.jpg"
+					},
+					{
+						"title": "BUY 1 GET 1 FREE",
+						"subtitle": "Code: BOGO",
+						"url": "/home-decor/dailyobjects/poster",
+						"image": "/assets/images/app/homepage/banner/small-carousel/home-decor/posters3X.jpg"
+					}
+				],
+				"meta": {
+					"hasStaticPosition": true,
+					"categorySlug": "home-decor"
+				}
+			},
+			{
+				"layoutType": "banner",
+				"title": "",
+				"subtitle": "",
+				"image": "/assets/images/app/homepage/happy-customers-02.png",
+				"height": 345,
+				"deeplink": "",
+				"padding": false,
+				"active": true,
+				"meta": {
+					"hasStaticPosition": true
+				}
+			}
+		]
+	}
+}

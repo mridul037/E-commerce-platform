@@ -1,0 +1,48 @@
+{
+	"phone-grippr": {
+		"default": {
+			"title": "Designer Phone Gripprs\u2122"
+		}
+	},
+	"cable-protectors": {
+		"default": {
+			"title": "Designer Wire Protector"
+		}
+	},
+	"airpods-case-cover": {
+		"default": {
+			"title": "Airpods Case Covers"
+		},
+		"airpods": {
+			"title": "Airpods Case Covers"
+		},
+		"airpod-pro": {
+			"title": "Airpods Pro Case Covers"
+		}
+	},
+	"sync-and-charge-cable": {
+		"default": {
+			"title": "Sync and Charge Cable"
+		}
+	},
+	"wander-wallet": {
+		"default": {
+			"title": "Wander Wallets"
+		},
+		"designer": {
+			"title": "Designer Wander Wallets"
+		},
+		"croco": {
+			"title": "Croco Wander Wallets"
+		},
+		"saffiano": {
+			"title": "Saffiano Wander Wallets"
+		},
+		"silicone": {
+			"title": "Silicone Wander Wallets"
+		},
+		"silicone-stand": {
+			"title": "Silicone Stand Wander Wallets"
+		}
+	}
+}

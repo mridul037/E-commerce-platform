@@ -1,0 +1,1698 @@
+{
+	"iphone-11-pro-max": {
+		"option": "caseType",
+		"type": {}
+	},
+	"iphone-11-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"iphone-11": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-xr": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-xs-max": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-xs": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-8-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-7-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-6s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-6s-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-5-5s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-6-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-4-4s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-se": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"iphone-5c": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-m40": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-a60": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-a8s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j4-core": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s10": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s10-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s10e": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a9-2018": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j4-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j6-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a8-star": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a6s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-note-9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s9-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-note-8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a8-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-c7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j7-pro-2017": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-c9-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-c7-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j7-max": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j7-prime": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j5-2017-edition": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s8-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a7-2017": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a5-2017": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a3-2017": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s7-edge": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-note-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s6-edge-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s6-edge": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j7-2016": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a7-2016": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a5-2016": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j5-2016": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-note-4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-note-2-n7100": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-grand-prime": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-on7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-on5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-note-7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-z3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-e7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a10": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a20": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a30": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a50": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-note-3-neo": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-grand-2-g7106": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-s4-mini": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-mega-5-8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a7-2018": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a8-2018": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-j7-2018": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a8-2016": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-m10": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-m20": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-m30": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a70": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"galaxy-a40": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-a30s": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-a70s": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-m30s": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-a50s": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-note-10": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-note-10-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-s20": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-s20-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+	"galaxy-s20-ultra": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"zenfone-max-pro-m2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"zenfone-5z": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"zenfone-3-max": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"zenfone-4-max-zc554kl": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"zenfone-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"zenfone-2-ze550ml-ze551ml": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"pixel-3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"pixel-3-xl": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"pixel-2-xl": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"pixel-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"pixel-xl": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"pixel": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nexus-6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nexus-5x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nexus-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"lenovo-s5-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"k8-note": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"k6-note": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"a6000": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"k3-note": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oneplus-7t": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oneplus-7t-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-7-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-6t": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-5t": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-3t": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oneplus-one": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"u11": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"desire-816": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"one-m9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"desire-728g": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"desire-828": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"desire-626": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"desire-820": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"desire-826": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"one-m8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"desire-620": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"one-e8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-xz2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-xz-premium": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-l1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-m4-aqua": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-z3-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-z-ultra": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-c4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-z3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-c3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-z2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-z": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-t2-ultra": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-z1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-zr": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-c": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-e3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-t3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-z5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-l": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-m": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xperia-sp": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-7s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-7-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xiaomi-redmi-7a": {
+		"option": "caseType",
+		"type": {}
+	},
+	"xiaomi-redmi-k20": {
+		"option": "caseType",
+		"type": {}
+	},
+	"xiaomi-redmi-k20-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"redmi-note-8-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"redmi-note-8": {
+		"option": "caseType",
+		"type": {}
+	},
+	"xiaomi-mi-mix-3": {
+		"option": "caseType",
+		"type": {}
+	},
+	"redmi-note-6-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xiaomi-mi-a2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xiaomi-redmi-5a": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"xiaomi-redmi-6a": {
+		"option": "caseType",
+		"type": {}
+	},
+	"mi-a3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"poco-f1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-y2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-6-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-5-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-5x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-5-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-y1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi-a1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi-max-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-4g": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-4a": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi-4i": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi-note": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi-note-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-note-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-3s-prime": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"mi-8-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"redmi-y1-lite": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g7-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-z-play": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g6-play": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g6-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g5s-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-e4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-e4-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-c": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-c-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-z2-play": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g5-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g4-moto-g4-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-x-play": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g4-play": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-x-style": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-z": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-z-force": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-e3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-m": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-x2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-g": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-e2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-e": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-one-power": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-e5-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"moto-e5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"lg-v40-thinq": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"g6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"q6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-5-1-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-3.1-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-7.1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-7-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"lumia-1320": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"lumia-640-xl": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"lumia-730": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"lumia-540": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"lumia-950": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-6": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nokia-6-1-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-8a": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-8c": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-10-lite": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-p30-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-p30": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-nova-4": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-y9-2019": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-honor-7s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-honor-8x-max": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-nova-3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-p9-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-p9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-p10": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-p10-lite": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-magic-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-mate-20": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"huawei-mate-20-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-9-lite": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"p20": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"p20-lite": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"p20-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-7x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-v10": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-8-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-6-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-6x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"nexus-6p": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-4x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"ascend-p8": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-7c": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"honor-8x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"z10": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"le1s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"leeco-le-2": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-a7": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-k3": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-realme-3-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-reno-10x-zoom": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-realme-x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-rx17-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-r11s-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-find-x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-realme-1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f11-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-realme-xt": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-reno-2": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-reno-2z": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-reno-2f": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-realme-5": {
+		"option": "caseType",
+		"type": {}
+	},
+	"oppo-realme-5-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-r11-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-r11": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f3-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f3": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f1-s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-a57": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f9-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-f9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-realme-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-realme-2-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-realme-c1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"oppo-r11s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"a1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"s6": {
+		"option": "caseType",
+		"type": {}
+	},
+	"vivo-s1": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v15-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"vivo-v15": {
+		"option": "caseType",
+		"type": {}
+	},
+	"vivo-v17-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-y83-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"vivo-z1-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+	"vivo-z1x": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v11": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v9-youth": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v9": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v7-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v7": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v5-plus": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v5s": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-y55": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"vivo-v11-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"infinix-smart-2": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"infinix-hot-6-pro": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"infinix-note-5": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"coolpad-note-3-lite": {
+		"option": "caseType",
+		"type": {}
+	},
+
+	"coolpad-note-5": {
+		"option": "caseType",
+		"type": {}
+	}
+}

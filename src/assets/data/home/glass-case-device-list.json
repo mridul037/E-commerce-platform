@@ -1,0 +1,495 @@
+{
+	"glassData": [
+		{
+			"name": "Apple",
+			"slug": "apple",
+			"models": [
+				{
+					"name": "iPhone 11 Pro Max",
+					"slug": "iphone-11-pro-max",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 11 Pro",
+					"slug": "iphone-11-pro",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 11",
+					"slug": "iphone-11",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone XR",
+					"slug": "iphone-xr",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone XS Max",
+					"slug": "iphone-xs-max",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone XS",
+					"slug": "iphone-xs",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone X",
+					"slug": "iphone-x",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 8 Plus",
+					"slug": "iphone-8-plus",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 8",
+					"slug": "iphone-8",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 7 Plus",
+					"slug": "iphone-7-plus",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 7",
+					"slug": "iphone-7",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 6s",
+					"slug": "iphone-6s",
+					"icon": null,
+					"intermediatePage": true
+				}
+			]
+		},
+		{
+			"name": "OnePlus",
+			"slug": "oneplus",
+			"models": [
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7T Pro",
+					"slug": "oneplus-7t-pro",
+					"status": true
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7T",
+					"slug": "oneplus-7t",
+					"status": true,
+					"intermediatePage": true
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7 Pro",
+					"slug": "oneplus-7-pro",
+					"status": true
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7",
+					"slug": "oneplus-7",
+					"status": true
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 6T",
+					"slug": "oneplus-6t",
+					"status": true
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 6",
+					"slug": "oneplus-6",
+					"status": true
+				}
+			]
+		},
+		{
+			"name": "Samsung",
+			"slug": "samsung",
+			"models": [
+				{
+					"name": "Galaxy S20 Ultra",
+					"slug": "galaxy-s20-ultra"
+				},
+				{
+					"name": "Galaxy S20 Plus",
+					"slug": "galaxy-s20-plus"
+				},
+				{
+					"name": "Galaxy S20",
+					"slug": "galaxy-s20"
+				},
+				{
+					"name": "Galaxy A70s",
+					"slug": "galaxy-a70s"
+				},
+				{
+					"name": "Galaxy M30S",
+					"slug": "galaxy-m30s"
+				},
+				{
+					"name": "Galaxy A30s",
+					"slug": "galaxy-a30s"
+				},
+				{
+					"name": "Galaxy A50s",
+					"slug": "galaxy-a50s"
+				},
+				{
+					"name": "Galaxy Note 10",
+					"slug": "galaxy-note-10"
+				},
+				{
+					"name": "Galaxy Note 10 Plus",
+					"slug": "galaxy-note-10-plus"
+				},
+				{
+					"name": "Galaxy S10",
+					"slug": "galaxy-s10"
+				},
+				{
+					"name": "Galaxy S10 Plus",
+					"slug": "galaxy-s10-plus"
+				},
+				{
+					"name": "Galaxy S10e",
+					"slug": "galaxy-s10e"
+				},
+				{
+					"name": "Galaxy M40",
+					"slug": "galaxy-m40"
+				},
+				{
+					"name": "Galaxy M30",
+					"slug": "galaxy-m30"
+				},
+				{
+					"name": "Galaxy M20",
+					"slug": "galaxy-m20"
+				},
+				{
+					"name": "Galaxy M10",
+					"slug": "galaxy-m10"
+				},
+				{
+					"name": "Galaxy A10",
+					"slug": "galaxy-a10"
+				},
+				{
+					"name": "Galaxy A20",
+					"slug": "galaxy-a20"
+				},
+				{
+					"name": "Galaxy A30",
+					"slug": "galaxy-a30"
+				},
+				{
+					"name": "Galaxy A40",
+					"slug": "galaxy-a40"
+				},
+				{
+					"name": "Galaxy A50",
+					"slug": "galaxy-a50"
+				},
+				{
+					"name": "Galaxy A70",
+					"slug": "galaxy-a70"
+				}
+			]
+		},
+		{
+			"name": "Vivo",
+			"slug": "vivo",
+			"models": [
+				{
+					"name": "Vivo S1",
+					"slug": "vivo-s1"
+				},
+				{
+					"name": "Vivo V15 Pro",
+					"slug": "vivo-v15-pro"
+				},
+				{
+					"name": "Vivo Z1 Pro",
+					"slug": "vivo-z1-pro"
+				},
+				{
+					"name": "Vivo V17 Pro",
+					"slug": "vivo-v17-pro"
+				}
+			]
+		},
+		{
+			"name": "Oppo",
+			"slug": "oppo",
+			"models": [
+				{
+					"name": "Oppo Reno 2F",
+					"slug": "oppo-reno-2f",
+					"intermediatePage": true
+				},
+				{
+					"name": "Oppo Reno 2Z",
+					"slug": "oppo-reno-2z",
+					"intermediatePage": true
+				},
+				{
+					"name": "Oppo Realme XT",
+					"slug": "oppo-realme-xt"
+				},
+				{
+					"name": "Oppo Reno 2",
+					"slug": "oppo-reno-2"
+				},
+				{
+					"name": "Oppo Realme 5",
+					"slug": "oppo-realme-5"
+				},
+				{
+					"name": "Oppo Realme 5 Pro",
+					"slug": "oppo-realme-5-pro"
+				},
+				{
+					"name": "OPPO K3",
+					"slug": "oppo-k3"
+				},
+				{
+					"name": "Oppo F11 Pro",
+					"slug": "oppo-f11-pro"
+				},
+				{
+					"name": "Oppo Realme 3 Pro",
+					"slug": "oppo-realme-3-pro"
+				},
+				{
+					"name": "Oppo Reno 10X Zoom",
+					"slug": "oppo-reno-10x-zoom"
+				},
+				{
+					"name": "Oppo RealMe X",
+					"slug": "oppo-realme-x"
+				}
+			]
+		},
+		{
+			"name": "Huawei",
+			"slug": "huawei",
+			"models": [
+				{
+					"name": "Huawei P30 Pro",
+					"slug": "huawei-p30-pro"
+				},
+				{
+					"name": "Huawei P30",
+					"slug": "huawei-p30"
+				}
+			]
+		},
+		{
+			"name": "Xiaomi",
+			"slug": "xiaomi",
+			"models": [
+				{
+					"name": "Xiaomi Redmi Note 8 Pro",
+					"slug": "redmi-note-8-pro"
+				},
+				{
+					"name": "Xiaomi Redmi Note 8",
+					"slug": "redmi-note-8"
+				},
+				{
+					"name": "Xiaomi Mi A3",
+					"slug": "mi-a3"
+				},
+				{
+					"name": "Poco F1",
+					"slug": "poco-f1"
+				},
+				{
+					"name": "Redmi Note 7",
+					"slug": "redmi-note-7"
+				},
+				{
+					"name": "Redmi Note 7s",
+					"slug": "redmi-note-7s"
+				},
+				{
+					"name": "Redmi Note 7 Pro",
+					"slug": "redmi-note-7-pro"
+				},
+				{
+					"name": "Xiaomi Redmi 7a",
+					"slug": "xiaomi-redmi-7a"
+				},
+				{
+					"name": "Xiaomi Redmi K20",
+					"slug": "xiaomi-redmi-k20"
+				},
+				{
+					"name": "Xiaomi Redmi K20 Pro",
+					"slug": "xiaomi-redmi-k20-pro"
+				}
+			]
+		}
+	],
+	"clearData": [
+		{
+			"name": "Apple",
+			"slug": "apple",
+			"models": [
+				{
+					"name": "iPhone XR",
+					"slug": "iphone-xr",
+					"icon": null,
+					"intermediatePage": true,
+					"buildOptionSlug": "classic-clear"
+				},
+				{
+					"name": "iPhone XS Max",
+					"slug": "iphone-xs-max",
+					"icon": null,
+					"intermediatePage": true,
+					"buildOptionSlug": "classic-clear"
+				},
+				{
+					"name": "iPhone XS",
+					"slug": "iphone-xs",
+					"icon": null,
+					"intermediatePage": true,
+					"buildOptionSlug": "classic-clear"
+				},
+				{
+					"name": "iPhone X",
+					"slug": "iphone-x",
+					"icon": null,
+					"intermediatePage": true,
+					"buildOptionSlug": "classic-clear"
+				},
+				{
+					"name": "iPhone 11 Pro Max",
+					"slug": "iphone-11-pro-max",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 11 Pro",
+					"slug": "iphone-11-pro",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 11",
+					"slug": "iphone-11",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 6s",
+					"slug": "iphone-6s",
+					"icon": null,
+					"intermediatePage": true
+				}
+			]
+		},
+		{
+			"name": "OnePlus",
+			"slug": "oneplus",
+			"models": [
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7T Pro",
+					"slug": "oneplus-7t-pro",
+					"buildOptionSlug": "classic-clear",
+					"status": true
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7T",
+					"slug": "oneplus-7t",
+					"buildOptionSlug": "classic-clear",
+					"status": true,
+					"intermediatePage": false
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7 Pro",
+					"slug": "oneplus-7-pro",
+					"buildOptionSlug": "classic-clear",
+					"status": true
+				},
+				{
+					"mysqlId": "3155",
+					"name": "OnePlus 7",
+					"slug": "oneplus-7",
+					"buildOptionSlug": "classic-clear",
+					"status": true
+				}
+			]
+		},
+		{
+			"name": "Samsung",
+			"slug": "samsung",
+			"models": [
+				{
+					"name": "Galaxy S10",
+					"slug": "galaxy-s10",
+					"buildOptionSlug": "classic-clear"
+				},
+				{
+					"name": "Galaxy S10 Plus",
+					"slug": "galaxy-s10-plus",
+					"buildOptionSlug": "classic-clear"
+				},
+				{
+					"name": "Galaxy S10e",
+					"slug": "galaxy-s10e",
+					"buildOptionSlug": "classic-clear"
+				}
+			]
+		}
+	],
+	"iphone11Data": [
+		{
+			"name": "Apple",
+			"slug": "apple",
+			"models": [
+				{
+					"name": "iPhone 11 Pro Max",
+					"slug": "iphone-11-pro-max",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 11 Pro",
+					"slug": "iphone-11-pro",
+					"icon": null,
+					"intermediatePage": true
+				},
+				{
+					"name": "iPhone 11",
+					"slug": "iphone-11",
+					"icon": null,
+					"intermediatePage": true
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"notebooks": [
+		{
+			"size": {
+				"a5": {
+					"grey": "/assets/images/a5.png",
+					"pink": "/assets/images/a5.png"
+				},
+				"a6": {
+					"grey": "/assets/images/a6.png",
+					"pink": "/assets/images/a6.png"
+				}
+			},
+			"bookType": {
+				"slim": {
+					"grey": "/Banner/combos/icon/notebook.svg",
+					"pink": "/assets/images/listing/slim-notebook-pink.svg"
+				},
+				"spiral": {
+					"grey": "/assets/images/listing/wiro-notebook-black.svg",
+					"pink": "/assets/images/listing/wiro-notebook-pink.svg"
+				}
+			}
+		}
+	],
+	"greeting-cards": [
+		{
+			"greetingSize": {
+				"a5": {
+					"grey": "/Banner/combos/icon/greeting-card-black.svg",
+					"pink": "/Banner/combos/icon/greeting-card-black.svg"
+				},
+				"a6": {
+					"grey": "/Banner/combos/icon/greetin-card-a6-black.svg",
+					"pink": "/Banner/combos/icon/greetin-card-a6-black.svg"
+				}
+			}
+		}
+	]
+}

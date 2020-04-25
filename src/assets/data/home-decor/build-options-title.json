@@ -1,0 +1,33 @@
+{
+	"poster": {
+		"default": {
+			"title": "Designer Wall Poster"
+		},
+		"medium": {
+			"title": "Designer Wall Poster"
+		}
+	},
+	"cushion-cover": {
+		"default": {
+			"title": "Designer Cushion Cover"
+		},
+		"12x12-in": {
+			"title": "Designer 12x12 In Cushion Cover"
+		},
+		"16x16-in": {
+			"title": "Designer 16x16 In Cushion Cover"
+		},
+		"18x18-in": {
+			"title": "Designer 18x18 In Cushion Cover"
+		},
+		"12x12-in-with-cushion": {
+			"title": "Designer 12x12 In-With-Cushion Cover"
+		},
+		"16x16-in-with-cushion": {
+			"title": "Designer 16x16 In-With-Cushion Cover"
+		},
+		"18x18-in-with-cushion": {
+			"title": "Designer 18x18 In-With-Cushion Cover"
+		}
+	}
+}

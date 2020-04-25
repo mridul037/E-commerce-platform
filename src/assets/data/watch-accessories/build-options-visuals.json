@@ -1,0 +1,83 @@
+{
+	"apple-watch-bands": [
+		{
+			"type": {
+				"croco-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/croco-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/croco-type-icon_01.png"
+				},
+				"saffiano-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/safiano-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/safiano-type-icon_01.png"
+				},
+				"napa-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/napa-leather-type-icon1.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/napa-leather-type-icon1.png"
+				},
+				"leather-loop": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/leather-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/leather-type-icon_01.png"
+				},
+				"milanese-loop": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/milanese-type-icon_02.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/milanese-type-icon_02.png"
+				},
+				"nylon-sports": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/nylon-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/nylon-type-icon_01.png"
+				},
+				"silicone": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/apple-silicone-type-icon.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/apple-silicone-type-icon.png"
+				},
+				"apple-designer-leather-strap": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/designer-leather-type-icon.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/designer-leather-type-icon.png"
+				},
+				"luxury-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/apple-luxury-leather-type-icon.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/apple-luxury-leather-type-icon.png"
+				},
+				"classic-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/apple-classic-leather-type-icon.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/apple-classic-leather-type-icon.png"
+				}
+			}
+		}
+	],
+	"universal-watch-bands": [
+		{
+			"type": {
+				"universal-designer-leather-strap": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/designer-leather-type-icon.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/designer-leather-type-icon.png"
+				},
+				"universal-croco-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/croco-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/croco-type-icon_01.png"
+				},
+				"universal-saffiano-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/safiano-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/safiano-type-icon_01.png"
+				},
+				"universal-napa-loop-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/napa-leather-type-icon1.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/napa-leather-type-icon1.png"
+				},
+				"universal-milanese-loop-leather": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/milanese-type-icon_02.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/milanese-type-icon_02.png"
+				},
+				"universal-nylon": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/nylon-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/nylon-type-icon_01.png"
+				},
+
+				"universal-silicone": {
+					"grey": "/assets/images/product-page/sizes/apple-straps/silicone-type-icon_01.png",
+					"pink": "/assets/images/product-page/sizes/apple-straps/silicone-type-icon_01.png"
+				}
+			}
+		}
+	]
+}

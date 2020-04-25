@@ -1,0 +1,20 @@
+{
+	"eyewear-case": {
+		"default": {
+			"title": "Leather Eyewear Cases"
+		},
+		"foldaway": {
+			"title": "Designer Foldaway Eyewear Case"
+		}
+	},
+	"keychain": {
+		"default": {
+			"title": "Leather Keychains"
+		}
+	},
+	"cable-wrap": {
+		"default": {
+			"title": "CABLE WRAPS AND PROTECTORS"
+		}
+	}
+}

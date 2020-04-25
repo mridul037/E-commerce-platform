@@ -1,0 +1,1069 @@
+[
+	{
+		"name": "Apple",
+		"slug": "apple",
+		"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAAXNSR0IArs4c6QAAAiJQTFRFZ2dnZ2dngICAZmZmAAAAgICAZ2dnTGlxZ2dnVVVVZ2dnZ2dn////aGhoVVVVZmZmQEBAZ2dnZmZmZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZmZmaGhoZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZWVlbW1taGhoZ2dnaGhoZ2dnZ2dnZ2dnZmZmZ2dnZ2dnZ2dnY2NjZ2dnZ2dnZ2dnZ2dnaWlpaGhoZ2dnaGhoaGhoZ2dnaWlpampqZ2dnZ2dnZmZmaGhoZ2dnZ2dnXV1dZ2dnZ2dnZ2dnaGhoZ2dnaGhoaGhoZ2dnaGhoaWlpZmZmaGhoZWVlZ2dnaGhoZ2dnY2NjZ2dnaGhoZ2dnZ2dnZ2dnZ2dnZ2dnampqZ2dnZmZmaWlpZ2dnZWVlYmJiZ2dnaGhoaGhoZ2dnZmZmZ2dnaGhoZmZmaGhoaGhoZ2dnZmZmZ2dnZmZmaGhoZmZmaGhoaGhoZ2dnZWVlZWVlZ2dna2trZ2dnaGhoaGhoampqZ2dnZ2dnXV1dZ2dnZ2dnZmZmZmZmZmZmgICAaGhoaWlpZGRkYGBgZ2dnaWlpZmZmaGhoZ2dnZ2dnaWlpZmZmY2NjZmZmZ2dnaGhoZmZmZ2dnaGhoZGRkZmZmZmZmaGhoaGhoZGRkZ2dnZmZmZ2dnaGhoaGhoaWlpaWlpZmZmZmZmaGhoZWVlbW1tZGRkZ2dnbW1tbm5ua2trbGxsaWlpaGhoampqb29vdXV1AQM+dAAAALZ0Uk5T/voEBQEC/AD9A/n7AfsG/gT4+Z71iOTuxnm6HnOB8kPsVM41BwlogF5v1nPQRJESwXfX4REXv0120g4prvB96pWXCMvdWiRPYGyvqidBUS3nIC8UijnaX6eShAw0NyvgKA3UcZarf53Ah0w9mspSdaxte+yjPzoxEzCl8R2PYwuh6LFqRgZWLiMQvSKZ21fDNSoferG7rPeMOPRLZUchsuXIx8VkM47v5V0VHP////////////80XpdVAAAIlElEQVRo3rVaB3vbNhoGKBIASUuO5BmvLMfZiZ29mtGMZu+k2WmS6073ntc9r72mvba39z4MDvX/HUjJlkiREi1BeOL4sYSHLz/gG+83AFa2DNPIsAsoQluQM7NtVAKoZ0VT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",
+		"position": 1,
+		"models": [
+			{
+				"name": "iPhone 11 Pro Max",
+				"slug": "iphone-11-pro-max",
+				"icon": null,
+				"intermediatePage": true
+			},
+			{
+				"name": "iPhone 11 Pro",
+				"slug": "iphone-11-pro",
+				"icon": null,
+				"intermediatePage": true
+			},
+			{
+				"name": "iPhone 11",
+				"slug": "iphone-11",
+				"icon": null,
+				"intermediatePage": true
+			},
+
+			{
+				"name": "iPhone XR",
+				"slug": "iphone-xr",
+				"icon": null,
+				"intermediatePage": true
+			},
+			{
+				"name": "iPhone XS Max",
+				"slug": "iphone-xs-max",
+				"icon": null,
+				"intermediatePage": true
+			},
+			{
+				"name": "iPhone XS",
+				"slug": "iphone-xs",
+				"icon": null,
+				"intermediatePage": true
+			},
+			{
+				"name": "iPhone X",
+				"slug": "iphone-x",
+				"icon": null,
+				"intermediatePage": true
+			}
+		],
+		"otherModels": [
+			{
+				"mysqlId": "3112",
+				"name": "iPhone 6s Plus",
+				"slug": "iphone-6s-plus",
+				"status": true
+			},
+			{
+				"mysqlId": "3002",
+				"name": "iPhone 6 Plus",
+				"slug": "iphone-6-plus",
+				"status": true
+			},
+			{
+				"mysqlId": "3107",
+				"name": "iPhone 6s",
+				"slug": "iphone-6s",
+				"status": true
+			},
+			{
+				"mysqlId": "2989",
+				"name": "iPhone 6",
+				"slug": "iphone-6",
+				"status": true
+			},
+			{
+				"mysqlId": "2902",
+				"name": "iPhone 5/5S",
+				"slug": "iphone-5-5s",
+				"status": true
+			},
+			{
+				"mysqlId": "3141",
+				"name": "iPhone SE",
+				"slug": "iphone-se",
+				"status": true
+			},
+			{
+				"mysqlId": "2901",
+				"name": "iPhone 4/4S",
+				"slug": "iphone-4-4s",
+				"status": true
+			},
+			{
+				"mysqlId": "2903",
+				"name": "iPhone 5C",
+				"slug": "iphone-5c",
+				"status": true
+			}
+		]
+	},
+	{
+		"name": "OnePlus",
+		"slug": "oneplus",
+		"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAAXNSR0IArs4c6QAAAE5QTFRFTGlxf39/gICAf39/gICAgICAgICAf39/fX19dnZ2gICAgICAgICAgICAgICAf39/gICAgICAenp6fn5+VVVVgICAgICAf39/fHx8f39/AQOldgAAABp0Uk5TANFGz4Ks2O8tDTDEUvrgi3g4GV0DYpi3I/+lx6idAAABKUlEQVRo3u3a2Q6CMBRFUQSxZRQQB/7/Rw2WWBDooO1Vw9mPUFwhahmDACGE/rGK9ZUJGXjs+go6cP8AGUCAALcEVgJsdeMS2+Sm7WS5mNpYszxWVjK7rnJTPllRdEIcVS6BwzjjIrlpqhtbLIHMEswsQAbwJ0FXP5qcG3Yb/YUnKy5ip+rxMgXYuJpptOMGkJPNpQABAgTo/3JtHQyj12LVBzVpH2/fB09mxzfb1sF8Bh4AfgaeqME6fpaRgKM4NRgC/AZ4zvquCRkoJu+ODnR6eAIIECBAgAABbgEcToR3fsH5qT6TS1IP4Fl1KzT3AOYqMATo5ILU83cY7hTVuPUFECBAgDPQ2eM8U9D4geVqFzvQVQC3ABZuQf2jINvXWzQRvpuIEPrx7qOV5IENEwavAAAAAElFTkSuQmCC",
+		"position": 7,
+		"models": [
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 7T Pro",
+				"slug": "oneplus-7t-pro",
+				"status": true
+			},
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 7T",
+				"slug": "oneplus-7t",
+				"status": true
+			},
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 7 Pro",
+				"slug": "oneplus-7-pro",
+				"status": true,
+				"intermediatePage": true
+			},
+
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 7",
+				"slug": "oneplus-7",
+				"status": true,
+				"intermediatePage": true
+			},
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 6T",
+				"slug": "oneplus-6t",
+				"status": true,
+				"intermediatePage": true
+			},
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 6",
+				"slug": "oneplus-6",
+				"status": true
+			},
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 5T",
+				"slug": "oneplus-5t",
+				"status": true
+			},
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 5",
+				"slug": "oneplus-5",
+				"status": true
+			},
+			{
+				"mysqlId": "3031333",
+				"name": "OnePlus 3T",
+				"slug": "oneplus-3t",
+				"status": true
+			}
+		],
+		"otherModels": [
+			{
+				"mysqlId": "3155",
+				"name": "OnePlus 3",
+				"slug": "oneplus-3",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3095",
+				"name": "OnePlus 2",
+				"slug": "oneplus-2",
+				"status": true
+			},
+			{
+				"mysqlId": "3125",
+				"name": "OnePlus X",
+				"slug": "oneplus-x",
+				"status": true
+			},
+			{
+				"mysqlId": "3031",
+				"name": "OnePlus One",
+				"slug": "oneplus-one",
+				"status": true
+			}
+		]
+	},
+	{
+		"name": "Samsung",
+		"slug": "samsung",
+		"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAAXNSR0IArs4c6QAAAHhQTFRFTGlxeXl5fn5+fn5+gICAf39/f39/gICAgICAgICAgICAfX19gICAf39/f39/gICAf39/gICAf39/gICAgICAgICAd3d3fn5+f39/fn5+gICAgICAfn5+f39/gICAcXFxgICAfX19gICAgICAfX19gICAgICAf39/+ejASgAAACh0Uk5TABVxaR7b9ZIkjEg96tOX4scosVhCMA9/uWHAhHnvzgmcN6qkK6BO//Mst9sAAAK2SURBVGje7ZXZmqMgEIVxg7gbTTSatc1S7/+Gc6qw0/1N23M7N/VfAEHgFLUQYxRFURRFURRFURRFURRFUZT/zv6e2PPl6H9Erqqci3m4c65y6dWYEb0L5fNpqusm7TEKnHMPaTfG9OgcTtigC3jd2Cb15bZf1fsgTyO//DjiYSpDbCq4LzBzLf3nGooP9J3Zo80gJNMPk6HdYmG1nLlbE2yIytewfN0SJQcixx8wlxQ49GqptHTBTEh0HiMsDb1GxuspNyaW409iPC7MZsxDjYPXBAteyTcb8aMjak9EB/5wxLihgbc/SQRnosmYhKj6KVg28NHeC4biELS0JghD6tzEeR54kVvu/ccudU+6w4gy9MbeiGxngl22+Sk4wU4TvAUTeKuq0jVBNoRNFlqi4ep3GYdxhJuFNL/kBB/uVrLih2Cytxi9Bet/ZKmTAAyf1x2NJXr5+VNOFv2w94LscXC7rghaGHs0326Ylk0zrSvuGj6G48bBf3GQjj7Vjj1RMNNr82lyPPPSJFhJGnZ9bL8EJ/olhlI2Z18LmdQB0rTF5JOz1VLX0Ga7hBVkF77jmiCM68ovwYBzek2sPRxGExcigsDbnrOFHXjngxtqz8TBK+DHtJlQMJNk0FYKKfblxF0Mz9ybb0nzwX5egUQKt5pFAyu50gL58ZQSrs0OxkKwFJtDqZH4Lbjc8AFDi+JbWYy/CCJixRhZSZuLhDLzZs8sGEl0M7m5vD1DhMS6Yx92lKfJ2xZLKPybtfGv0FSdP1+vv8iWZ6gIZN8SnkruczAoSsh2/tyg9kvt452x8mrIjnx5F7e+nJnz+mO6a2trk4oNdWn6wevTtINLuL2mPLVFyy92n16KorxtvKVzWSdtx8M+iiLs36GLejmzmpp2CPSfUVEURVEURVEURVEURVEU5b/zB6z5YtkBKltKAAAAAElFTkSuQmCC",
+		"position": 2,
+		"models": [
+			{
+				"name": "Galaxy Note 10",
+				"slug": "galaxy-note-10",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy Note 10 Plus",
+				"slug": "galaxy-note-10-plus",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy A10",
+				"slug": "galaxy-a10",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy A30",
+				"slug": "galaxy-a30",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy A30s",
+				"slug": "galaxy-a30s",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy A50s",
+				"slug": "galaxy-a50s",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy S20 Ultra",
+				"slug": "galaxy-s20-ultra",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy S20 Plus",
+				"slug": "galaxy-s20-plus",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy S20",
+				"slug": "galaxy-s20",
+				"intermediatePage": true
+			},
+
+			{
+				"name": "Galaxy A70s",
+				"slug": "galaxy-a70s",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy M30S",
+				"slug": "galaxy-m30s",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy A40",
+				"slug": "galaxy-a40",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy A50",
+				"slug": "galaxy-a50",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy A70",
+				"slug": "galaxy-a70",
+				"intermediatePage": true
+			},
+
+			{
+				"name": "Galaxy M20",
+				"slug": "galaxy-m20",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy M10",
+				"slug": "galaxy-m10",
+				"intermediatePage": true
+			},
+			{
+				"name": "Galaxy S10 Plus",
+				"slug": "galaxy-s10-plus"
+			},
+			{
+				"name": "Galaxy S10",
+				"slug": "galaxy-s10"
+			},
+			{
+				"name": "Galaxy S10e",
+				"slug": "galaxy-s10e"
+			},
+			{
+				"name": "Galaxy A9 2018",
+				"slug": "galaxy-a9-2018"
+			},
+			{
+				"name": "Galaxy J4 Plus",
+				"slug": "galaxy-j4-plus"
+			},
+			{
+				"name": "Galaxy J6 Plus",
+				"slug": "galaxy-j6-plus"
+			},
+			{
+				"name": "Galaxy A7 2018",
+				"slug": "galaxy-a7-2018"
+			},
+			{
+				"name": "Galaxy A8 2018",
+				"slug": "galaxy-a8-2018"
+			},
+			{
+				"name": "Galaxy J7 2018",
+				"slug": "galaxy-j7-2018"
+			},
+			{
+				"name": "Galaxy A8 2016",
+				"slug": "galaxy-a8-2016"
+			},
+			{
+				"name": "Galaxy J8",
+				"slug": "galaxy-j8",
+				"status": true
+			},
+			{
+				"name": "Galaxy Note 9",
+				"slug": "galaxy-note-9",
+				"status": true
+			},
+			{
+				"name": "Galaxy C7",
+				"slug": "galaxy-c7",
+				"status": true
+			},
+			{
+				"name": "Galaxy J7 Pro 2017",
+				"slug": "galaxy-j7-pro-2017",
+				"status": true
+			},
+
+			{
+				"name": "Galaxy S9 Plus",
+				"slug": "galaxy-s9-plus",
+				"status": true
+			},
+			{
+				"name": "Galaxy S9",
+				"slug": "galaxy-s9",
+				"status": true
+			},
+			{
+				"status": true,
+				"slug": "galaxy-note-8",
+				"name": "Galaxy Note 8"
+			},
+			{
+				"slug": "galaxy-a8-plus",
+				"name": "Galaxy A8 Plus",
+				"status": true
+			},
+			{
+				"slug": "galaxy-j7-max",
+				"name": "Galaxy J7 Max",
+				"status": true
+			},
+			{
+				"mysqlId": "2104",
+				"name": "Galaxy S8",
+				"slug": "galaxy-s8",
+				"status": true
+			},
+			{
+				"name": "Galaxy C9 Pro",
+				"slug": "galaxy-c9-pro",
+				"status": true
+			},
+			{
+				"mysqlId": "2104",
+				"name": "Galaxy S8 Plus",
+				"slug": "galaxy-s8-plus",
+				"status": true
+			},
+			{
+				"name": "Galaxy C7 Pro",
+				"slug": "galaxy-c7-pro",
+				"status": true
+			},
+			{
+				"name": "Galaxy J7 Prime",
+				"slug": "galaxy-j7-prime",
+				"status": true
+			},
+			{
+				"mysqlId": "3104",
+				"name": "Galaxy A7 2017",
+				"slug": "galaxy-a7-2017",
+				"status": true
+			},
+			{
+				"mysqlId": "3105",
+				"name": "Galaxy J5 2017 Edition",
+				"slug": "galaxy-j5-2017-edition",
+				"status": true
+			},
+			{
+				"mysqlId": "3104",
+				"name": "Galaxy A5 2017",
+				"slug": "galaxy-a5-2017",
+				"status": true
+			},
+			{
+				"mysqlId": "3143",
+				"name": "Galaxy A9",
+				"slug": "galaxy-a9",
+				"status": true
+			},
+			{
+				"mysqlId": "3104",
+				"name": "Galaxy A3 2017",
+				"slug": "galaxy-a3-2017",
+				"status": true
+			}
+		],
+		"otherModels": [
+			{
+				"mysqlId": "3132",
+				"name": "Galaxy S7",
+				"slug": "galaxy-s7",
+				"status": true
+			},
+			{
+				"name": "Galaxy Note 7",
+				"slug": "galaxy-note-7",
+				"status": true
+			},
+			{
+				"mysqlId": "3133",
+				"name": "Galaxy S7 Edge",
+				"slug": "galaxy-s7-edge",
+				"status": true
+			},
+			{
+				"mysqlId": "3052",
+				"name": "Galaxy S6",
+				"slug": "galaxy-s6",
+				"status": true
+			},
+			{
+				"mysqlId": "2997",
+				"name": "Galaxy Note 4",
+				"slug": "galaxy-note-4",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3062",
+				"name": "Galaxy S6 Edge",
+				"slug": "galaxy-s6-edge",
+				"status": true
+			},
+			{
+				"mysqlId": "2940",
+				"name": "Galaxy Note 3 Neo",
+				"slug": "galaxy-note-3-neo",
+				"status": true
+			},
+			{
+				"mysqlId": "3133",
+				"name": "Galaxy S6 Edge Plus",
+				"slug": "galaxy-s6-edge-plus",
+				"status": true
+			},
+			{
+				"mysqlId": "3150",
+				"name": "Galaxy J7 2016",
+				"slug": "galaxy-j7-2016",
+				"status": true
+			},
+			{
+				"mysqlId": "3148",
+				"name": "Galaxy A7 2016",
+				"slug": "galaxy-a7-2016",
+				"status": true
+			},
+			{
+				"mysqlId": "3108",
+				"name": "Galaxy J7",
+				"slug": "galaxy-j7",
+				"status": true
+			},
+			{
+				"mysqlId": "3149",
+				"name": "Galaxy J5 2016",
+				"slug": "galaxy-j5-2016",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3147",
+				"name": "Galaxy A5 2016",
+				"slug": "galaxy-a5-2016",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3109",
+				"name": "Galaxy J5",
+				"slug": "galaxy-j5",
+				"status": true
+			},
+			{
+				"mysqlId": "3085",
+				"name": "Galaxy A5",
+				"slug": "galaxy-a5",
+				"status": true
+			},
+
+			{
+				"mysqlId": "2939",
+				"name": "Galaxy S5",
+				"slug": "galaxy-s5",
+				"status": true
+			},
+			{
+				"mysqlId": "3122",
+				"name": "Galaxy On5",
+				"slug": "galaxy-on5",
+				"status": true
+			},
+
+			{
+				"mysqlId": "2938",
+				"name": "Galaxy S4",
+				"slug": "galaxy-s4",
+				"status": true
+			},
+			{
+				"mysqlId": "3124",
+				"name": "Galaxy E7",
+				"slug": "galaxy-e7",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3148",
+				"slug": "galaxy-s4-mini",
+				"name": "Galaxy S4 Mini",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3033",
+				"name": "Galaxy Grand Prime",
+				"slug": "galaxy-grand-prime",
+				"status": true
+			},
+
+			{
+				"mysqlId": "2937",
+				"name": "Galaxy S3",
+				"slug": "galaxy-s3",
+				"status": false
+			},
+
+			{
+				"mysqlId": "3124",
+				"name": "Galaxy Z3",
+				"slug": "galaxy-z3",
+				"status": true
+			}
+		]
+	},
+	{
+		"name": "Xiaomi",
+		"slug": "xiaomi",
+		"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAAXNSR0IArs4c6QAAAFpQTFRFTGlxfn5+gICAgICAgICAgICAf39/gICAgICAfHx8gICAf39/gICAgICAf39/gICAgICAbW1tgICAfn5+gICAf39/gICAf39/gICAf39/f39/gICAgICAf39/c0NgPgAAAB50Uk5TAF/WniyU1/JMKXrF5NKjVDQHPm+Ig7i/ROut2Bj/QG0MaQAAAQhJREFUaN7t2msPgiAYhmGwTC3IQ2er//83W6lMna3NfJmr+/kGIpdOYeBUihBCPMZEcjFD4F0yQ2Ak6EWAgICAgICAgICAgDMCdbJ8n+ys17bd+ljVJ5kZDeYft1xxq/NDU2lHg8nnTV5+cq3Dpm4lCSp19A2qi28w9Q0qMzmYbfopdesNPkwO7gbGsjm7M/XkoB6cPpLeQxQHT270ewLdROQNLKRBs61TD/VUGtw1TRdVOZYG14CAgICAgIC/CN66C0+3xAi7i6iiKu6/3x9m3Tt0PZbdRVR9PdveXmMEGNngGdscCqpi8Obw9VW2hq8YgICAgICAgICAgDMC75KZxb+JhJB/yQNyQCD4awtn0QAAAABJRU5ErkJggg==",
+		"position": 5,
+		"models": [
+			{
+				"name": "Redmi Note 7 Pro",
+				"slug": "redmi-note-7-pro",
+				"status": true
+			},
+			{
+				"name": "Redmi Go",
+				"slug": "redmi-go",
+				"status": true
+			},
+			{
+				"name": "Redmi Note 7",
+				"slug": "redmi-note-7",
+				"status": true,
+				"intermediatePage": true
+			},
+			{
+				"name": "Mi Mix 3",
+				"slug": "xiaomi-mi-mix-3",
+				"status": true
+			},
+			{
+				"name": "Redmi Note 6 Pro",
+				"slug": "redmi-note-6-pro",
+				"status": true
+			},
+			{
+				"name": "Mi 8 Pro",
+				"slug": "mi-8-pro",
+				"status": true
+			},
+			{
+				"name": "Redmi Y1 Lite",
+				"slug": "redmi-y1-lite",
+				"status": true
+			},
+			{
+				"name": "Xiaomi Mi A3",
+				"slug": "mi-a3",
+				"status": true
+			},
+			{
+				"name": "Xiaomi Redmi Note 8 Pro",
+				"slug": "redmi-note-8-pro",
+				"status": true
+			},
+			{
+				"name": "Poco F1",
+				"slug": "poco-f1",
+				"status": true
+			},
+			{
+				"name": "Xiaomi Redmi Note 8",
+				"slug": "redmi-note-8",
+				"status": true
+			},
+			{
+				"name": "Mi A2",
+				"slug": "xiaomi-mi-a2",
+				"status": true
+			},
+			{
+				"name": "Redmi Y2",
+				"slug": "redmi-y2",
+				"status": true
+			},
+			{
+				"name": "Redmi 6",
+				"slug": "redmi-6",
+				"status": true
+			},
+			{
+				"name": "Redmi 6 Pro",
+				"slug": "redmi-6-pro",
+				"status": true
+			},
+			{
+				"name": "Redmi Note 5 Pro",
+				"slug": "redmi-note-5-pro",
+				"status": true
+			},
+			{
+				"name": "Redmi Note 5",
+				"slug": "redmi-note-5",
+				"status": true
+			},
+			{
+				"status": true,
+				"name": "Mi Max 2",
+				"slug": "mi-max-2"
+			},
+			{
+				"name": "Mi A1",
+				"status": true,
+				"slug": "mi-a1"
+			},
+			{
+				"name": "Mi6",
+				"slug": "mi6",
+				"status": true
+			},
+			{
+				"name": "Redmi Note 4",
+				"slug": "redmi-note-4",
+				"status": true
+			},
+			{
+				"mysqlId": "3044",
+				"name": "Mi4",
+				"slug": "mi4",
+				"status": true
+			},
+			{
+				"_id": "57cabdfc065e7a463528ff3e",
+				"name": "Mi Max",
+				"slug": "mi-max",
+				"icon": null
+			}
+		],
+		"otherModels": [
+			{
+				"mysqlId": "3050",
+				"name": "Redmi Note 4G",
+				"slug": "redmi-note-4g",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3089",
+				"name": "Mi 4i ",
+				"slug": "mi-4i",
+				"status": true
+			},
+			{
+				"mysqlId": "3130",
+				"name": "Redmi Note 3",
+				"slug": "redmi-note-3",
+				"status": true
+			},
+			{
+				"mysqlId": "3044",
+				"name": "Mi3",
+				"slug": "mi3",
+				"status": true
+			},
+			{
+				"mysqlId": "3105",
+				"name": "Redmi Note 2",
+				"slug": "redmi-note-2",
+				"status": true
+			},
+			{
+				"mysqlId": "3189",
+				"name": "Mi Note 2",
+				"slug": "mi-note-2",
+				"status": true
+			},
+			{
+				"name": "Redmi 4A",
+				"slug": "redmi-4a",
+				"status": true
+			},
+			{
+				"mysqlId": "3103",
+				"name": "Mi Note",
+				"slug": "mi-note",
+				"status": true
+			},
+
+			{
+				"name": "Redmi 4",
+				"slug": "redmi-4",
+				"status": true
+			},
+			{
+				"mysqlId": "3145",
+				"name": "Redmi 3",
+				"slug": "redmi-3",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3055",
+				"name": "Redmi 2",
+				"slug": "redmi-2",
+				"status": true
+			}
+		]
+	},
+	{
+		"name": "Motorola",
+		"slug": "motorola",
+		"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAAXNSR0IArs4c6QAAAH5QTFRFTGlxgICAfn5+f39/ZmZmf39/f39/dHR0f39/f39/f39/enp6gICAf39/gICAfHx8f39/gICAgICAeHh4gICAfn5+gICAfX19gICAgICAgICAgICAe3t7fn5+f39/f39/f39/fn5+f39/f39/gICAgICAgICAgICAf39/f39/LqE9+gAAACp0Uk5TANZTjwW75wv5ge0X9JfIJ89sNBHicS47Wk7csB1lh8G1eaehQEacYKv/KCxt4QAABcNJREFUaN7tWtmiqjAMBMouICD7oiB6tP//g5eCqECCgNw382hLQ9vJZBLhuJ/97Gc/m7ZdmB/vEu/psqx7vJSSPDz8P28BsVQ6MsMi0e4/eHM1m6KmSk62qbeDf3osLVt/ZRSHbhC4lzgqK0vvfJ4vm7nLtGZVQyKOKw4HFdcpjNanFW2DE7O5uJOPX9RBqFqflvC1O7HZnXzcfzz09oql4Dt/V56d5XEW9GOpcXn8xp/JViCzQR9bbL7trnW3Z8/fFz3uNPBy1vmLGNiXAm93Zh7/1vjTGAT2y5/LG0wri5/7Y7e37iYY0PiFbKdU9UNr41gsWCQtuwmvfiQeriOirycCxyMtecUE8MeFGjb/OELykeF7vkMLjN/SwOar+Tg+lmCV3Z85/jmlCGZdaLYzPx7Z1AL4Xac+FkAeElbhrLxeT0yA3y91dMFP1LQN0VGdQo054cgAA6VvUvMOSOJZ/QCEJ4WfBdUjFoAJNsCoxcbO6vqRJpALbAboGRpJKXIm7BqN7HNEqODBlxShD0XFE0R9u+mHhFs/m4MjrYoChJLQZnoUgLtPiElgsmt1EoFZHsVj8SH8Y3gTtd1ah/x4RG5HYhQSU1u0Ebxx3P0hP0dkEz4GkI2kIGm9OArDsdjpXR8iFIqnI7ZFXILdsRtszhoGx7MAuKBb9NG0pqJ8+/csIw5jmqFT8jBEN9EAQ0W27z3XjQAFg+GpuwyMwyU0TN1XoXQe4Z5ieHpyJcFPFKkNyteyek9OKMZrxEdf1oJHBIzVWgnQ2RUEE0WTFwvUANP1SDbJ3otPMhQHGJ46O8PZqwG4hmuApyUwmHBZ6SP554DyEyf16us9CCYseTXHrotwwKg7FE0UBIfWG9Bh4bpT4UusI8pD0URhcPD9ESS98/BpExQz1aBncQDBRFGaLmBwpCjjy4N1IxBMFOUwE36VGhklxoYUBkcxHAkwkBdwVNzA+WS4bAeOd5pprcQ4+gTzc4QKVRAcwmjAwuLCBpU8zKT7caeLvLUc+gbG1QVOJZhDf7xsAtBMa/kGDjvititiWu/g6MBkmaTqArJY4FCGHR5amknbciWUXuBoaSZtkRmmbYtPgcWuPZ8PosFRaU9w2H1cOqhajGA0neAbuA+XKR/g2A8VfoSpxRzmsALUQY0+zEf9sKjdkTbSBTJc01QwY97hYuM+hlHavGAB4CsEMzCB38OC23vKuM4wOE4d1xMZrBZPsN4RwIQmQ0vUobnbQ0xYYdXHBWGUAKi3IKTL1PGh3JBBajFA5C6DhwOcswnSsWGAEQAJ+wgTyVAtZyP61kMWCYEIIFii9cd43GEJ4IYJrmR8fB5WVB9kKouj1AnP5aiKavRoXHYHaGUVD1UAVt1UBNXM5xEMPLzn1Z9cp/QCK+0UtIg2xOGJmhP14WEQmvnS7mw5CLo6N1G0Tz8EdfWp6QGHMxnwGlqQMlB7/fi2lzegvZ6DHZ0ouZucGPf8r/ibxeyBkgBc3A8vvnei1+UOhfczZXrBnJotv21RlGR+xf+tu8RLe8lmEga3t1sUFZFbZaLyTubm9GQerUrX2Gn6BrsSc7O/c4VpiD7j5rSRP1Z7eLNm+dsd6Iy+/nWKi5aYNvfvUoJ3wJZe4EyiquW8LX7rz6V0NhMzdfMtcPYG3tGE307KvvZ3mz+fAUffr/cXGnQhgbCeunH5Bi+fKA3ocq5I92/11XlNFC19y5Y5qpXfK9zWfXVw9ShdyVVh04FaljuyprOhx+vu4tDU7cmCT1acplUkrf9iqW2ZSDOFxi2ZaEfNDeC2OSF93mXmbPNBDSe0LRhem1pIDM227ybfuO8tf3R9bA05WuH46EnJpcJtYlHXgfJO5HjJHuJKFJUsFMipa/7Z5Ybf1F3Iq0ur6rLn3auTLOuvZrh6jrltTRH+Euw7On3qk7BvLCjP/KhFenZchfuPtg+EXEuLtChSPxfcjPvZz372s0/2D9vtFVL6bwEbAAAAAElFTkSuQmCC",
+		"position": 6,
+		"models": [
+			{
+				"name": "Moto Z Play",
+				"slug": "moto-z-play"
+			},
+			{
+				"name": "Moto E5 Plus",
+				"slug": "moto-e5-plus"
+			},
+			{
+				"name": "Moto E5",
+				"slug": "moto-e5",
+				"status": true
+			},
+			{
+				"name": "Moto One Power",
+				"slug": "moto-one-power"
+			},
+			{
+				"name": "Moto G6 Play",
+				"slug": "moto-g6-play",
+				"status": true
+			},
+			{
+				"name": "Moto One Power",
+				"slug": "moto-one-power"
+			},
+			{
+				"name": "Moto G6 Play",
+				"slug": "moto-g6-play",
+				"status": true
+			},
+			{
+				"name": "Moto E4",
+				"slug": "moto-e4",
+				"status": true
+			},
+			{
+				"name": "Moto E4 Plus",
+				"slug": "moto-e4-plus",
+				"status": true
+			},
+
+			{
+				"slug": "moto-g6-plus",
+				"status": true,
+				"name": "Moto G6 Plus"
+			},
+			{
+				"slug": "moto-g6",
+				"status": true,
+				"name": "Moto G6"
+			},
+			{
+				"name": "Moto G5",
+				"slug": "moto-g5",
+				"status": true
+			},
+			{
+				"slug": "moto-g5s-plus",
+				"status": true,
+				"name": "Moto G5S Plus"
+			},
+			{
+				"name": "Moto C",
+				"slug": "moto-c",
+				"status": true
+			},
+			{
+				"name": "Moto G5 Plus",
+				"slug": "moto-g5-plus",
+				"status": true
+			},
+			{
+				"name": "Moto C Plus",
+				"slug": "moto-c-plus",
+				"status": true
+			}
+		],
+		"otherModels": [
+			{
+				"mysqlId": "3101",
+				"name": "Moto G4/Moto G4 Plus",
+				"slug": "moto-g4-moto-g4-plus",
+				"status": true
+			},
+			{
+				"mysqlId": "2963",
+				"name": "Moto M",
+				"slug": "moto-m",
+				"status": true
+			},
+			{
+				"mysqlId": "3154",
+				"name": "Moto G4 Play",
+				"slug": "moto-g4-play",
+				"status": true
+			},
+			{
+				"mysqlId": "2960",
+				"name": "Moto X",
+				"slug": "moto-x",
+				"status": true
+			},
+			{
+				"mysqlId": "3153",
+				"name": "Moto G3/Moto G Turbo",
+				"slug": "moto-g3",
+				"status": true
+			},
+			{
+				"mysqlId": "3019",
+				"name": "Moto X2",
+				"slug": "moto-x2",
+				"status": true
+			},
+
+			{
+				"mysqlId": "3003",
+				"name": "Moto G2",
+				"slug": "moto-g2",
+				"status": true
+			},
+			{
+				"mysqlId": "3113",
+				"name": "Moto X Play",
+				"slug": "moto-x-play",
+				"status": true
+			},
+			{
+				"mysqlId": "2959",
+				"name": "Moto G",
+				"slug": "moto-g",
+				"status": true
+			},
+			{
+				"mysqlId": "3115",
+				"name": "Moto X Style",
+				"slug": "moto-x-style",
+				"status": true
+			},
+			{
+				"name": "Moto Z",
+				"slug": "moto-z",
+				"status": true
+			},
+			{
+				"name": "Moto E3",
+				"slug": "moto-e3",
+				"status": true
+			},
+
+			{
+				"name": "Moto Z Force",
+				"slug": "moto-z-force",
+				"status": true
+			},
+			{
+				"mysqlId": "3060",
+				"name": "Moto E2",
+				"slug": "moto-e2",
+				"status": true
+			},
+			{
+				"_id": "593baf2fc36c880d58996aef",
+				"name": "moto Z2 Play",
+				"slug": "moto-z2-play",
+				"status": true
+			},
+			{
+				"mysqlId": "2958",
+				"name": "Moto E",
+				"slug": "moto-e",
+				"status": true
+			}
+		]
+	},
+	{
+		"name": "Oppo",
+		"slug": "oppo",
+		"icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAAXNSR0IArs4c6QAAAgpQTFRFTGlxgICAgICAgICAgICAgICAf39/gICAcXFxf39/f39/gICAgICAf39/f39/gICAfn5+f39/gICAgICAf39/gICAf39/eXl5f39/fn5+gICAgICAgICAgICAfn5+f39/gICAgICAgICAgICAgICAgICAgICAbW1tgICAgICAdnZ2fn5+gICAf39/fHx8fHx8gICAgICAgICAf39/gICAgICAgICAgICAgICAgICAf39/gICAgICAfn5+gICAfn5+f39/f39/gICAf39/f39/gICAgICAfn5+f39/gICAf39/gICAfn5+gICAgICAgICAf39/gICAZmZmf39/gICAgICAgICAgICAgICAgICAfn5+e3t7fX19gICAf39/gICAfn5+f39/f39/gICAgICAfX19f39/gICAgICAf39/f39/f39/gICAe3t7gICAf39/f39/gICAfn5+gICAfX19gICAf39/fn5+d3d3gICAgICAgICAf39/fn5+dHR0f39/f39/f39/gICAgICAfn5+gICAeXl5fn5+gICAgICAgICAfX19fn5+gICAgICAf39/gICAgICAfX19f39/gICAf39/gICAgICAgICAgICAf39/gICAgICAgICAfX19gICAgICAgICAgICAfn5+gICAf39/f39/f39/f39/fn5+gICAfn5+f39/f39/8lRJvQAAAK50Uk5TADDICMqkqVQJ66fEooHXwm23QBCbtPcV3XWAlELAd8dSOL66cNCIB9hmDW/WnSEpKH7amXYU0lhaEv1sRGMKZcWNBMu1mF57rwzx5kVqLNz1XAW5jJaK9uCgXR05ks2Cc8nBNpw11S7q+duxSh8ev896a943/NlJD7YysLN5C4mrn+xiWRwTV476xjtbKrL7SIQ/5aiRmhiuIOl0ZAYzaPDi1EHk56OFh1HoTYP/2KEaRwAAAlFJREFUaN7tlVV320AQRqeuZZlihpjixLETO06bhtNAwwxtGMrMzMzM3KTMqP/YHbmWI53a7YPzNvdB2r1nznxreVcCIAiCIAiCIAiCIAiCIAiCIAgiS6zZ0NmhUhf6LA/c4jyfMxr3ASzNW1KoVjnHYrYSUX/nvvhGkvreRPOj3lSLocG1PS3tZq77yqJ/pW2uDKnXGQKGqEtgtFhY80o2KADgS1X7g7loJ60zrHKcjbRsOduCAdUU6lUdw2IL99NbB2qCmwKRS2gfX2zMlOfYWL7sz9B+R83q+y5DObulFjr7co7Nc/3wSxB0iyV99+F91B8BBvun/Ulr4zBztDptHheSTcewvKBWFgjQZkW9ekYWCPA8Kmq/MDS/xcAkriNtYFQx72PVTosiELTY+RuvCITbqH2huLzFNNq0gRXNsqn/Jiv21LGLe76+jj1+ssAfsuoi1LxnSiaLTRkDt+7Qb5cmV3Ow1gAN7Hp+RaqFBzUH7OaKl0j62g3URoDRD8OSfN31HndTfvpNU2wsNe1uDTfFzjqOYYOaQ+LKXSedF4qajtsaaw+Kf6CBB/gqCJ8czp7W2B7bQJ3XjNrMY49X5nbrlvXheHdnBOXKCXfGc9HWpdm1UxArT+cdQcN+aP256qozJl096sMaSxlqryB8Bnv4hUl3FHWFviG5v6GsShPpZ+fqndrx9s3/Hf7eE6lniE/2VGK3LLdrJe2VNo1MZ4Ec5S5VBmab8cSbRokv8aZZAHiNXr/3b/rJsxH68hAEQRAEQRAEQRAEQRAEsWD8BhVxxx6oZMkwAAAAAElFTkSuQmCC",
+		"position": 11,
+		"models": [
+			{
+				"name": "Oppo R11S",
+				"slug": "oppo-r11s"
+			},
+			{
+				"name": "Oppo F11 Pro",
+				"slug": "oppo-f11-pro",
+				"intermediatePage": true
+			},
+			{
+				"name": "Oppo Reno 2Z",
+				"slug": "oppo-reno-2z",
+				"intermediatePage": true
+			},
+			{
+				"name": "Oppo Reno 2F",
+				"slug": "oppo-reno-2f",
+				"intermediatePage": true
+			},
+			{
+				"name": "Oppo Reno 2",
+				"slug": "oppo-reno-2",
+				"intermediatePage": true
+			},
+			{
+				"name": "Oppo Realme XT",
+				"slug": "oppo-realme-xt",
+				"intermediatePage": true
+			},
+			{
+				"name": "Oppo Realme 5",
+				"slug": "oppo-realme-5",
+				"intermediatePage": true
+			},
+
+			{
+				"name": "Oppo Realme 5 Pro",
+				"slug": "oppo-realme-5-pro",
+				"intermediatePage": true
+			},
+			{
+				"name": "Oppo F9 Pro",
+				"slug": "oppo-f9-pro"
+			},
+			{
+				"name": "Oppo F9",
+				"slug": "oppo-f9"
+			},
+			{
+				"name": "Oppo Realme 2",
+				"slug": "oppo-realme-2"
+			},
+			{
+				"name": "Oppo Realme 2 Pro",
+				"slug": "oppo-realme-2-pro"
+			},
+			{
+				"name": "Oppo Realme C1",
+				"slug": "oppo-realme-c1"
+			},
+			{
+				"name": "Oppo Realme 1",
+				"slug": "oppo-realme-1",
+				"status": true
+			},
+			{
+				"name": "Oppo F7",
+				"slug": "oppo-f7",
+				"status": true
+			},
+			{
+				"slug": "oppo-f5",
+				"name": "Oppo F5",
+				"status": true
+			},
+			{
+				"slug": "oppo-f3",
+				"name": "Oppo F3",
+				"status": true
+			},
+			{
+				"slug": "oppo-r11-plus",
+				"name": "Oppo R11 Plus",
+				"status": true
+			},
+			{
+				"slug": "oppo-r11",
+				"name": "Oppo R11",
+				"status": true
+			},
+			{
+				"name": "Oppo F3 Plus",
+				"slug": "oppo-f3-plus",
+				"status": true
+			},
+			{
+				"_id": "57cabdbd6b1b384735de1791",
+				"name": "Oppo F1 S",
+				"slug": "oppo-f1-s",
+				"status": true
+			},
+			{
+				"_id": "58cb8154c36c882276116786",
+				"name": "Oppo A57",
+				"slug": "oppo-a57",
+				"status": true
+			}
+		]
+	}
+]
